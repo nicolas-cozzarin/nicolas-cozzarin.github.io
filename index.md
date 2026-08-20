@@ -8,12 +8,13 @@ layout: default
     position: relative;
     max-width: 1100px;
     margin: 0 auto;
+    padding-bottom: 50px;
   }
 
   /* Minimalist Language Toggle (Top Right) */
   .lang-toggle-container {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
     font-family: monospace, sans-serif;
     font-size: 0.95em;
@@ -35,11 +36,12 @@ layout: default
     text-decoration: underline;
   }
 
-  /* Two-Column Grid */
-  .portfolio-container {
+  /* Top Section: Two-Column Grid */
+  .top-section {
     display: flex;
     gap: 50px;
     padding-top: 40px; /* Space for the toggle */
+    margin-bottom: 30px;
   }
   
   /* Left Sidebar */
@@ -74,13 +76,23 @@ layout: default
     margin-bottom: 12px;
   }
   
-  /* Right Main Content */
-  .main-content {
+  /* Right Content (About Me) */
+  .about-content {
     flex: 1;
     min-width: 300px;
   }
-  .main-content h2 {
+  .about-content h2 {
     margin-top: 0;
+  }
+
+  /* Full Width Section */
+  .full-width-section {
+    width: 100%;
+  }
+  hr.section-divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 40px 0;
   }
 
   /* Skills Stars */
@@ -108,17 +120,17 @@ layout: default
   
   /* Responsive */
   @media (max-width: 768px) {
-    .portfolio-container { flex-direction: column; gap: 30px; }
+    .top-section { flex-direction: column; gap: 30px; }
     .sidebar { flex: 1 1 auto; }
-    .lang-toggle-container { position: relative; text-align: right; margin-bottom: 20px; }
+    .lang-toggle-container { position: relative; text-align: right; margin-bottom: 20px; top: 0; }
   }
 </style>
 
 <script>
   function setLanguage(lang) {
-    // Toggle content visibility
-    document.getElementById('lang-en').style.display = lang === 'en' ? 'flex' : 'none';
-    document.getElementById('lang-fr').style.display = lang === 'fr' ? 'flex' : 'none';
+    // Toggle content visibility (using block instead of flex now)
+    document.getElementById('lang-en').style.display = lang === 'en' ? 'block' : 'none';
+    document.getElementById('lang-fr').style.display = lang === 'fr' ? 'block' : 'none';
     
     // Toggle button active states
     document.getElementById('btn-en').className = lang === 'en' ? 'lang-btn active' : 'lang-btn';
@@ -135,35 +147,41 @@ layout: default
   </div>
 
   <!-- ================= ENGLISH SECTION ================= -->
-  <div id="lang-en" class="portfolio-container">
+  <div id="lang-en">
     
-    <!-- Left Column: Sidebar -->
-    <aside class="sidebar">
-      <h2>Nicolas Cozzarin</h2>
-      <img src="docs/assets/ppicture.jpeg" alt="Nicolas Cozzarin" class="profile-pic">
-      <hr>
-      <ul class="sidebar-links">
-        <li><a href="#" target="_blank">Find me on LinkedIn</a></li>
-        <li><a href="#" target="_blank">Download my CV</a></li>
-        <li><a href="#" target="_blank">Follow me on Twitter</a></li>
-        <li><a href="#" target="_blank">Check out my GitHub profile</a></li>
-        <li><a href="mailto:nicolasjcozzarin@gmail.com">E-mail me at nicolasjcozzarin@gmail.com</a></li>
-      </ul>
-    </aside>
+    <!-- Top Section: Two Columns -->
+    <div class="top-section">
+      <aside class="sidebar">
+        <h2>Nicolas Cozzarin</h2>
+        <img src="docs/assets/ppicture.jpeg" alt="Nicolas Cozzarin" class="profile-pic">
+        <hr>
+        <ul class="sidebar-links">
+          <li><a href="#" target="_blank">Find me on LinkedIn</a></li>
+          <li><a href="#" target="_blank">Download my CV</a></li>
+          <li><a href="#" target="_blank">Follow me on Twitter</a></li>
+          <li><a href="#" target="_blank">Check out my GitHub profile</a></li>
+          <li><a href="mailto:nicolasjcozzarin@gmail.com">E-mail me at nicolasjcozzarin@gmail.com</a></li>
+        </ul>
+      </aside>
 
-    <!-- Right Column: Main Content -->
-    <main class="main-content">
-      <h2 id="about-me">about me</h2>
-      <p>I am an IT Project Manager and Product Owner with 10 years of experience. I specialize in Agile methodologies (Scrum/Kanban) and Software Development Life Cycle (SDLC) management. My technical focus is on AI and Data, allowing me to translate user needs into practical, effective technical solutions.</p>
-      <p>Currently, I am completing a BSc in Artificial Intelligence & Robotics at Universidad Siglo XXI, focusing on machine learning and generative AI.</p>
-      <hr>
+      <div class="about-content">
+        <h2 id="about-me">about me</h2>
+        <p>I am an IT Project Manager and Product Owner with 10 years of experience. I specialize in Agile methodologies (Scrum/Kanban) and Software Development Life Cycle (SDLC) management. My technical focus is on AI and Data, allowing me to translate user needs into practical, effective technical solutions.</p>
+        <p>Currently, I am completing a BSc in Artificial Intelligence & Robotics at Universidad Siglo XXI, focusing on machine learning and generative AI.</p>
+      </div>
+    </div>
+
+    <!-- Bottom Section: Full Width -->
+    <div class="full-width-section">
+      <hr class="section-divider">
 
       <h2 id="things-i-am-doing">things I am doing at the moment</h2>
       <ul>
         <li>I am an <strong>AI Product Owner</strong> for the Security Forces Disciplinary Control System in Cordoba, Argentina, managing an NLP model for text classification and implementing data anonymization protocols.</li>
         <li>Finishing my <strong>BSc in Artificial Intelligence & Robotics</strong>.</li>
       </ul>
-      <hr>
+      
+      <hr class="section-divider">
 
       <h2 id="things-i-have-done">links to things I have done in the past</h2>
       <ul>
@@ -172,7 +190,8 @@ layout: default
         <li>Optimized delivery processes and led test strategies as a <strong>QA Lead</strong> at Charly Inc (Canada).</li>
         <li>Developed ERP modules in Python as a <strong>Backend Developer</strong> at E-MIPS (Buenos Aires).</li>
       </ul>
-      <hr>
+      
+      <hr class="section-divider">
 
       <h2 id="updates">updates</h2>
       <table>
@@ -187,7 +206,8 @@ layout: default
           <tr><td>02/2015</td><td>Started my tech career as a Backend Python Developer at E-MIPS</td></tr>
         </tbody>
       </table>
-      <hr>
+      
+      <hr class="section-divider">
 
       <h2 id="skills">skills</h2>
       <div class="skills-container">
@@ -209,7 +229,8 @@ layout: default
         <div class="skill-row"><span class="skill-name">French (C1)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
         <div class="skill-row"><span class="skill-name">German (B2)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
       </div>
-      <hr>
+      
+      <hr class="section-divider">
       
       <h2>projects & insights</h2>
       <ul class="post-list">
@@ -224,39 +245,45 @@ layout: default
         </li>
         {%- endfor -%}
       </ul>
-    </main>
+    </div>
   </div>
 
   <!-- ================= FRENCH SECTION ================= -->
-  <div id="lang-fr" class="portfolio-container" style="display:none;">
+  <div id="lang-fr" style="display:none;">
     
-    <!-- Left Column: Sidebar -->
-    <aside class="sidebar">
-      <h2>Nicolas Cozzarin</h2>
-      <img src="docs/assets/ppicture.jpeg" alt="Nicolas Cozzarin" class="profile-pic">
-      <hr>
-      <ul class="sidebar-links">
-        <li><a href="#" target="_blank">Me retrouver sur LinkedIn</a></li>
-        <li><a href="#" target="_blank">Télécharger mon CV</a></li>
-        <li><a href="#" target="_blank">Me suivre sur Twitter</a></li>
-        <li><a href="#" target="_blank">Découvrir mon profil GitHub</a></li>
-        <li><a href="mailto:nicolasjcozzarin@gmail.com">M'envoyer un e-mail à nicolasjcozzarin@gmail.com</a></li>
-      </ul>
-    </aside>
+    <!-- Top Section: Two Columns -->
+    <div class="top-section">
+      <aside class="sidebar">
+        <h2>Nicolas Cozzarin</h2>
+        <img src="docs/assets/ppicture.jpeg" alt="Nicolas Cozzarin" class="profile-pic">
+        <hr>
+        <ul class="sidebar-links">
+          <li><a href="#" target="_blank">Me retrouver sur LinkedIn</a></li>
+          <li><a href="#" target="_blank">Télécharger mon CV</a></li>
+          <li><a href="#" target="_blank">Me suivre sur Twitter</a></li>
+          <li><a href="#" target="_blank">Découvrir mon profil GitHub</a></li>
+          <li><a href="mailto:nicolasjcozzarin@gmail.com">M'envoyer un e-mail à nicolasjcozzarin@gmail.com</a></li>
+        </ul>
+      </aside>
 
-    <!-- Right Column: Main Content -->
-    <main class="main-content">
-      <h2 id="a-propos">à propos</h2>
-      <p>Product Owner et Chef de Projet IT avec 10 ans d'expérience. Je suis spécialiste des méthodologies Agiles (Scrum/Kanban) et du pilotage SDLC. Fort d'une spécialisation en IA et Data, je traduis les besoins utilisateurs en solutions techniques concrètes et performantes.</p>
-      <p>Je termine actuellement un Bachelor en Intelligence Artificielle et Robotique à l'Universidad Siglo XXI, avec un accent sur le machine learning et l'IA générative.</p>
-      <hr>
+      <div class="about-content">
+        <h2 id="a-propos">à propos</h2>
+        <p>Product Owner et Chef de Projet IT avec 10 ans d'expérience. Je suis spécialiste des méthodologies Agiles (Scrum/Kanban) et du pilotage SDLC. Fort d'une spécialisation en IA et Data, je traduis les besoins utilisateurs en solutions techniques concrètes et performantes.</p>
+        <p>Je termine actuellement un Bachelor en Intelligence Artificielle et Robotique à l'Universidad Siglo XXI, avec un accent sur le machine learning et l'IA générative.</p>
+      </div>
+    </div>
+
+    <!-- Bottom Section: Full Width -->
+    <div class="full-width-section">
+      <hr class="section-divider">
 
       <h2 id="en-ce-moment">ce que je fais en ce moment</h2>
       <ul>
         <li>Je suis <strong>AI Product Owner</strong> pour le Système de Contrôle Disciplinaire des Forces de Sécurité à Cordoba, Argentine, où je gère un modèle NLP pour l'automatisation de l'analyse de dossiers légaux.</li>
         <li>Je finalise mon <strong>Bachelor en Intelligence Artificielle et Robotique</strong>.</li>
       </ul>
-      <hr>
+      
+      <hr class="section-divider">
 
       <h2 id="experiences-passees">liens vers mes expériences passées</h2>
       <ul>
@@ -265,7 +292,8 @@ layout: default
         <li>Définition des stratégies de tests pour des équipes distantes en tant que <strong>QA Lead</strong> chez Charly Inc (Canada).</li>
         <li>Développement de modules ERP en Python en tant que <strong>Développeur Backend</strong> chez E-MIPS (Buenos Aires).</li>
       </ul>
-      <hr>
+      
+      <hr class="section-divider">
 
       <h2 id="mises-a-jour">mises à jour</h2>
       <table>
@@ -280,7 +308,8 @@ layout: default
           <tr><td>02/2015</td><td>Début de carrière technique comme Développeur Backend Python chez E-MIPS</td></tr>
         </tbody>
       </table>
-      <hr>
+      
+      <hr class="section-divider">
 
       <h2 id="competences">compétences</h2>
       <div class="skills-container">
@@ -302,7 +331,8 @@ layout: default
         <div class="skill-row"><span class="skill-name">Français (C1)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
         <div class="skill-row"><span class="skill-name">Allemand (B2)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
       </div>
-      <hr>
+      
+      <hr class="section-divider">
 
       <h2>projets & réflexions</h2>
       <ul class="post-list">
@@ -317,6 +347,6 @@ layout: default
         </li>
         {%- endfor -%}
       </ul>
-    </main>
+    </div>
   </div>
 </div>
