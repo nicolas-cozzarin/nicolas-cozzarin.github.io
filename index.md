@@ -219,7 +219,6 @@
     
     <div class="top-section">
       <aside class="sidebar">
-        <h2>Nicolas Cozzarin</h2>
         <img src="docs/assets/ppicture.jpeg" alt="Nicolas Cozzarin" class="profile-pic">
         <hr>
         <ul class="sidebar-links">
@@ -504,7 +503,6 @@
     
     <div class="top-section">
       <aside class="sidebar">
-        <h2>Nicolas Cozzarin</h2>
         <img src="docs/assets/ppicture.jpeg" alt="Nicolas Cozzarin" class="profile-pic">
         <hr>
         <ul class="sidebar-links">
