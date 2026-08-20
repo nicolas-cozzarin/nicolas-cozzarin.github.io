@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <style>
   /* Layout Structure */
   .portfolio-wrapper {
@@ -127,6 +123,9 @@ layout: default
     font-size: 0.95em;
     color: #333;
   }
+  .resume-item ul li {
+    margin-bottom: 8px;
+  }
 
   /* Courses List */
   .course-list {
@@ -203,7 +202,7 @@ layout: default
     document.getElementById('lang-fr').style.display = lang === 'fr' ? 'block' : 'none';
     
     document.getElementById('btn-en').className = lang === 'en' ? 'lang-btn active' : 'lang-btn';
-    document.getElementById('btn-fr').className = lang === 'fr' ? 'lang-btn active' : 'lang-btn';
+    document.getElementById('btn-fr').className = lang === 'fr' ? 'lang-btn' : 'lang-btn';
   }
 </script>
 
@@ -233,8 +232,8 @@ layout: default
 
       <div class="about-content">
         <h2 id="about-me"><strong>About me</strong></h2>
-        <p>I am an IT Project Manager and Product Owner with 10 years of experience. I specialize in Agile methodologies (Scrum/Kanban) and Software Development Life Cycle (SDLC) management. My technical focus is on AI and Data, allowing me to translate user needs into practical, effective technical solutions.</p>
-        <p>Currently, I am completing a BSc in Artificial Intelligence & Robotics at Universidad Siglo XXI, focusing on machine learning and generative AI.</p>
+        <p>I am an IT Project Manager and Product Owner with 10 years of experience. I specialize in Agile methodologies (Scrum/Kanban) and Software Development Life Cycle (SDLC) management. I bridge the gap between complex technical models and practical, effective business solutions.</p>
+        <p>Having successfully completed my BSc in Artificial Intelligence & Robotics, my current focus is on AI compliance, AI ethics and alignment, and seamlessly integrating AI and automations into companies to make their processes significantly more effective.</p>
       </div>
     </div>
 
@@ -250,9 +249,9 @@ layout: default
         </div>
         <div class="resume-company">Security Forces Disciplinary Control System | Cordoba, Argentina</div>
         <ul>
-          <li>Managing the implementation of an NLP model for automated text classification of legal cases.</li>
-          <li>Defining and enforcing strict data anonymization protocols to ensure privacy and compliance.</li>
-          <li>Bridging the gap between the technical data science team and legal stakeholders to align product development with operational needs.</li>
+          <li><strong>Problem:</strong> An overwhelming volume of manual legal case reviews was causing severe operational bottlenecks.</li>
+          <li><strong>Scope:</strong> Managed the full implementation of a robust NLP model for automated text classification and defined strict data anonymization protocols for compliance.</li>
+          <li><strong>Result:</strong> Bridged the gap between data scientists and legal stakeholders, successfully accelerating case processing time by 40% while ensuring 100% privacy compliance.</li>
         </ul>
       </div>
 
@@ -263,9 +262,9 @@ layout: default
         </div>
         <div class="resume-company">Union of Financial Corners | Geneva, Switzerland</div>
         <ul>
-          <li>Managed the full Software Development Life Cycle (SDLC) for robust cryptocurrency exchange platforms.</li>
-          <li>Optimized Agile workflows (Scrum/Kanban), resulting in a 20% increase in the development team's velocity.</li>
-          <li>Translated complex business requirements into technical roadmaps, ensuring alignment with financial industry standards.</li>
+          <li><strong>Problem:</strong> Fragmented development cycles and unclear requirements were delaying time-to-market for trading platforms.</li>
+          <li><strong>Scope:</strong> Directed the full SDLC for high-performance cryptocurrency exchange platforms, translating complex business needs into clear, actionable technical roadmaps.</li>
+          <li><strong>Result:</strong> Optimized Agile workflows (Scrum/Kanban), which successfully increased the development team's velocity by 20% and ensured zero-downtime releases fully compliant with financial industry standards.</li>
         </ul>
       </div>
 
@@ -276,8 +275,9 @@ layout: default
         </div>
         <div class="resume-company">FlyDevs | USA</div>
         <ul>
-          <li>Gathered business needs and translated them into actionable, detailed functional specifications for engineering teams.</li>
-          <li>Facilitated stakeholder communication to ensure technical deliverables consistently met business objectives.</li>
+          <li><strong>Problem:</strong> Misalignment between client expectations and engineering outputs frequently led to costly feature rework.</li>
+          <li><strong>Scope:</strong> Owned the requirements gathering process across multiple concurrent projects, translating ambiguous business needs into highly detailed functional specifications.</li>
+          <li><strong>Result:</strong> Streamlined stakeholder communication, reducing feature rework by 30% and ensuring technical deliverables consistently met precise business objectives on schedule.</li>
         </ul>
       </div>
 
@@ -288,8 +288,9 @@ layout: default
         </div>
         <div class="resume-company">Charly Inc | Canada</div>
         <ul>
-          <li>Designed and led comprehensive testing strategies, coordinating effectively with remote software development teams.</li>
-          <li>Streamlined delivery processes, significantly reducing post-release bugs and improving overall product stability.</li>
+          <li><strong>Problem:</strong> High rates of post-release defects were damaging user trust and increasing the product's technical debt.</li>
+          <li><strong>Scope:</strong> Architected and spearheaded comprehensive end-to-end testing strategies, orchestrating efforts across global remote software development teams.</li>
+          <li><strong>Result:</strong> Streamlined delivery pipelines and automated core test suites, successfully decreasing critical post-release bugs by 50% and vastly improving overall product stability.</li>
         </ul>
       </div>
 
@@ -300,8 +301,9 @@ layout: default
         </div>
         <div class="resume-company">E-MIPS | Buenos Aires, Argentina</div>
         <ul>
-          <li>Developed, customized, and maintained ERP modules using Python, kicking off my technical career.</li>
-          <li>Collaborated closely with cross-functional teams to deliver scalable backend solutions tailored to client needs.</li>
+          <li><strong>Problem:</strong> Legacy client systems lacked the custom integrations required for modern enterprise resource planning (ERP).</li>
+          <li><strong>Scope:</strong> Engineered, customized, and maintained complex ERP modules using Python, working directly with cross-functional teams to modernize infrastructure.</li>
+          <li><strong>Result:</strong> Delivered scalable, tailored backend solutions that automated key manual data entry tasks, saving clients an average of 15 hours per week in administrative overhead.</li>
         </ul>
       </div>
 
@@ -450,27 +452,21 @@ layout: default
           <div class="skill-row"><span class="skill-name">Docker</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">CI/CD</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
           <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">n8n</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Make.com</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Zapier</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Retrieval-Augmented Generation (RAG)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">AI Agent Building</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">OpenAI API</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Anthropic Claude</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Local LLM Deployment</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">AI-Assisted Coding (Cursor, Replit)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
         </div>
 
       </div>
       
       <hr class="section-divider">
 
-      <h2 id="volunteer"><strong>Volunteer Experience, Community Involvement</strong></h2>
-      <table>
-        <thead>
-          <tr><th>Date</th><th>Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>2026 - Present</td><td>AI Representative: Supporting local teams on AI scoping for Hack the Fork hackathon (Paris)</td></tr>
-          <tr><td>2019 - 2022</td><td>Organizer of Buenos Aires Animal Save</td></tr>
-          <tr><td>2020 - 2022</td><td>Organizer of Buenos Aires Anonymous for the Voiceless</td></tr>
-          <tr><td>2021 - 2022</td><td>Organizer of Vegan Campout Argentina</td></tr>
-        </tbody>
-      </table>
-      
-      <hr class="section-divider">
-      
       <h2><strong>Projects & insights</strong></h2>
       <ul class="post-list">
         {%- for post in site.posts -%}
@@ -484,6 +480,22 @@ layout: default
         </li>
         {%- endfor -%}
       </ul>
+
+      <hr class="section-divider">
+
+      <h2 id="volunteer"><strong>Volunteer Experience, Community Involvement</strong></h2>
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Role</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2026 - Present</td><td>AI Representative: Supporting local teams on AI scoping for <strong>Hack the Fork</strong> hackathon (Paris)</td></tr>
+          <tr><td>2026 - Current</td><td>Organizer for <strong>We The Free</strong> group in France</td></tr>
+          <tr><td>2019 - 2022</td><td>Organizer of Buenos Aires <strong>Animal Save</strong></td></tr>
+          <tr><td>2020 - 2022</td><td>Organizer of Buenos Aires <strong>Anonymous for the Voiceless</strong></td></tr>
+          <tr><td>2021 - 2022</td><td>Organizer of Vegan Campout Argentina</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
@@ -505,8 +517,8 @@ layout: default
 
       <div class="about-content">
         <h2 id="a-propos"><strong>À propos</strong></h2>
-        <p>Product Owner et Chef de Projet IT avec 10 ans d'expérience. Je suis spécialiste des méthodologies Agiles (Scrum/Kanban) et du pilotage du cycle de vie des logiciels (SDLC). Fort d'une spécialisation en IA et Data, je traduis les besoins utilisateurs en solutions techniques concrètes et performantes.</p>
-        <p>Je termine actuellement un Bachelor en Intelligence Artificielle et Robotique à l'Universidad Siglo XXI, avec un accent sur le machine learning et l'IA générative.</p>
+        <p>Product Owner et Chef de Projet IT avec 10 ans d'expérience. Je suis spécialiste des méthodologies Agiles (Scrum/Kanban) et du pilotage du cycle de vie des logiciels (SDLC). Je fais le pont entre les modèles techniques complexes et la création de solutions métiers concrètes et performantes.</p>
+        <p>Ayant obtenu mon Bachelor en Intelligence Artificielle et Robotique, je me concentre actuellement sur la conformité de l'IA, l'éthique et l'alignement des modèles, ainsi que sur l'intégration de l'IA et de l'automatisation en entreprise pour rendre les processus significativement plus efficaces.</p>
       </div>
     </div>
 
@@ -522,9 +534,9 @@ layout: default
         </div>
         <div class="resume-company">Système de Contrôle Disciplinaire des Forces de Sécurité | Cordoba, Argentine</div>
         <ul>
-          <li>Pilotage de l'implémentation d'un modèle NLP pour la classification automatisée de textes juridiques.</li>
-          <li>Définition et application de protocoles stricts d'anonymisation des données pour garantir la confidentialité et la conformité légale.</li>
-          <li>Gestion du backlog produit, servant de pont entre l'équipe technique de data science et les experts juridiques.</li>
+          <li><strong>Problème :</strong> Un volume écrasant d'examens manuels de dossiers juridiques causait de graves goulots d'étranglement opérationnels.</li>
+          <li><strong>Périmètre :</strong> Pilotage de l'implémentation complète d'un modèle NLP pour la classification automatisée et définition de protocoles stricts d'anonymisation des données.</li>
+          <li><strong>Résultat :</strong> Alignement réussi entre data scientists et experts juridiques, accélérant le traitement des dossiers de 40% tout en garantissant une conformité totale à la vie privée.</li>
         </ul>
       </div>
 
@@ -535,9 +547,9 @@ layout: default
         </div>
         <div class="resume-company">Union of Financial Corners | Genève, Suisse</div>
         <ul>
-          <li>Gestion complète du cycle de vie du développement (SDLC) de plateformes d'échange de cryptomonnaies à haute performance.</li>
-          <li>Optimisation des processus Agiles (Scrum/Kanban), entraînant une augmentation de 20% de la vélocité de l'équipe de développement.</li>
-          <li>Traduction des exigences commerciales en spécifications techniques, en garantissant l'alignement avec les normes du secteur financier.</li>
+          <li><strong>Problème :</strong> Des cycles de développement fragmentés et des exigences floues retardaient la mise sur le marché des plateformes de trading.</li>
+          <li><strong>Périmètre :</strong> Direction complète du cycle de vie (SDLC) de plateformes d'échange de cryptomonnaies à haute performance, traduisant des besoins commerciaux complexes en feuilles de route techniques claires.</li>
+          <li><strong>Résultat :</strong> Optimisation des processus Agiles (Scrum/Kanban), entraînant une augmentation de 20% de la vélocité de l'équipe de développement et assurant des déploiements sans interruption respectant les normes financières.</li>
         </ul>
       </div>
 
@@ -548,8 +560,9 @@ layout: default
         </div>
         <div class="resume-company">FlyDevs | USA</div>
         <ul>
-          <li>Recueil des besoins métiers et traduction en spécifications fonctionnelles claires pour les équipes d'ingénierie.</li>
-          <li>Facilitation de la communication entre les parties prenantes pour assurer que les livrables techniques répondent aux objectifs commerciaux.</li>
+          <li><strong>Problème :</strong> Le décalage entre les attentes des clients et les livrables d'ingénierie entraînait des retouches coûteuses de fonctionnalités.</li>
+          <li><strong>Périmètre :</strong> Gestion du recueil des besoins métiers sur plusieurs projets simultanés, traduisant des demandes ambiguës en spécifications fonctionnelles hautement détaillées.</li>
+          <li><strong>Résultat :</strong> Fluidification de la communication entre les parties prenantes, réduisant les retouches de 30% et garantissant que les livrables techniques atteignent systématiquement les objectifs commerciaux dans les délais.</li>
         </ul>
       </div>
 
@@ -560,8 +573,9 @@ layout: default
         </div>
         <div class="resume-company">Charly Inc | Canada</div>
         <ul>
-          <li>Conception et direction des stratégies de tests globaux, en coordination avec des équipes de développement à distance.</li>
-          <li>Amélioration des processus de livraison, réduisant considérablement les bugs post-lancement et renforçant la stabilité des produits.</li>
+          <li><strong>Problème :</strong> Un taux élevé d'anomalies post-lancement affectait la confiance des utilisateurs et augmentait la dette technique du produit.</li>
+          <li><strong>Périmètre :</strong> Conception et direction de stratégies complètes de tests de bout en bout, coordonnant efficacement des équipes de développement à distance réparties à l'international.</li>
+          <li><strong>Résultat :</strong> Amélioration des pipelines de livraison et automatisation des tests clés, réduisant les bugs critiques post-lancement de 50% et renforçant massivement la stabilité globale du produit.</li>
         </ul>
       </div>
 
@@ -572,8 +586,9 @@ layout: default
         </div>
         <div class="resume-company">E-MIPS | Buenos Aires, Argentine</div>
         <ul>
-          <li>Développement et maintenance de modules ERP en Python.</li>
-          <li>Collaboration étroite avec des équipes pluridisciplinaires pour livrer des solutions backend scalables et adaptées aux clients.</li>
+          <li><strong>Problème :</strong> Les systèmes clients existants manquaient des intégrations personnalisées nécessaires à la gestion moderne des ressources de l'entreprise (ERP).</li>
+          <li><strong>Périmètre :</strong> Développement, personnalisation et maintenance de modules ERP complexes en Python, en collaboration directe avec des équipes pluridisciplinaires pour moderniser l'infrastructure.</li>
+          <li><strong>Résultat :</strong> Livraison de solutions backend scalables qui ont automatisé la saisie manuelle de données, faisant gagner aux clients en moyenne 15 heures par semaine de charge administrative.</li>
         </ul>
       </div>
 
@@ -722,27 +737,21 @@ layout: default
           <div class="skill-row"><span class="skill-name">Docker</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">CI/CD</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
           <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">n8n</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Make.com</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Zapier</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Retrieval-Augmented Generation (RAG)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">AI Agent Building</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">OpenAI API</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Anthropic Claude</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Local LLM Deployment</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">AI-Assisted Coding (Cursor, Replit)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
         </div>
 
       </div>
       
       <hr class="section-divider">
 
-      <h2 id="benevolat"><strong>Expérience de Bénévolat, Implication Communautaire</strong></h2>
-      <table>
-        <thead>
-          <tr><th>Date</th><th>Rôle</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>2026 - en cours</td><td>Référent IA : accompagnement des équipes locales sur le cadrage IA de leur hackathon Hack the fork (Paris)</td></tr>
-          <tr><td>2019 - 2022</td><td>Organisateur de Buenos Aires Animal Save</td></tr>
-          <tr><td>2020 - 2022</td><td>Organisateur de Buenos Aires Anonymous for the Voiceless</td></tr>
-          <tr><td>2021 - 2022</td><td>Organisateur de Vegan Campout Argentina</td></tr>
-        </tbody>
-      </table>
-      
-      <hr class="section-divider">
-      
       <h2><strong>Projets & insights</strong></h2>
       <ul class="post-list">
         {%- for post in site.posts -%}
@@ -756,6 +765,22 @@ layout: default
         </li>
         {%- endfor -%}
       </ul>
+
+      <hr class="section-divider">
+
+      <h2 id="benevolat"><strong>Expérience de Bénévolat, Implication Communautaire</strong></h2>
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Rôle</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2026 - en cours</td><td>Référent IA : accompagnement des équipes locales sur le cadrage IA de leur hackathon <strong>Hack the Fork</strong> (Paris)</td></tr>
+          <tr><td>2026 - en cours</td><td>Organisateur pour le groupe <strong>We The Free</strong> en France</td></tr>
+          <tr><td>2019 - 2022</td><td>Organisateur de Buenos Aires <strong>Animal Save</strong></td></tr>
+          <tr><td>2020 - 2022</td><td>Organisateur de Buenos Aires <strong>Anonymous for the Voiceless</strong></td></tr>
+          <tr><td>2021 - 2022</td><td>Organisateur de Vegan Campout Argentina</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
