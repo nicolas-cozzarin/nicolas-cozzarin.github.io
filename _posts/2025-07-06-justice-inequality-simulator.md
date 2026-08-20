@@ -4,7 +4,7 @@ date: 2025-07-06
 author: "Nicolas Cozzarin (@ncozzarin)"
 ---
 
-## HFU Deep Generative Models — Project Write up
+## Justice Inequality Simulator — A Generative & Probabilistic Approach to Judicial Bias
 
 ### 1. Motivation
 
