@@ -224,11 +224,9 @@ layout: default
         <img src="docs/assets/ppicture.jpeg" alt="Nicolas Cozzarin" class="profile-pic">
         <hr>
         <ul class="sidebar-links">
-          <li><a href="#" target="_blank">Find me on LinkedIn</a></li>
-          <!-- ADD YOUR CV PDF IN THE ASSETS FOLDER AND ENSURE THE NAME MATCHES BELOW -->
-          <li><a href="docs/assets/cv.pdf" download>Download my CV</a></li>
-          <li><a href="#" target="_blank">Follow me on Twitter</a></li>
-          <li><a href="#" target="_blank">Check out my GitHub profile</a></li>
+          <li><a href="https://www.linkedin.com/in/ncozzarin/?skipRedirect=true" target="_blank">Find me on LinkedIn</a></li>
+          <li><a href="docs/assets/CV_COZZARIN_EN.pdf" download>Download my CV</a></li>
+          <li><a href="https://www.linkedin.com/in/ncozzarin/?skipRedirect=true" target="_blank">Check out my GitHub profile</a></li>
           <li><a href="mailto:nicolasjcozzarin@gmail.com">E-mail me</a></li>
         </ul>
       </aside>
@@ -489,9 +487,8 @@ layout: default
         <hr>
         <ul class="sidebar-links">
           <li><a href="#" target="_blank">Me retrouver sur LinkedIn</a></li>
-          <li><a href="docs/assets/cv.pdf" download>Télécharger mon CV</a></li>
-          <li><a href="#" target="_blank">Me suivre sur Twitter</a></li>
-          <li><a href="#" target="_blank">Découvrir mon profil GitHub</a></li>
+          <li><a href="docs/assets/CV_COZZARIN_FR.pdf" download>Télécharger mon CV</a></li>
+          <li><a href="https://github.com/nicolas-cozzarin" target="_blank">Mon profil GitHub</a></li>
           <li><a href="mailto:nicolasjcozzarin@gmail.com">M'envoyer un e-mail</a></li>
         </ul>
       </aside>
@@ -669,19 +666,19 @@ layout: default
         
         <div class="skill-category">Tech, Data & IA</div>
         <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">Python</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Pandas</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Scikit-learn</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">PyTorch</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Python</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Pandas</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Scikit-learn</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">PyTorch</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">NLP</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">NER</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">SQL</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">React.js</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">TypeScript</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">SQL</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">React.js</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">TypeScript</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
           <div class="skill-row"><span class="skill-name">Git</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Docker</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">CI/CD</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">API REST</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Docker</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">CI/CD</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">API REST</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
         </div>
 
         <div class="skill-category">Produit & Management</div>
@@ -691,19 +688,20 @@ layout: default
           <div class="skill-row"><span class="skill-name">Backlog Management</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">User Stories</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">Jira</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Confluence</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Azure DevOps</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Confluence</span> <span class="skill-stars"><span class="filled">★★</span></span>★★★</div>
+          <div class="skill-row"><span class="skill-name">Azure DevOps</span> <span class="skill-stars"><span class="filled">★★★</span></span>★★</div>
           <div class="skill-row"><span class="skill-name">Figma</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
           <div class="skill-row"><span class="skill-name">Miro</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Balsamiq</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Balsamiq</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
         </div>
         
         <div class="skill-category">Langues</div>
         <div class="skills-grid">
           <div class="skill-row"><span class="skill-name">Espagnol (Natif)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Anglais (C1)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Français (C1)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Anglais (everyday working language)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Français (working language)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
           <div class="skill-row"><span class="skill-name">Allemand (B2)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Chinois (HSK3)</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
         </div>
 
       </div>
