@@ -232,7 +232,7 @@ layout: default
       </aside>
 
       <div class="about-content">
-        <h2 id="about-me">about me</h2>
+        <h2 id="about-me"><strong>About me</strong></h2>
         <p>I am an IT Project Manager and Product Owner with 10 years of experience. I specialize in Agile methodologies (Scrum/Kanban) and Software Development Life Cycle (SDLC) management. My technical focus is on AI and Data, allowing me to translate user needs into practical, effective technical solutions.</p>
         <p>Currently, I am completing a BSc in Artificial Intelligence & Robotics at Universidad Siglo XXI, focusing on machine learning and generative AI.</p>
       </div>
@@ -241,7 +241,7 @@ layout: default
     <div class="full-width-section">
       <hr class="section-divider">
 
-      <h2 id="professional-experience">professional experience</h2>
+      <h2 id="professional-experience"><strong>Professional experience</strong></h2>
       
       <div class="resume-item">
         <div class="resume-header">
@@ -307,7 +307,7 @@ layout: default
 
       <hr class="section-divider">
 
-      <h2 id="education">education</h2>
+      <h2 id="education"><strong>Education</strong></h2>
 
       <div class="resume-item">
         <div class="resume-header">
@@ -348,7 +348,7 @@ layout: default
 
       <hr class="section-divider">
 
-      <h2 id="courses">courses & certifications</h2>
+      <h2 id="courses"><strong>Courses & certifications</strong></h2>
       <ul class="course-list">
         <li>
           <span class="course-meta">2026 • Altruisme Efficace France</span>
@@ -399,25 +399,8 @@ layout: default
 
       <hr class="section-divider">
 
-      <h2 id="skills">skills</h2>
+      <h2 id="skills"><strong>Skills</strong></h2>
       <div class="skills-container">
-        
-        <div class="skill-category">Tech, Data & AI</div>
-        <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">Python</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Pandas</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Scikit-learn</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">PyTorch</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">NLP</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">NER</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">SQL</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">React.js</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">TypeScript</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Git</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Docker</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">CI/CD</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-        </div>
 
         <div class="skill-category">Product & Management</div>
         <div class="skills-grid">
@@ -426,42 +409,69 @@ layout: default
           <div class="skill-row"><span class="skill-name">Backlog Management</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">User Stories</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">Jira</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Confluence</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Azure DevOps</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Confluence</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Azure DevOps</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
           <div class="skill-row"><span class="skill-name">Figma</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
           <div class="skill-row"><span class="skill-name">Miro</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Balsamiq</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Balsamiq</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Apple / MacOS</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Github / Gitlab</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Scrum / Agile</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">SEO</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Insomnia / Postman</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Product Roadmap</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Backlog Refinement</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">User Research</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">A/B Testing</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Stakeholder Management</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
         </div>
-        
+
         <div class="skill-category">Languages</div>
         <div class="skills-grid">
           <div class="skill-row"><span class="skill-name">Spanish (Native)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">English (C1)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
           <div class="skill-row"><span class="skill-name">French (C1)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">German (B2)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">German</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
+          <div class="skill-row"><span class="skill-name">Chinese (HSK3)</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
+        </div>
+        
+        <div class="skill-category">Tech, Data & AI</div>
+        <div class="skills-grid">
+          <div class="skill-row"><span class="skill-name">Python</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Pandas</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Scikit-learn</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">PyTorch</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">NLP</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">NER</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">SQL</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">React.js</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
+          <div class="skill-row"><span class="skill-name">TypeScript</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Git</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Docker</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">CI/CD</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
         </div>
 
       </div>
       
       <hr class="section-divider">
 
-      <h2 id="updates">updates</h2>
+      <h2 id="volunteer"><strong>Volunteer Experience, Community Involvement</strong></h2>
       <table>
         <thead>
-          <tr><th>date</th><th>news</th></tr>
+          <tr><th>Date</th><th>Role</th></tr>
         </thead>
         <tbody>
-          <tr><td>11/2025</td><td>Started AI Product Owner role for Security Forces in Cordoba, Argentina</td></tr>
-          <tr><td>10/2022</td><td>Started as Product Owner/IT Project Manager at Union of Financial Corners, Geneva</td></tr>
-          <tr><td>02/2019</td><td>Began working as a Functional Analyst for FlyDevs</td></tr>
-          <tr><td>2017</td><td>Took on the QA Lead role at Charly Inc</td></tr>
-          <tr><td>02/2015</td><td>Started my tech career as a Backend Python Developer at E-MIPS</td></tr>
+          <tr><td>2026 - Present</td><td>AI Representative: Supporting local teams on AI scoping for Hack the Fork hackathon (Paris)</td></tr>
+          <tr><td>2019 - 2022</td><td>Organizer of Buenos Aires Animal Save</td></tr>
+          <tr><td>2020 - 2022</td><td>Organizer of Buenos Aires Anonymous for the Voiceless</td></tr>
+          <tr><td>2021 - 2022</td><td>Organizer of Vegan Campout Argentina</td></tr>
         </tbody>
       </table>
       
       <hr class="section-divider">
       
-      <h2>projects & insights</h2>
+      <h2><strong>Projects & insights</strong></h2>
       <ul class="post-list">
         {%- for post in site.posts -%}
         <li>
@@ -494,7 +504,7 @@ layout: default
       </aside>
 
       <div class="about-content">
-        <h2 id="a-propos">à propos</h2>
+        <h2 id="a-propos"><strong>À propos</strong></h2>
         <p>Product Owner et Chef de Projet IT avec 10 ans d'expérience. Je suis spécialiste des méthodologies Agiles (Scrum/Kanban) et du pilotage du cycle de vie des logiciels (SDLC). Fort d'une spécialisation en IA et Data, je traduis les besoins utilisateurs en solutions techniques concrètes et performantes.</p>
         <p>Je termine actuellement un Bachelor en Intelligence Artificielle et Robotique à l'Universidad Siglo XXI, avec un accent sur le machine learning et l'IA générative.</p>
       </div>
@@ -503,7 +513,7 @@ layout: default
     <div class="full-width-section">
       <hr class="section-divider">
 
-      <h2 id="experiences-professionnelles">expérience professionnelle</h2>
+      <h2 id="experiences-professionnelles"><strong>Expérience professionnelle</strong></h2>
       
       <div class="resume-item">
         <div class="resume-header">
@@ -569,7 +579,7 @@ layout: default
 
       <hr class="section-divider">
 
-      <h2 id="education-fr">éducation</h2>
+      <h2 id="education-fr"><strong>Éducation</strong></h2>
 
       <div class="resume-item">
         <div class="resume-header">
@@ -610,7 +620,7 @@ layout: default
 
       <hr class="section-divider">
 
-      <h2 id="cours">cours & certifications</h2>
+      <h2 id="cours"><strong>Cours & certifications</strong></h2>
       <ul class="course-list">
         <li>
           <span class="course-meta">2026 • Altruisme Efficace France</span>
@@ -661,74 +671,83 @@ layout: default
 
       <hr class="section-divider">
 
-      <h2 id="competences">compétences</h2>
+      <h2 id="competences"><strong>Compétences</strong></h2>
       <div class="skills-container">
-        
-        <div class="skill-category">Tech, Data & IA</div>
-        <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">Python</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Pandas</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Scikit-learn</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">PyTorch</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">NLP</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">NER</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">SQL</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">React.js</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">TypeScript</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
-          <div class="skill-row"><span class="skill-name">Git</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Docker</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">CI/CD</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">API REST</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-        </div>
 
         <div class="skill-category">Produit & Management</div>
         <div class="skills-grid">
           <div class="skill-row"><span class="skill-name">Agile (Scrum/Kanban)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">SDLC</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Backlog Management</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Gestion du Backlog</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">User Stories</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">Jira</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Confluence</span> <span class="skill-stars"><span class="filled">★★</span></span>★★★</div>
-          <div class="skill-row"><span class="skill-name">Azure DevOps</span> <span class="skill-stars"><span class="filled">★★★</span></span>★★</div>
+          <div class="skill-row"><span class="skill-name">Confluence</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Azure DevOps</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
           <div class="skill-row"><span class="skill-name">Figma</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
           <div class="skill-row"><span class="skill-name">Miro</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
           <div class="skill-row"><span class="skill-name">Balsamiq</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Apple / MacOS</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Github / Gitlab</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Scrum / Agile</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">SEO</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Insomnia / Postman</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Roadmap Produit</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Affinage du Backlog</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Recherche Utilisateur</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">A/B Testing</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Gestion des Parties Prenantes</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
         </div>
-        
+
         <div class="skill-category">Langues</div>
         <div class="skills-grid">
           <div class="skill-row"><span class="skill-name">Espagnol (Natif)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Anglais (everyday working language)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Français (working language)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Allemand (B2)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Anglais (C1)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Français (C1)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Allemand</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
           <div class="skill-row"><span class="skill-name">Chinois (HSK3)</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
+        </div>
+        
+        <div class="skill-category">Tech, Data & IA</div>
+        <div class="skills-grid">
+          <div class="skill-row"><span class="skill-name">Python</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Pandas</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Scikit-learn</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">PyTorch</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">NLP</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">NER</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">SQL</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">React.js</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
+          <div class="skill-row"><span class="skill-name">TypeScript</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Git</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Docker</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">CI/CD</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
         </div>
 
       </div>
       
       <hr class="section-divider">
 
-      <h2 id="mises-a-jour">mises à jour</h2>
+      <h2 id="benevolat"><strong>Expérience de Bénévolat, Implication Communautaire</strong></h2>
       <table>
         <thead>
-          <tr><th>date</th><th>nouvelle</th></tr>
+          <tr><th>Date</th><th>Rôle</th></tr>
         </thead>
         <tbody>
-          <tr><td>11/2025</td><td>Début de ma mission d'AI Product Owner pour les Forces de Sécurité de Cordoba</td></tr>
-          <tr><td>10/2022</td><td>Arrivée chez Union of Financial Corners à Genève en tant que Product Owner</td></tr>
-          <tr><td>02/2019</td><td>Début en tant qu'Analyste fonctionnel pour FlyDevs</td></tr>
-          <tr><td>2017</td><td>Prise de poste en tant que QA Lead chez Charly Inc</td></tr>
-          <tr><td>02/2015</td><td>Début de carrière technique comme Développeur Backend Python chez E-MIPS</td></tr>
+          <tr><td>2026 - en cours</td><td>Référent IA : accompagnement des équipes locales sur le cadrage IA de leur hackathon Hack the fork (Paris)</td></tr>
+          <tr><td>2019 - 2022</td><td>Organisateur de Buenos Aires Animal Save</td></tr>
+          <tr><td>2020 - 2022</td><td>Organisateur de Buenos Aires Anonymous for the Voiceless</td></tr>
+          <tr><td>2021 - 2022</td><td>Organisateur de Vegan Campout Argentina</td></tr>
         </tbody>
       </table>
       
       <hr class="section-divider">
-
-      <h2>projets & réflexions</h2>
+      
+      <h2><strong>Projets & insights</strong></h2>
       <ul class="post-list">
         {%- for post in site.posts -%}
         <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span class="post-meta">{{ post.date | date: "%-d %b %Y" }}</span>
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
