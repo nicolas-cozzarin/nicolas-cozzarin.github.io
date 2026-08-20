@@ -9,6 +9,5 @@
     As I deepen my AI expertise, I’m eager to apply hands-on engineering skills to drive practical innovation for clients.
   </p>
   <p>
-    This blog began as a space for my project proposal in the <em>Deep Generative Models</em> class of the HFU Master’s program.
   </p>
 </section>
