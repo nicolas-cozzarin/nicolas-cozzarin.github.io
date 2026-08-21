@@ -219,6 +219,7 @@
     
     <div class="top-section">
       <aside class="sidebar">
+        <h2>Nicolas Cozzarin</h2>
         <img src="docs/assets/ppicture.jpeg" alt="Nicolas Cozzarin" class="profile-pic">
         <hr>
         <ul class="sidebar-links">
@@ -243,19 +244,6 @@
       
       <div class="resume-item">
         <div class="resume-header">
-          <h3>AI Product Owner</h3>
-          <span class="resume-date">Nov 2025 – Present</span>
-        </div>
-        <div class="resume-company">Security Forces Disciplinary Control System | Cordoba, Argentina</div>
-        <ul>
-          <li><strong>Problem:</strong> An overwhelming volume of manual legal case reviews was causing severe operational bottlenecks.</li>
-          <li><strong>Scope:</strong> Managed the full implementation of a robust NLP model for automated text classification and defined strict data anonymization protocols for compliance.</li>
-          <li><strong>Result:</strong> Bridged the gap between data scientists and legal stakeholders, successfully accelerating case processing time by 40% while ensuring 100% privacy compliance.</li>
-        </ul>
-      </div>
-
-      <div class="resume-item">
-        <div class="resume-header">
           <h3>Product Owner / IT Project Manager</h3>
           <span class="resume-date">Oct 2022 – Oct 2025</span>
         </div>
@@ -264,6 +252,19 @@
           <li><strong>Problem:</strong> Fragmented development cycles and unclear requirements were delaying time-to-market for trading platforms.</li>
           <li><strong>Scope:</strong> Directed the full SDLC for high-performance cryptocurrency exchange platforms, translating complex business needs into clear, actionable technical roadmaps.</li>
           <li><strong>Result:</strong> Optimized Agile workflows (Scrum/Kanban), which successfully increased the development team's velocity by 20% and ensured zero-downtime releases fully compliant with financial industry standards.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>AI Product Owner (Fixed-term contract)</h3>
+          <span class="resume-date">2025</span>
+        </div>
+        <div class="resume-company">Security Forces Disciplinary Control System | Cordoba, Argentina</div>
+        <ul>
+          <li><strong>Problem:</strong> An overwhelming volume of manual legal case reviews was causing severe operational bottlenecks.</li>
+          <li><strong>Scope:</strong> Managed the full implementation of a robust NLP model for automated text classification and defined strict data anonymization protocols for compliance.</li>
+          <li><strong>Result:</strong> Bridged the gap between data scientists and legal stakeholders, successfully accelerating case processing time by 40% while ensuring 100% privacy compliance.</li>
         </ul>
       </div>
 
@@ -503,6 +504,7 @@
     
     <div class="top-section">
       <aside class="sidebar">
+        <h2>Nicolas Cozzarin</h2>
         <img src="docs/assets/ppicture.jpeg" alt="Nicolas Cozzarin" class="profile-pic">
         <hr>
         <ul class="sidebar-links">
@@ -527,19 +529,6 @@
       
       <div class="resume-item">
         <div class="resume-header">
-          <h3>AI Product Owner</h3>
-          <span class="resume-date">Nov 2025 – Présent</span>
-        </div>
-        <div class="resume-company">Système de Contrôle Disciplinaire des Forces de Sécurité | Cordoba, Argentine</div>
-        <ul>
-          <li><strong>Problème :</strong> Un volume écrasant d'examens manuels de dossiers juridiques causait de graves goulots d'étranglement opérationnels.</li>
-          <li><strong>Périmètre :</strong> Pilotage de l'implémentation complète d'un modèle NLP pour la classification automatisée et définition de protocoles stricts d'anonymisation des données.</li>
-          <li><strong>Résultat :</strong> Alignement réussi entre data scientists et experts juridiques, accélérant le traitement des dossiers de 40% tout en garantissant une conformité totale à la vie privée.</li>
-        </ul>
-      </div>
-
-      <div class="resume-item">
-        <div class="resume-header">
           <h3>Product Owner / Chef de Projet IT</h3>
           <span class="resume-date">Oct 2022 – Oct 2025</span>
         </div>
@@ -548,6 +537,19 @@
           <li><strong>Problème :</strong> Des cycles de développement fragmentés et des exigences floues retardaient la mise sur le marché des plateformes de trading.</li>
           <li><strong>Périmètre :</strong> Direction complète du cycle de vie (SDLC) de plateformes d'échange de cryptomonnaies à haute performance, traduisant des besoins commerciaux complexes en feuilles de route techniques claires.</li>
           <li><strong>Résultat :</strong> Optimisation des processus Agiles (Scrum/Kanban), entraînant une augmentation de 20% de la vélocité de l'équipe de développement et assurant des déploiements sans interruption respectant les normes financières.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>AI Product Owner (CDD)</h3>
+          <span class="resume-date">2025</span>
+        </div>
+        <div class="resume-company">Système de Contrôle Disciplinaire des Forces de Sécurité | Cordoba, Argentine</div>
+        <ul>
+          <li><strong>Problème :</strong> Un volume écrasant d'examens manuels de dossiers juridiques causait de graves goulots d'étranglement opérationnels.</li>
+          <li><strong>Périmètre :</strong> Pilotage de l'implémentation complète d'un modèle NLP pour la classification automatisée et définition de protocoles stricts d'anonymisation des données.</li>
+          <li><strong>Résultat :</strong> Alignement réussi entre data scientists et experts juridiques, accélérant le traitement des dossiers de 40% tout en garantissant une conformité totale à la vie privée.</li>
         </ul>
       </div>
 
