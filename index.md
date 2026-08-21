@@ -114,8 +114,15 @@
   .resume-company {
     font-weight: bold;
     color: #444;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 0.95em;
+  }
+  .resume-summary {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5;
   }
   .resume-item ul {
     margin-top: 0;
@@ -244,10 +251,11 @@
       
       <div class="resume-item">
         <div class="resume-header">
-          <h3>Product Owner / IT Project Manager</h3>
-          <span class="resume-date">Oct 2022 – Oct 2025</span>
+          <h3>IT Project Manager / Product Owner</h3>
+          <span class="resume-date">Oct 2022 – Present</span>
         </div>
         <div class="resume-company">Union of Financial Corners | Geneva, Switzerland</div>
+        <p class="resume-summary">Directed the end-to-end delivery of software projects across Europe and Latin America, translating complex requirements into actionable tasks and managing agile workflows to ensure on-time, high-quality releases.</p>
         <ul>
           <li><strong>Problem:</strong> Fragmented development cycles and unclear requirements were delaying time-to-market for trading platforms.</li>
           <li><strong>Scope:</strong> Directed the full SDLC for high-performance cryptocurrency exchange platforms, translating complex business needs into clear, actionable technical roadmaps.</li>
@@ -261,6 +269,7 @@
           <span class="resume-date">2025</span>
         </div>
         <div class="resume-company">Security Forces Disciplinary Control System | Cordoba, Argentina</div>
+        <p class="resume-summary">Led the implementation of an NLP-based automated text classification system to streamline legal case reviews while ensuring strict data privacy and security compliance.</p>
         <ul>
           <li><strong>Problem:</strong> An overwhelming volume of manual legal case reviews was causing severe operational bottlenecks.</li>
           <li><strong>Scope:</strong> Managed the full implementation of a robust NLP model for automated text classification and defined strict data anonymization protocols for compliance.</li>
@@ -270,10 +279,11 @@
 
       <div class="resume-item">
         <div class="resume-header">
-          <h3>Functional Analyst</h3>
-          <span class="resume-date">Feb 2019 – Oct 2022</span>
+          <h3>Front end Developer</h3>
+          <span class="resume-date">Feb 2019 – Dec 2022</span>
         </div>
-        <div class="resume-company">FlyDevs | USA</div>
+        <div class="resume-company">FlyDevs | USA (Remote)</div>
+        <p class="resume-summary">Delivered high-quality web applications using React.js and TypeScript, working closely with stakeholders and design teams to align technical execution with client requirements in an agile environment.</p>
         <ul>
           <li><strong>Problem:</strong> Misalignment between client expectations and engineering outputs frequently led to costly feature rework.</li>
           <li><strong>Scope:</strong> Owned the requirements gathering process across multiple concurrent projects, translating ambiguous business needs into highly detailed functional specifications.</li>
@@ -283,10 +293,11 @@
 
       <div class="resume-item">
         <div class="resume-header">
-          <h3>QA Lead</h3>
-          <span class="resume-date">2017 – Feb 2019</span>
+          <h3>Lead Quality Assurance Analyst</h3>
+          <span class="resume-date">Mar 2017 – Dec 2019</span>
         </div>
-        <div class="resume-company">Charly Inc | Canada</div>
+        <div class="resume-company">Charly Inc. | Canada (Remote)</div>
+        <p class="resume-summary">Managed QA processes and led a distributed remote team, designing comprehensive test strategies that significantly improved defect detection and overall software quality.</p>
         <ul>
           <li><strong>Problem:</strong> High rates of post-release defects were damaging user trust and increasing the product's technical debt.</li>
           <li><strong>Scope:</strong> Architected and spearheaded comprehensive end-to-end testing strategies, orchestrating efforts across global remote software development teams.</li>
@@ -296,10 +307,11 @@
 
       <div class="resume-item">
         <div class="resume-header">
-          <h3>Backend Python Developer</h3>
-          <span class="resume-date">Feb 2015 – 2017</span>
+          <h3>Python Backend Developer - Odoo</h3>
+          <span class="resume-date">Feb 2015 – Jun 2016</span>
         </div>
         <div class="resume-company">E-MIPS | Buenos Aires, Argentina</div>
+        <p class="resume-summary">Engineered and customized backend ERP modules using Python and Odoo, integrating third-party APIs to automate and optimize core business workflows for clients.</p>
         <ul>
           <li><strong>Problem:</strong> Legacy client systems lacked the custom integrations required for modern enterprise resource planning (ERP).</li>
           <li><strong>Scope:</strong> Engineered, customized, and maintained complex ERP modules using Python, working directly with cross-functional teams to modernize infrastructure.</li>
@@ -420,7 +432,6 @@
           <div class="skill-row"><span class="skill-name">Github / Gitlab</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">Scrum / Agile</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">SEO</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Insomnia / Postman</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">Product Roadmap</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
           <div class="skill-row"><span class="skill-name">Backlog Refinement</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">User Research</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
@@ -437,7 +448,21 @@
           <div class="skill-row"><span class="skill-name">Chinese (HSK3)</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
         </div>
         
-        <div class="skill-category">Tech, Data & AI</div>
+        <div class="skill-category">AI & Automation Tools</div>
+        <div class="skills-grid">
+          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">n8n</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Make.com</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Zapier</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Retrieval-Augmented Generation (RAG)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">AI Agent Building</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">OpenAI API</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Anthropic Claude</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Local LLM Deployment</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">AI-Assisted Coding (Cursor, Replit)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+        </div>
+
+        <div class="skill-category">Technical & Data</div>
         <div class="skills-grid">
           <div class="skill-row"><span class="skill-name">Python</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">Pandas</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
@@ -451,16 +476,6 @@
           <div class="skill-row"><span class="skill-name">Git</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
           <div class="skill-row"><span class="skill-name">Docker</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">CI/CD</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">n8n</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Make.com</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Zapier</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Retrieval-Augmented Generation (RAG)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">AI Agent Building</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">OpenAI API</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Anthropic Claude</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Local LLM Deployment</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">AI-Assisted Coding (Cursor, Replit)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
         </div>
 
       </div>
@@ -529,10 +544,11 @@
       
       <div class="resume-item">
         <div class="resume-header">
-          <h3>Product Owner / Chef de Projet IT</h3>
-          <span class="resume-date">Oct 2022 – Oct 2025</span>
+          <h3>Chef de Projet IT / Product Owner</h3>
+          <span class="resume-date">Oct 2022 – Aujourd'hui</span>
         </div>
         <div class="resume-company">Union of Financial Corners | Genève, Suisse</div>
+        <p class="resume-summary">Direction complète de la livraison de projets logiciels à travers l'Europe et l'Amérique latine, traduisant des exigences complexes en tâches concrètes et gérant les flux de travail agiles pour assurer des lancements ponctuels et de haute qualité.</p>
         <ul>
           <li><strong>Problème :</strong> Des cycles de développement fragmentés et des exigences floues retardaient la mise sur le marché des plateformes de trading.</li>
           <li><strong>Périmètre :</strong> Direction complète du cycle de vie (SDLC) de plateformes d'échange de cryptomonnaies à haute performance, traduisant des besoins commerciaux complexes en feuilles de route techniques claires.</li>
@@ -546,6 +562,7 @@
           <span class="resume-date">2025</span>
         </div>
         <div class="resume-company">Système de Contrôle Disciplinaire des Forces de Sécurité | Cordoba, Argentine</div>
+        <p class="resume-summary">Pilotage de la mise en œuvre d'un système de classification de texte automatisé basé sur le NLP pour optimiser l'examen des dossiers juridiques tout en garantissant la stricte confidentialité des données.</p>
         <ul>
           <li><strong>Problème :</strong> Un volume écrasant d'examens manuels de dossiers juridiques causait de graves goulots d'étranglement opérationnels.</li>
           <li><strong>Périmètre :</strong> Pilotage de l'implémentation complète d'un modèle NLP pour la classification automatisée et définition de protocoles stricts d'anonymisation des données.</li>
@@ -555,10 +572,11 @@
 
       <div class="resume-item">
         <div class="resume-header">
-          <h3>Analyste Fonctionnel</h3>
-          <span class="resume-date">Fév 2019 – Oct 2022</span>
+          <h3>Développeur Front-End</h3>
+          <span class="resume-date">Fév 2019 – Déc 2022</span>
         </div>
-        <div class="resume-company">FlyDevs | USA</div>
+        <div class="resume-company">FlyDevs | USA (À distance)</div>
+        <p class="resume-summary">Livraison d'applications web de haute qualité avec React.js et TypeScript, en étroite collaboration avec les parties prenantes et les équipes de conception pour aligner l'exécution technique sur les besoins des clients.</p>
         <ul>
           <li><strong>Problème :</strong> Le décalage entre les attentes des clients et les livrables d'ingénierie entraînait des retouches coûteuses de fonctionnalités.</li>
           <li><strong>Périmètre :</strong> Gestion du recueil des besoins métiers sur plusieurs projets simultanés, traduisant des demandes ambiguës en spécifications fonctionnelles hautement détaillées.</li>
@@ -568,10 +586,11 @@
 
       <div class="resume-item">
         <div class="resume-header">
-          <h3>QA Lead</h3>
-          <span class="resume-date">2017 – Fév 2019</span>
+          <h3>Lead QA Analyst</h3>
+          <span class="resume-date">Mar 2017 – Déc 2019</span>
         </div>
-        <div class="resume-company">Charly Inc | Canada</div>
+        <div class="resume-company">Charly Inc. | Canada (À distance)</div>
+        <p class="resume-summary">Gestion des processus d'assurance qualité et direction d'une équipe répartie à distance, en concevant des stratégies de test complètes qui ont considérablement amélioré la détection des anomalies et la qualité globale des logiciels.</p>
         <ul>
           <li><strong>Problème :</strong> Un taux élevé d'anomalies post-lancement affectait la confiance des utilisateurs et augmentait la dette technique du produit.</li>
           <li><strong>Périmètre :</strong> Conception et direction de stratégies complètes de tests de bout en bout, coordonnant efficacement des équipes de développement à distance réparties à l'international.</li>
@@ -581,10 +600,11 @@
 
       <div class="resume-item">
         <div class="resume-header">
-          <h3>Développeur Backend Python</h3>
-          <span class="resume-date">Fév 2015 – 2017</span>
+          <h3>Développeur Backend Python - Odoo</h3>
+          <span class="resume-date">Fév 2015 – Juin 2016</span>
         </div>
         <div class="resume-company">E-MIPS | Buenos Aires, Argentine</div>
+        <p class="resume-summary">Conception et personnalisation de modules ERP backend avec Python et Odoo, en intégrant des API tierces pour automatiser et optimiser les processus métiers clés des clients.</p>
         <ul>
           <li><strong>Problème :</strong> Les systèmes clients existants manquaient des intégrations personnalisées nécessaires à la gestion moderne des ressources de l'entreprise (ERP).</li>
           <li><strong>Périmètre :</strong> Développement, personnalisation et maintenance de modules ERP complexes en Python, en collaboration directe avec des équipes pluridisciplinaires pour moderniser l'infrastructure.</li>
@@ -705,7 +725,6 @@
           <div class="skill-row"><span class="skill-name">Github / Gitlab</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">Scrum / Agile</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">SEO</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Insomnia / Postman</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">Roadmap Produit</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
           <div class="skill-row"><span class="skill-name">Affinage du Backlog</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">Recherche Utilisateur</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
@@ -722,7 +741,21 @@
           <div class="skill-row"><span class="skill-name">Chinois (HSK3)</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
         </div>
         
-        <div class="skill-category">Tech, Data & IA</div>
+        <div class="skill-category">Outils d'IA & Automatisation</div>
+        <div class="skills-grid">
+          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">n8n</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Make.com</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Zapier</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Retrieval-Augmented Generation (RAG)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Création d'Agents IA</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">OpenAI API</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Anthropic Claude</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Déploiement LLM Local</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Code Assisté par IA (Cursor, Replit)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+        </div>
+
+        <div class="skill-category">Tech & Data</div>
         <div class="skills-grid">
           <div class="skill-row"><span class="skill-name">Python</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">Pandas</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
@@ -736,16 +769,6 @@
           <div class="skill-row"><span class="skill-name">Git</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
           <div class="skill-row"><span class="skill-name">Docker</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">CI/CD</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">n8n</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Make.com</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Zapier</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Retrieval-Augmented Generation (RAG)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">AI Agent Building</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">OpenAI API</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Anthropic Claude</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Local LLM Deployment</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">AI-Assisted Coding (Cursor, Replit)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
         </div>
 
       </div>
