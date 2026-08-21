@@ -241,6 +241,7 @@
         <h2 id="about-me"><strong>About me</strong></h2>
         <p>I am an IT Project Manager and Product Owner with 10 years of experience. I specialize in Agile methodologies (Scrum/Kanban) and Software Development Life Cycle (SDLC) management. I bridge the gap between complex technical models and practical, effective business solutions.</p>
         <p>Having successfully completed my BSc in Artificial Intelligence & Robotics, my current focus is on AI compliance, AI ethics and alignment, and seamlessly integrating AI and automations into companies to make their processes significantly more effective.</p>
+        <p>Alongside my professional work, I have volunteered extensively in animal welfare and animal rights, and I am now exploring the potential impact of artificial intelligence on the situation of animals—a crucial topic that remains largely undiscussed. This includes examining the present and potential use of AI in factory farming and, conversely, in reducing wild animal suffering, as well as how reducing speciesist attitudes in frontier AI systems could shape outcomes for animals now and in the future. Finally, I consider how AI tools could help boost our efforts in animal advocacy.</p>
       </div>
     </div>
 
@@ -255,7 +256,7 @@
           <span class="resume-date">Oct 2022 – Present</span>
         </div>
         <div class="resume-company">Union of Financial Corners | Geneva, Switzerland</div>
-        <p class="resume-summary">Directed the end-to-end delivery of software projects across Europe and Latin America, translating complex requirements into actionable tasks and managing agile workflows to ensure on-time, high-quality releases.</p>
+        <p class="resume-summary">Directed the end-to-end delivery of software projects in Switzerland, translating complex requirements into actionable tasks and managing agile workflows to ensure on-time, high-quality releases.</p>
         <ul>
           <li><strong>Problem:</strong> Fragmented development cycles and unclear requirements were delaying time-to-market for trading platforms.</li>
           <li><strong>Scope:</strong> Directed the full SDLC for high-performance cryptocurrency exchange platforms, translating complex business needs into clear, actionable technical roadmaps.</li>
@@ -279,15 +280,15 @@
 
       <div class="resume-item">
         <div class="resume-header">
-          <h3>Front end Developer</h3>
+          <h3>Functional Analyst</h3>
           <span class="resume-date">Feb 2019 – Dec 2022</span>
         </div>
         <div class="resume-company">FlyDevs | USA (Remote)</div>
-        <p class="resume-summary">Delivered high-quality web applications using React.js and TypeScript, working closely with stakeholders and design teams to align technical execution with client requirements in an agile environment.</p>
         <ul>
-          <li><strong>Problem:</strong> Misalignment between client expectations and engineering outputs frequently led to costly feature rework.</li>
-          <li><strong>Scope:</strong> Owned the requirements gathering process across multiple concurrent projects, translating ambiguous business needs into highly detailed functional specifications.</li>
-          <li><strong>Result:</strong> Streamlined stakeholder communication, reducing feature rework by 30% and ensuring technical deliverables consistently met precise business objectives on schedule.</li>
+          <li>Translated business needs into clear user stories and functional specs.</li>
+          <li>Bridged the gap between stakeholders, UI/UX, QA, and engineering teams.</li>
+          <li>Drove Agile delivery by facilitating sprint ceremonies and removing roadblocks.</li>
+          <li>Streamlined release cycles and aligned CI/CD practices with business goals.</li>
         </ul>
       </div>
 
@@ -442,23 +443,23 @@
         <div class="skill-category">Languages</div>
         <div class="skills-grid">
           <div class="skill-row"><span class="skill-name">Spanish (Native)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">English (C1)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">French (C1)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">German</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
+          <div class="skill-row"><span class="skill-name">English (C1)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">French (C1)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">German (B2)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">Chinese (HSK3)</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
         </div>
         
         <div class="skill-category">AI & Automation Tools</div>
         <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">n8n</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Make.com</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Zapier</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">n8n</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Make.com</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Zapier</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">Retrieval-Augmented Generation (RAG)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">AI Agent Building</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">OpenAI API</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Anthropic Claude</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Local LLM Deployment</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">OpenAI API</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Anthropic Claude</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Local LLM Deployment</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">AI-Assisted Coding (Cursor, Replit)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
         </div>
 
@@ -508,7 +509,28 @@
           <tr><td>2026 - Current</td><td>Organizer for <strong>We The Free</strong> group in France</td></tr>
           <tr><td>2019 - 2022</td><td>Organizer of Buenos Aires <strong>Animal Save</strong></td></tr>
           <tr><td>2020 - 2022</td><td>Organizer of Buenos Aires <strong>Anonymous for the Voiceless</strong></td></tr>
-          <tr><td>2021 - 2022</td><td>Organizer of Vegan Campout Argentina</td></tr>
+          <tr><td>2021 - 2022</td><td>Organizer of <strong>Vegan Campout Argentina</strong></td></tr>
+        </tbody>
+      </table>
+
+      <hr class="section-divider">
+
+      <h2 id="references"><strong>References</strong></h2>
+      <table>
+        <thead>
+          <tr><th>Name</th><th>Role</th><th>Contact</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Andi Gjonej</td>
+            <td>President, Union Financial Corners | Geneva, Switzerland</td>
+            <td><a href="mailto:andi.gjionej@ufc.ch">andi.gjionej@ufc.ch</a><br><a href="docs/assets/Certificat_de_travail.pdf" download>Download Certificat de travail</a></td>
+          </tr>
+          <tr>
+            <td>Franco Cellone</td>
+            <td><a href="https://www.linkedin.com/company/15223804/" target="_blank">Coordinador de Registro y Análisis de la Información</a><br><a href="https://www.linkedin.com/company/15223804/" target="_blank">Gobierno de Córdoba</a></td>
+            <td><a href="mailto:Franco.Cellone@cba.gov.ar">Franco.Cellone@cba.gov.ar</a></td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -533,7 +555,8 @@
       <div class="about-content">
         <h2 id="a-propos"><strong>À propos</strong></h2>
         <p>Product Owner et Chef de Projet IT avec 10 ans d'expérience. Je suis spécialiste des méthodologies Agiles (Scrum/Kanban) et du pilotage du cycle de vie des logiciels (SDLC). Je fais le pont entre les modèles techniques complexes et la création de solutions métiers concrètes et performantes.</p>
-        <p>Ayant obtenu mon Bachelor en Intelligence Artificielle et Robotique, je me concentre actuellement sur la conformité de l'IA, l'éthique et l'alignement des modèles, ainsi que sur l'intégration de l'IA et de l'automatisation en entreprise pour rendre les processus significativement plus efficaces.</p>
+        <p>Ayant obtenu mon Bachelor en Intelligence Artificielle et Robotique, je me concentre actuellement sur l'intégration de l'IA et de l'automatisation en entreprise pour rendre les processus significativement plus efficaces, la conformité de l'IA, l'éthique et l'alignement des modèles.</p>
+        <p>En parallèle de mon parcours professionnel, je me suis beaucoup investi dans le bénévolat pour le bien-être et les droits des animaux, et j'explore aujourd'hui l'impact potentiel de l'intelligence artificielle sur la situation des animaux — un sujet crucial qui reste largement absent du débat. Cela inclut l'examen de l'utilisation actuelle et potentielle de l'IA dans les élevages industriels et, à l'inverse, dans la réduction de la souffrance des animaux sauvages, ainsi que la manière dont la réduction des attitudes spécistes dans les systèmes d'IA de pointe peut avoir un impact présent et futur. Enfin, je m'intéresse à la façon dont les outils d'IA pourraient renforcer nos actions de plaidoyer pour les animaux.</p>
       </div>
     </div>
 
@@ -548,7 +571,7 @@
           <span class="resume-date">Oct 2022 – Aujourd'hui</span>
         </div>
         <div class="resume-company">Union of Financial Corners | Genève, Suisse</div>
-        <p class="resume-summary">Direction complète de la livraison de projets logiciels à travers l'Europe et l'Amérique latine, traduisant des exigences complexes en tâches concrètes et gérant les flux de travail agiles pour assurer des lancements ponctuels et de haute qualité.</p>
+        <p class="resume-summary">Direction complète de la livraison de projets logiciels en Suisse, traduisant des exigences complexes en tâches concrètes et gérant les flux de travail agiles pour assurer des lancements ponctuels et de haute qualité.</p>
         <ul>
           <li><strong>Problème :</strong> Des cycles de développement fragmentés et des exigences floues retardaient la mise sur le marché des plateformes de trading.</li>
           <li><strong>Périmètre :</strong> Direction complète du cycle de vie (SDLC) de plateformes d'échange de cryptomonnaies à haute performance, traduisant des besoins commerciaux complexes en feuilles de route techniques claires.</li>
@@ -572,15 +595,15 @@
 
       <div class="resume-item">
         <div class="resume-header">
-          <h3>Développeur Front-End</h3>
+          <h3>Analyste fonctionnel</h3>
           <span class="resume-date">Fév 2019 – Déc 2022</span>
         </div>
         <div class="resume-company">FlyDevs | USA (À distance)</div>
-        <p class="resume-summary">Livraison d'applications web de haute qualité avec React.js et TypeScript, en étroite collaboration avec les parties prenantes et les équipes de conception pour aligner l'exécution technique sur les besoins des clients.</p>
         <ul>
-          <li><strong>Problème :</strong> Le décalage entre les attentes des clients et les livrables d'ingénierie entraînait des retouches coûteuses de fonctionnalités.</li>
-          <li><strong>Périmètre :</strong> Gestion du recueil des besoins métiers sur plusieurs projets simultanés, traduisant des demandes ambiguës en spécifications fonctionnelles hautement détaillées.</li>
-          <li><strong>Résultat :</strong> Fluidification de la communication entre les parties prenantes, réduisant les retouches de 30% et garantissant que les livrables techniques atteignent systématiquement les objectifs commerciaux dans les délais.</li>
+          <li>Traduction des besoins métiers en user stories claires et spécifications fonctionnelles.</li>
+          <li>Fait le lien entre les parties prenantes, les équipes UI/UX, QA et ingénierie.</li>
+          <li>Pilotage de la livraison Agile en facilitant les cérémonies de sprint et en levant les obstacles.</li>
+          <li>Optimisation des cycles de livraison et alignement des pratiques CI/CD sur les objectifs métiers.</li>
         </ul>
       </div>
 
@@ -735,23 +758,23 @@
         <div class="skill-category">Langues</div>
         <div class="skills-grid">
           <div class="skill-row"><span class="skill-name">Espagnol (Natif)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Anglais (C1)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Français (C1)</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Allemand</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
+          <div class="skill-row"><span class="skill-name">Anglais (C1)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Français (C1)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">Allemand (B2)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">Chinois (HSK3)</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
         </div>
         
         <div class="skill-category">Outils d'IA & Automatisation</div>
         <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">n8n</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Make.com</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Zapier</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">n8n</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Make.com</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">Zapier</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">Retrieval-Augmented Generation (RAG)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">Création d'Agents IA</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">OpenAI API</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Anthropic Claude</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Déploiement LLM Local</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
+          <div class="skill-row"><span class="skill-name">OpenAI API</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Anthropic Claude</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
+          <div class="skill-row"><span class="skill-name">Déploiement LLM Local</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">Code Assisté par IA (Cursor, Replit)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
         </div>
 
@@ -801,7 +824,28 @@
           <tr><td>2026 - en cours</td><td>Organisateur pour le groupe <strong>We The Free</strong> en France</td></tr>
           <tr><td>2019 - 2022</td><td>Organisateur de Buenos Aires <strong>Animal Save</strong></td></tr>
           <tr><td>2020 - 2022</td><td>Organisateur de Buenos Aires <strong>Anonymous for the Voiceless</strong></td></tr>
-          <tr><td>2021 - 2022</td><td>Organisateur de Vegan Campout Argentina</td></tr>
+          <tr><td>2021 - 2022</td><td>Organisateur de <strong>Vegan Campout Argentina</strong></td></tr>
+        </tbody>
+      </table>
+
+      <hr class="section-divider">
+
+      <h2 id="references-fr"><strong>Références</strong></h2>
+      <table>
+        <thead>
+          <tr><th>Nom</th><th>Rôle</th><th>Contact</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Andi Gjonej</td>
+            <td>Président, Union Financial Corners | Genève, Suisse</td>
+            <td><a href="mailto:andi.gjionej@ufc.ch">andi.gjionej@ufc.ch</a><br><a href="docs/assets/Certificat_de_travail.pdf" download>Télécharger le Certificat de travail</a></td>
+          </tr>
+          <tr>
+            <td>Franco Cellone</td>
+            <td><a href="https://www.linkedin.com/company/15223804/" target="_blank">Coordinador de Registro y Análisis de la Información</a><br><a href="https://www.linkedin.com/company/15223804/" target="_blank">Gobierno de Córdoba</a></td>
+            <td><a href="mailto:Franco.Cellone@cba.gov.ar">Franco.Cellone@cba.gov.ar</a></td>
+          </tr>
         </tbody>
       </table>
     </div>
