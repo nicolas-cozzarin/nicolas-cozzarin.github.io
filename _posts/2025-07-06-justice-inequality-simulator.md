@@ -1,5 +1,5 @@
 ---
-title: "Justice Inequality Simulator — A Generative & Probabilistic Approach to Judicial Bias"
+title: "Justice Inequality Simulator  A Generative & Probabilistic Approach to Judicial Bias"
 date: 2025-07-06
 author: "Nicolas Cozzarin (@ncozzarin)"
 ---
@@ -9,7 +9,7 @@ author: "Nicolas Cozzarin (@ncozzarin)"
 ### 1. Motivation
 
 Judicial outcomes shape lives, yet historical data show that race, gender, or socioeconomic status sometimes correlate with harsher sentences.  
-**Goal**: reveal and quantify those correlations through counterfactual generation — not to automate justice, but to explain bias.
+**Goal**: reveal and quantify those correlations through counterfactual generation to explain bias.
 
 ---
 
