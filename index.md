@@ -241,7 +241,7 @@
         <h2 id="about-me"><strong>About me</strong></h2>
         <p>I am an IT Project Manager and Product Owner with 10 years of experience. I specialize in Agile methodologies (Scrum/Kanban) and Software Development Life Cycle (SDLC) management. I bridge the gap between complex technical models and practical, effective business solutions.</p>
         <p>Having successfully completed my BSc in Artificial Intelligence & Robotics, my current focus is on AI compliance, AI ethics and alignment, and seamlessly integrating AI and automations into companies to make their processes significantly more effective.</p>
-        <p>Alongside my professional work, I have volunteered extensively in animal welfare and animal rights, and I am now exploring the potential impact of artificial intelligence on the situation of animals—a crucial topic that remains largely undiscussed. This includes examining the present and potential use of AI in factory farming and, conversely, in reducing wild animal suffering, as well as how reducing speciesist attitudes in frontier AI systems could shape outcomes for animals now and in the future. Finally, I consider how AI tools could help boost our efforts in animal advocacy.</p>
+        <p>Alongside my professional work, I have volunteered extensively in animal welfare and animal rights, and I am now exploring the potential impact of artificial intelligence on the situation of animals, a crucial topic that remains largely undiscussed. This includes examining the present and potential use of AI in factory farming and, conversely, in reducing wild animal suffering, as well as how reducing speciesist attitudes in frontier AI systems could shape outcomes for animals now and in the future. Finally, I consider how AI tools could help boost our efforts in animal advocacy.</p>
       </div>
     </div>
 
@@ -253,15 +253,10 @@
       <div class="resume-item">
         <div class="resume-header">
           <h3>IT Project Manager / Product Owner</h3>
-          <span class="resume-date">Oct 2022 – Present</span>
+          <span class="resume-date">Oct 2022 – Oct 2025</span>
         </div>
         <div class="resume-company">Union of Financial Corners | Geneva, Switzerland</div>
-        <p class="resume-summary">Directed the end-to-end delivery of software projects in Switzerland, translating complex requirements into actionable tasks and managing agile workflows to ensure on-time, high-quality releases.</p>
-        <ul>
-          <li><strong>Problem:</strong> Fragmented development cycles and unclear requirements were delaying time-to-market for trading platforms.</li>
-          <li><strong>Scope:</strong> Directed the full SDLC for high-performance cryptocurrency exchange platforms, translating complex business needs into clear, actionable technical roadmaps.</li>
-          <li><strong>Result:</strong> Optimized Agile workflows (Scrum/Kanban), which successfully increased the development team's velocity by 20% and ensured zero-downtime releases fully compliant with financial industry standards.</li>
-        </ul>
+        <p class="resume-summary">Led the end-to-end development of digital financial products, from business planning and product definition to delivery, launch, and post-launch optimization, while ensuring alignment between business objectives, technology, and compliance requirements. Managed the product backlog and distributed engineering teams, translated business needs into actionable user stories, and used sprint planning and performance metrics to improve delivery efficiency.</p>
       </div>
 
       <div class="resume-item">
@@ -270,12 +265,7 @@
           <span class="resume-date">2025</span>
         </div>
         <div class="resume-company">Security Forces Disciplinary Control System | Cordoba, Argentina</div>
-        <p class="resume-summary">Led the implementation of an NLP-based automated text classification system to streamline legal case reviews while ensuring strict data privacy and security compliance.</p>
-        <ul>
-          <li><strong>Problem:</strong> An overwhelming volume of manual legal case reviews was causing severe operational bottlenecks.</li>
-          <li><strong>Scope:</strong> Managed the full implementation of a robust NLP model for automated text classification and defined strict data anonymization protocols for compliance.</li>
-          <li><strong>Result:</strong> Bridged the gap between data scientists and legal stakeholders, successfully accelerating case processing time by 40% while ensuring 100% privacy compliance.</li>
-        </ul>
+        <p class="resume-summary">Led the development of a supervised text-classification product to automate the analysis of disciplinary case files, from product definition to data processing and decision-support outputs. Designed data anonymization and privacy protocols using NLP, NER, and pseudonymization, and analyzed complex datasets to produce reliable indicators while meeting legal and regulatory requirements.</p>
       </div>
 
       <div class="resume-item">
@@ -284,12 +274,7 @@
           <span class="resume-date">Feb 2019 – Dec 2022</span>
         </div>
         <div class="resume-company">FlyDevs | USA (Remote)</div>
-        <ul>
-          <li>Translated business needs into clear user stories and functional specs.</li>
-          <li>Bridged the gap between stakeholders, UI/UX, QA, and engineering teams.</li>
-          <li>Drove Agile delivery by facilitating sprint ceremonies and removing roadblocks.</li>
-          <li>Streamlined release cycles and aligned CI/CD practices with business goals.</li>
-        </ul>
+        <p class="resume-summary">Translated business requirements into functional specifications and user stories, while acting as the link between stakeholders, UI/UX, QA, and engineering teams throughout product delivery. Facilitated Agile ceremonies, resolved delivery blockers, and helped streamline release processes by aligning technical delivery and CI/CD practices with business priorities.</p>
       </div>
 
       <div class="resume-item">
@@ -298,12 +283,7 @@
           <span class="resume-date">Mar 2017 – Dec 2019</span>
         </div>
         <div class="resume-company">Charly Inc. | Canada (Remote)</div>
-        <p class="resume-summary">Managed QA processes and led a distributed remote team, designing comprehensive test strategies that significantly improved defect detection and overall software quality.</p>
-        <ul>
-          <li><strong>Problem:</strong> High rates of post-release defects were damaging user trust and increasing the product's technical debt.</li>
-          <li><strong>Scope:</strong> Architected and spearheaded comprehensive end-to-end testing strategies, orchestrating efforts across global remote software development teams.</li>
-          <li><strong>Result:</strong> Streamlined delivery pipelines and automated core test suites, successfully decreasing critical post-release bugs by 50% and vastly improving overall product stability.</li>
-        </ul>
+        <p class="resume-summary">Led quality assurance activities across several software projects, defining test strategies and coordinating a distributed QA team to ensure functional and technical requirements were met. Established processes for functional, integration, and regression testing, maintained test documentation and defect tracking, and improved the defect detection.</p>
       </div>
 
       <div class="resume-item">
@@ -312,12 +292,7 @@
           <span class="resume-date">Feb 2015 – Jun 2016</span>
         </div>
         <div class="resume-company">E-MIPS | Buenos Aires, Argentina</div>
-        <p class="resume-summary">Engineered and customized backend ERP modules using Python and Odoo, integrating third-party APIs to automate and optimize core business workflows for clients.</p>
-        <ul>
-          <li><strong>Problem:</strong> Legacy client systems lacked the custom integrations required for modern enterprise resource planning (ERP).</li>
-          <li><strong>Scope:</strong> Engineered, customized, and maintained complex ERP modules using Python, working directly with cross-functional teams to modernize infrastructure.</li>
-          <li><strong>Result:</strong> Delivered scalable, tailored backend solutions that automated key manual data entry tasks, saving clients an average of 15 hours per week in administrative overhead.</li>
-        </ul>
+        <p class="resume-summary">Developed and customized Odoo modules in Python to automate business processes including CRM, inventory, and accounting, and integrated the platform with external applications and APIs. Documented the solutions, used Git and Docker throughout development, and worked within Agile delivery cycles to maintain and evolve the applications.</p>
       </div>
 
       <hr class="section-divider">
@@ -341,11 +316,12 @@
           <h3>AI & Robotics Exchange Laboratory</h3>
           <span class="resume-date">Nov 2024 – Nov 2025</span>
         </div>
-        <div class="resume-company">Hochschule Furtwangen | Germany (Remote)</div>
+        <div class="resume-company">Hochschule Furtwangen | Germany</div>
         <ul>
           <li>Completed coursework in Machine Learning, Deep Generative Models, Computer Vision, Robotics, and Microcontroller Systems.</li>
           <li>Maintained a strong focus on AI model development, data processing, and hands-on experimentation in Jupyter-based environments.</li>
           <li>Collaborated in a multicultural academic setting, strengthening analytical research and cross-cultural communication skills.</li>
+          <li>Passed the German B2 language exam and built connections with professionals and organizations active in Germany's AI ecosystem.</li>
         </ul>
       </div>
 
@@ -438,6 +414,7 @@
           <div class="skill-row"><span class="skill-name">User Research</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">A/B Testing</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">Stakeholder Management</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">TestRail</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
         </div>
 
         <div class="skill-category">Languages</div>
@@ -483,22 +460,6 @@
       
       <hr class="section-divider">
 
-      <h2><strong>Projects & insights</strong></h2>
-      <ul class="post-list">
-        {%- for post in site.posts -%}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-        </li>
-        {%- endfor -%}
-      </ul>
-
-      <hr class="section-divider">
-
       <h2 id="volunteer"><strong>Volunteer Experience, Community Involvement</strong></h2>
       <table>
         <thead>
@@ -523,8 +484,8 @@
         <tbody>
           <tr>
             <td>Andi Gjonej</td>
-            <td>President, Union Financial Corners | Geneva, Switzerland</td>
-            <td><a href="mailto:andi.gjionej@ufc.ch">andi.gjionej@ufc.ch</a><br><a href="docs/assets/Certificat_de_travail.pdf" download>Download Certificat de travail</a></td>
+            <td>CEO, Union Financial Corners | Geneva, Switzerland</td>
+            <td><a href="mailto:andi.gjonej@ufc.ch">andi.gjonej@ufc.ch</a><br><a href="docs/assets/NC-Employment-certificate-2026.pdf" download>Download Employment Certificate</a></td>
           </tr>
           <tr>
             <td>Franco Cellone</td>
@@ -556,7 +517,7 @@
         <h2 id="a-propos"><strong>À propos</strong></h2>
         <p>Product Owner et Chef de Projet IT avec 10 ans d'expérience. Je suis spécialiste des méthodologies Agiles (Scrum/Kanban) et du pilotage du cycle de vie des logiciels (SDLC). Je fais le pont entre les modèles techniques complexes et la création de solutions métiers concrètes et performantes.</p>
         <p>Ayant obtenu mon Bachelor en Intelligence Artificielle et Robotique, je me concentre actuellement sur l'intégration de l'IA et de l'automatisation en entreprise pour rendre les processus significativement plus efficaces, la conformité de l'IA, l'éthique et l'alignement des modèles.</p>
-        <p>En parallèle de mon parcours professionnel, je me suis beaucoup investi dans le bénévolat pour le bien-être et les droits des animaux, et j'explore aujourd'hui l'impact potentiel de l'intelligence artificielle sur la situation des animaux — un sujet crucial qui reste largement absent du débat. Cela inclut l'examen de l'utilisation actuelle et potentielle de l'IA dans les élevages industriels et, à l'inverse, dans la réduction de la souffrance des animaux sauvages, ainsi que la manière dont la réduction des attitudes spécistes dans les systèmes d'IA de pointe peut avoir un impact présent et futur. Enfin, je m'intéresse à la façon dont les outils d'IA pourraient renforcer nos actions de plaidoyer pour les animaux.</p>
+        <p>En parallèle de mon parcours professionnel, je me suis beaucoup investi dans le bénévolat pour le bien-être et les droits des animaux, et j'explore aujourd'hui l'impact potentiel de l'intelligence artificielle sur la situation des animaux, un sujet crucial qui reste largement absent du débat. Cela inclut l'examen de l'utilisation actuelle et potentielle de l'IA dans les élevages industriels et, à l'inverse, dans la réduction de la souffrance des animaux sauvages, ainsi que la manière dont la réduction des attitudes spécistes dans les systèmes d'IA de pointe peut avoir un impact présent et futur. Enfin, je m'intéresse à la façon dont les outils d'IA pourraient renforcer nos actions de plaidoyer pour les animaux.</p>
       </div>
     </div>
 
@@ -568,15 +529,10 @@
       <div class="resume-item">
         <div class="resume-header">
           <h3>Chef de Projet IT / Product Owner</h3>
-          <span class="resume-date">Oct 2022 – Aujourd'hui</span>
+          <span class="resume-date">Oct 2022 – Oct 2025</span>
         </div>
         <div class="resume-company">Union of Financial Corners | Genève, Suisse</div>
-        <p class="resume-summary">Direction complète de la livraison de projets logiciels en Suisse, traduisant des exigences complexes en tâches concrètes et gérant les flux de travail agiles pour assurer des lancements ponctuels et de haute qualité.</p>
-        <ul>
-          <li><strong>Problème :</strong> Des cycles de développement fragmentés et des exigences floues retardaient la mise sur le marché des plateformes de trading.</li>
-          <li><strong>Périmètre :</strong> Direction complète du cycle de vie (SDLC) de plateformes d'échange de cryptomonnaies à haute performance, traduisant des besoins commerciaux complexes en feuilles de route techniques claires.</li>
-          <li><strong>Résultat :</strong> Optimisation des processus Agiles (Scrum/Kanban), entraînant une augmentation de 20% de la vélocité de l'équipe de développement et assurant des déploiements sans interruption respectant les normes financières.</li>
-        </ul>
+        <p class="resume-summary">Pilotage de bout en bout du développement de produits financiers numériques, de la définition du produit et des business plans jusqu'au déploiement, au lancement et à l'optimisation post-lancement, en assurant l'alignement entre les enjeux métier, la technologie et les exigences de conformité. Gestion du backlog produit et d'équipes d'ingénierie réparties en Europe et en Amérique, traduction des besoins métier en user stories et pilotage des sprints et des indicateurs de performance.</p>
       </div>
 
       <div class="resume-item">
@@ -585,12 +541,7 @@
           <span class="resume-date">2025</span>
         </div>
         <div class="resume-company">Système de Contrôle Disciplinaire des Forces de Sécurité | Cordoba, Argentine</div>
-        <p class="resume-summary">Pilotage de la mise en œuvre d'un système de classification de texte automatisé basé sur le NLP pour optimiser l'examen des dossiers juridiques tout en garantissant la stricte confidentialité des données.</p>
-        <ul>
-          <li><strong>Problème :</strong> Un volume écrasant d'examens manuels de dossiers juridiques causait de graves goulots d'étranglement opérationnels.</li>
-          <li><strong>Périmètre :</strong> Pilotage de l'implémentation complète d'un modèle NLP pour la classification automatisée et définition de protocoles stricts d'anonymisation des données.</li>
-          <li><strong>Résultat :</strong> Alignement réussi entre data scientists et experts juridiques, accélérant le traitement des dossiers de 40% tout en garantissant une conformité totale à la vie privée.</li>
-        </ul>
+        <p class="resume-summary">Pilotage du développement d'un outil de classification supervisée de textes destiné à automatiser l'analyse des dossiers disciplinaires, depuis la définition du produit jusqu'au traitement des données et à la production d'indicateurs d'aide à la décision. Conception de protocoles d'anonymisation et de protection des données sensibles à l'aide du NLP, de la NER et de la pseudonymisation, ainsi qu'exploration et analyse de jeux de données complexes dans le respect des exigences légales et réglementaires.</p>
       </div>
 
       <div class="resume-item">
@@ -599,12 +550,7 @@
           <span class="resume-date">Fév 2019 – Déc 2022</span>
         </div>
         <div class="resume-company">FlyDevs | USA (À distance)</div>
-        <ul>
-          <li>Traduction des besoins métiers en user stories claires et spécifications fonctionnelles.</li>
-          <li>Fait le lien entre les parties prenantes, les équipes UI/UX, QA et ingénierie.</li>
-          <li>Pilotage de la livraison Agile en facilitant les cérémonies de sprint et en levant les obstacles.</li>
-          <li>Optimisation des cycles de livraison et alignement des pratiques CI/CD sur les objectifs métiers.</li>
-        </ul>
+        <p class="resume-summary">Traduction des besoins métier en spécifications fonctionnelles et en user stories, avec un rôle d'interface entre les parties prenantes, les équipes UI/UX, QA et engineering tout au long de la réalisation des produits. Animation des cérémonies Agile, résolution des blocages et amélioration des cycles de livraison en veillant à aligner les pratiques de développement et de CI/CD sur les priorités métier.</p>
       </div>
 
       <div class="resume-item">
@@ -613,12 +559,7 @@
           <span class="resume-date">Mar 2017 – Déc 2019</span>
         </div>
         <div class="resume-company">Charly Inc. | Canada (À distance)</div>
-        <p class="resume-summary">Gestion des processus d'assurance qualité et direction d'une équipe répartie à distance, en concevant des stratégies de test complètes qui ont considérablement amélioré la détection des anomalies et la qualité globale des logiciels.</p>
-        <ul>
-          <li><strong>Problème :</strong> Un taux élevé d'anomalies post-lancement affectait la confiance des utilisateurs et augmentait la dette technique du produit.</li>
-          <li><strong>Périmètre :</strong> Conception et direction de stratégies complètes de tests de bout en bout, coordonnant efficacement des équipes de développement à distance réparties à l'international.</li>
-          <li><strong>Résultat :</strong> Amélioration des pipelines de livraison et automatisation des tests clés, réduisant les bugs critiques post-lancement de 50% et renforçant massivement la stabilité globale du produit.</li>
-        </ul>
+        <p class="resume-summary">Pilotage de l'assurance qualité sur plusieurs projets logiciels, avec définition des stratégies de test et coordination d'une équipe QA distribuée afin de garantir le respect des exigences fonctionnelles et techniques. Mise en place des processus de tests fonctionnels, d'intégration et de régression, maintenance de la documentation et du suivi des anomalies.</p>
       </div>
 
       <div class="resume-item">
@@ -627,12 +568,7 @@
           <span class="resume-date">Fév 2015 – Juin 2016</span>
         </div>
         <div class="resume-company">E-MIPS | Buenos Aires, Argentine</div>
-        <p class="resume-summary">Conception et personnalisation de modules ERP backend avec Python et Odoo, en intégrant des API tierces pour automatiser et optimiser les processus métiers clés des clients.</p>
-        <ul>
-          <li><strong>Problème :</strong> Les systèmes clients existants manquaient des intégrations personnalisées nécessaires à la gestion moderne des ressources de l'entreprise (ERP).</li>
-          <li><strong>Périmètre :</strong> Développement, personnalisation et maintenance de modules ERP complexes en Python, en collaboration directe avec des équipes pluridisciplinaires pour moderniser l'infrastructure.</li>
-          <li><strong>Résultat :</strong> Livraison de solutions backend scalables qui ont automatisé la saisie manuelle de données, faisant gagner aux clients en moyenne 15 heures par semaine de charge administrative.</li>
-        </ul>
+        <p class="resume-summary">Développement et personnalisation de modules Odoo en Python pour automatiser des processus métier tels que le CRM, la gestion des stocks et la comptabilité, ainsi qu'intégration d'applications et d'API externes. Documentation des solutions développées et utilisation de Git et Docker dans le cadre de cycles de développement Agile pour assurer la maintenance et l'évolution des applications.</p>
       </div>
 
       <hr class="section-divider">
@@ -656,11 +592,12 @@
           <h3>Échange Laboratoire IA & Robotique</h3>
           <span class="resume-date">Nov 2024 – Nov 2025</span>
         </div>
-        <div class="resume-company">Hochschule Furtwangen | Allemagne (À distance)</div>
+        <div class="resume-company">Hochschule Furtwangen | Allemagne</div>
         <ul>
           <li>Modules suivis en Machine Learning, Modèles Génératifs Profonds, Vision par Ordinateur, Robotique et Systèmes Microcontrôleurs.</li>
           <li>Fort accent sur le développement de modèles d'IA, le traitement des données et l'expérimentation pratique via des environnements Jupyter.</li>
           <li>Collaboration dans un cadre académique multiculturel, renforçant les capacités d'analyse, de recherche et de communication.</li>
+          <li>Obtention de la certification B2 en allemand et développement de contacts avec des acteurs de l'écosystème de l'IA en Allemagne.</li>
         </ul>
       </div>
 
@@ -753,6 +690,7 @@
           <div class="skill-row"><span class="skill-name">Recherche Utilisateur</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
           <div class="skill-row"><span class="skill-name">A/B Testing</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
           <div class="skill-row"><span class="skill-name">Gestion des Parties Prenantes</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
+          <div class="skill-row"><span class="skill-name">TestRail</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
         </div>
 
         <div class="skill-category">Langues</div>
@@ -798,22 +736,6 @@
       
       <hr class="section-divider">
 
-      <h2><strong>Projets & insights</strong></h2>
-      <ul class="post-list">
-        {%- for post in site.posts -%}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%-d %b %Y" }}</span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-        </li>
-        {%- endfor -%}
-      </ul>
-
-      <hr class="section-divider">
-
       <h2 id="benevolat"><strong>Expérience de Bénévolat, Implication Communautaire</strong></h2>
       <table>
         <thead>
@@ -838,8 +760,8 @@
         <tbody>
           <tr>
             <td>Andi Gjonej</td>
-            <td>Président, Union Financial Corners | Genève, Suisse</td>
-            <td><a href="mailto:andi.gjionej@ufc.ch">andi.gjionej@ufc.ch</a><br><a href="docs/assets/Certificat_de_travail.pdf" download>Télécharger le Certificat de travail</a></td>
+            <td>PDG, Union Financial Corners | Genève, Suisse</td>
+            <td><a href="mailto:andi.gjonej@ufc.ch">andi.gjonej@ufc.ch</a><br><a href="docs/assets/NC-Employment-certificate-2026.pdf" download>Télécharger le Certificat de travail</a></td>
           </tr>
           <tr>
             <td>Franco Cellone</td>
