@@ -4,7 +4,7 @@ date: 2025-07-06
 author: "Nicolas Cozzarin (@ncozzarin)"
 ---
 
-## Justice Inequality Simulator — A Generative & Probabilistic Approach to Judicial Bias
+## Justice Inequality Simulator: A Generative and Probabilistic Approach to Judicial Bias
 
 ### 1. Motivation
 
