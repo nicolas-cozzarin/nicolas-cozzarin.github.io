@@ -2,9 +2,10 @@
   /* Layout Structure */
   .portfolio-wrapper {
     position: relative;
-    max-width: 1100px;
+    max-width: min(1200px, 92vw);
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding: 0 clamp(16px, 4vw, 48px) 50px;
+    box-sizing: border-box;
   }
 
   /* Minimalist Language Toggle (Top Right) */
@@ -123,15 +124,20 @@
     font-size: 0.95em;
     color: #555;
     line-height: 1.5;
+    max-width: 70ch;
   }
   .resume-item ul {
     margin-top: 0;
     padding-left: 20px;
     font-size: 0.95em;
     color: #333;
+    max-width: 70ch;
   }
   .resume-item ul li {
     margin-bottom: 8px;
+  }
+  .about-content p {
+    max-width: 70ch;
   }
 
   /* Courses List */
@@ -157,35 +163,21 @@
     display: block;
   }
 
-  /* Skills Stars (Two Columns) */
-  .skills-container { margin-bottom: 40px; }
-  .skill-category { 
-    margin-top: 35px; 
-    font-weight: bold; 
-    border-bottom: 1px solid #333; 
-    padding-bottom: 5px; 
-    margin-bottom: 15px; 
-    font-size: 1.1em;
-  }
-  .skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-  }
-  .skill-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 10px;
-    margin: 0 -10px;
-    border-bottom: 1px solid #eee;
-    transition: background-color 0.3s;
+  /* Skills (Compact) */
+  .skills-compact { margin-bottom: 10px; }
+  .skill-line {
+    margin-bottom: 16px;
     font-size: 0.95em;
+    color: #333;
+    line-height: 1.6;
+    border-left: 3px solid #eee;
+    padding-left: 15px;
+    max-width: 70ch;
   }
-  .skill-row:hover { background-color: #f9f9f9; }
-  .skill-name { color: #333; }
-  .skill-stars { color: #ddd; letter-spacing: 2px; }
-  .skill-stars .filled { color: #888; transition: color 0.3s; }
-  .skill-row:hover .skill-stars .filled { color: #f39c12; }
+  .skill-label {
+    font-weight: bold;
+    color: #222;
+  }
   
   /* Tables */
   table { width: 100%; border-collapse: collapse; margin-bottom: 30px; font-size: 0.95em; }
@@ -199,7 +191,6 @@
     .lang-toggle-container { position: relative; text-align: right; margin-bottom: 20px; top: 0; }
     .resume-header { flex-direction: column; }
     .resume-date { margin-top: 5px; }
-    .skills-grid { grid-template-columns: 1fr; }
   }
 </style>
 
@@ -207,9 +198,11 @@
   function setLanguage(lang) {
     document.getElementById('lang-en').style.display = lang === 'en' ? 'block' : 'none';
     document.getElementById('lang-fr').style.display = lang === 'fr' ? 'block' : 'none';
+    document.getElementById('lang-es').style.display = lang === 'es' ? 'block' : 'none';
     
     document.getElementById('btn-en').className = lang === 'en' ? 'lang-btn active' : 'lang-btn';
-    document.getElementById('btn-fr').className = lang === 'fr' ? 'lang-btn' : 'lang-btn';
+    document.getElementById('btn-fr').className = lang === 'fr' ? 'lang-btn active' : 'lang-btn';
+    document.getElementById('btn-es').className = lang === 'es' ? 'lang-btn active' : 'lang-btn';
   }
 </script>
 
@@ -218,7 +211,8 @@
   <!-- Minimalist Language Toggle -->
   <div class="lang-toggle-container">
     <button id="btn-en" class="lang-btn active" onclick="setLanguage('en')">EN</button> | 
-    <button id="btn-fr" class="lang-btn" onclick="setLanguage('fr')">FR</button>
+    <button id="btn-fr" class="lang-btn" onclick="setLanguage('fr')">FR</button> | 
+    <button id="btn-es" class="lang-btn" onclick="setLanguage('es')">ES</button>
   </div>
 
   <!-- ================= ENGLISH SECTION ================= -->
@@ -226,7 +220,6 @@
     
     <div class="top-section">
       <aside class="sidebar">
-        <h2>Nicolas Cozzarin</h2>
         <img src="docs/assets/ppicture.jpeg" alt="Nicolas Cozzarin" class="profile-pic">
         <hr>
         <ul class="sidebar-links">
@@ -239,9 +232,10 @@
 
       <div class="about-content">
         <h2 id="about-me"><strong>About me</strong></h2>
-        <p>I am an IT Project Manager and Product Owner with 10 years of experience. I specialize in Agile methodologies (Scrum/Kanban) and Software Development Life Cycle (SDLC) management. I bridge the gap between complex technical models and practical, effective business solutions.</p>
+        <p>I'm a Product Owner and IT Project Manager with 10 years of experience across product management, QA, and backend development, now specialised in AI and data products.</p>
         <p>Having successfully completed my BSc in Artificial Intelligence & Robotics, my current focus is on AI compliance, AI ethics and alignment, and seamlessly integrating AI and automations into companies to make their processes significantly more effective.</p>
         <p>Alongside my professional work, I have volunteered extensively in animal welfare and animal rights, and I am now exploring the potential impact of artificial intelligence on the situation of animals, a crucial topic that remains largely undiscussed. This includes examining the present and potential use of AI in factory farming and, conversely, in reducing wild animal suffering, as well as how reducing speciesist attitudes in frontier AI systems could shape outcomes for animals now and in the future. Finally, I consider how AI tools could help boost our efforts in animal advocacy.</p>
+        <p>EU citizen with a Swiss work permit, based near Geneva and immediately available to relocate.</p>
       </div>
     </div>
 
@@ -339,6 +333,55 @@
 
       <hr class="section-divider">
 
+      <h2 id="animal-advocacy"><strong>Animal Advocacy Experience</strong></h2>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>AI Enabler</h3>
+          <span class="resume-date">2026 – Present</span>
+        </div>
+        <div class="resume-company">Hack the Fork | Paris, France</div>
+        <p class="resume-summary">Designed the AI framework for the hackathon and helped explore and test the AWS environment; will mentor participating teams on AI scoping during the event.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Founder & Organiser</h3>
+          <span class="resume-date">2026 – Present</span>
+        </div>
+        <div class="resume-company">We The Free | Angoulême, France</div>
+        <p class="resume-summary">Founded and run the local chapter: manage the materials budget and purchasing, organise outreach and social events, and recruit activists from the surrounding area.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Logistics</h3>
+          <span class="resume-date">2021 – 2022</span>
+        </div>
+        <div class="resume-company">Vegan Campout Argentina</div>
+        <p class="resume-summary">Coordinated stall logistics and supplier needs for a 2,000-attendee event, contributed to the programme, and managed a team of 20 volunteers on the day.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Organiser</h3>
+          <span class="resume-date">2019 – 2022</span>
+        </div>
+        <div class="resume-company">Buenos Aires Animal Save</div>
+        <p class="resume-summary">Co-organised slaughterhouse vigils: opened events by briefing attendees, liaised with slaughterhouse workers, supported participants during vigils, and produced footage for social media.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Organiser</h3>
+          <span class="resume-date">2018 – 2020</span>
+        </div>
+        <div class="resume-company">Anonymous for the Voiceless | Buenos Aires, Argentina</div>
+        <p class="resume-summary">Created and ran Cube of Truth events with 20–60 activists: coordinated teams and materials, and welcomed and briefed new members.</p>
+      </div>
+
+      <hr class="section-divider">
+
       <h2 id="courses"><strong>Courses & certifications</strong></h2>
       <ul class="course-list">
         <li>
@@ -391,89 +434,13 @@
       <hr class="section-divider">
 
       <h2 id="skills"><strong>Skills</strong></h2>
-      <div class="skills-container">
-
-        <div class="skill-category">Product & Management</div>
-        <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">Agile (Scrum/Kanban)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">SDLC</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Backlog Management</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">User Stories</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Jira</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Confluence</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Azure DevOps</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
-          <div class="skill-row"><span class="skill-name">Figma</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Miro</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Balsamiq</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Apple / MacOS</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Github / Gitlab</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Scrum / Agile</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">SEO</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Product Roadmap</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Backlog Refinement</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">User Research</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">A/B Testing</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Stakeholder Management</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">TestRail</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-        </div>
-
-        <div class="skill-category">Languages</div>
-        <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">Spanish (Native)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">English (C1)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">French (C1)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">German (B2)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Chinese (HSK3)</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
-        </div>
-        
-        <div class="skill-category">AI & Automation Tools</div>
-        <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">n8n</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Make.com</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Zapier</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Retrieval-Augmented Generation (RAG)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">AI Agent Building</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">OpenAI API</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Anthropic Claude</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Local LLM Deployment</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">AI-Assisted Coding (Cursor, Replit)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-        </div>
-
-        <div class="skill-category">Technical & Data</div>
-        <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">Python</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Pandas</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Scikit-learn</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">PyTorch</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">NLP</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">NER</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">SQL</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">React.js</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
-          <div class="skill-row"><span class="skill-name">TypeScript</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Git</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Docker</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">CI/CD</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-        </div>
-
+      <div class="skills-compact">
+        <p class="skill-line"><span class="skill-label">Product:</span> Agile (Scrum/Kanban), backlog management, product roadmapping, user research, A/B testing, stakeholder management, Jira, Confluence, Figma</p>
+        <p class="skill-line"><span class="skill-label">AI & Data:</span> Python (Pandas, Scikit-learn, PyTorch), NLP/NER, SQL, RAG, LLM APIs (OpenAI, Anthropic), AI agent building, local LLM deployment</p>
+        <p class="skill-line"><span class="skill-label">Engineering:</span> Docker, CI/CD, Git, React.js, TypeScript, REST APIs</p>
+        <p class="skill-line"><span class="skill-label">Languages:</span> Spanish (native), English (C1), French (C1), German (B2), Chinese (HSK3)</p>
       </div>
       
-      <hr class="section-divider">
-
-      <h2 id="volunteer"><strong>Volunteer Experience, Community Involvement</strong></h2>
-      <table>
-        <thead>
-          <tr><th>Date</th><th>Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>2026 - Present</td><td>AI Representative: Supporting local teams on AI scoping for <strong>Hack the Fork</strong> hackathon (Paris)</td></tr>
-          <tr><td>2026 - Current</td><td>Organizer for <strong>We The Free</strong> group in France</td></tr>
-          <tr><td>2019 - 2022</td><td>Organizer of Buenos Aires <strong>Animal Save</strong></td></tr>
-          <tr><td>2020 - 2022</td><td>Organizer of Buenos Aires <strong>Anonymous for the Voiceless</strong></td></tr>
-          <tr><td>2021 - 2022</td><td>Organizer of <strong>Vegan Campout Argentina</strong></td></tr>
-        </tbody>
-      </table>
-
       <hr class="section-divider">
 
       <h2 id="references"><strong>References</strong></h2>
@@ -485,12 +452,12 @@
           <tr>
             <td>Andi Gjonej</td>
             <td>CEO, Union Financial Corners | Geneva, Switzerland</td>
-            <td><a href="mailto:andi.gjonej@ufc.ch">andi.gjonej@ufc.ch</a><br><a href="docs/assets/NC-Employment-certificate-2026.pdf" download>Download Employment Certificate</a></td>
+            <td>Available on request<br><a href="docs/assets/Certificat_de_travail.pdf" download>Download Employment Certificate</a></td>
           </tr>
           <tr>
             <td>Franco Cellone</td>
             <td><a href="https://www.linkedin.com/company/15223804/" target="_blank">Coordinador de Registro y Análisis de la Información</a><br><a href="https://www.linkedin.com/company/15223804/" target="_blank">Gobierno de Córdoba</a></td>
-            <td><a href="mailto:Franco.Cellone@cba.gov.ar">Franco.Cellone@cba.gov.ar</a></td>
+            <td>Available on request</td>
           </tr>
         </tbody>
       </table>
@@ -502,7 +469,6 @@
     
     <div class="top-section">
       <aside class="sidebar">
-        <h2>Nicolas Cozzarin</h2>
         <img src="docs/assets/ppicture.jpeg" alt="Nicolas Cozzarin" class="profile-pic">
         <hr>
         <ul class="sidebar-links">
@@ -515,9 +481,10 @@
 
       <div class="about-content">
         <h2 id="a-propos"><strong>À propos</strong></h2>
-        <p>Product Owner et Chef de Projet IT avec 10 ans d'expérience. Je suis spécialiste des méthodologies Agiles (Scrum/Kanban) et du pilotage du cycle de vie des logiciels (SDLC). Je fais le pont entre les modèles techniques complexes et la création de solutions métiers concrètes et performantes.</p>
+        <p>Je suis Product Owner et Chef de Projet IT, avec 10 ans d'expérience en gestion de produit, QA et développement backend, aujourd'hui spécialisé dans les produits IA et data.</p>
         <p>Ayant obtenu mon Bachelor en Intelligence Artificielle et Robotique, je me concentre actuellement sur l'intégration de l'IA et de l'automatisation en entreprise pour rendre les processus significativement plus efficaces, la conformité de l'IA, l'éthique et l'alignement des modèles.</p>
         <p>En parallèle de mon parcours professionnel, je me suis beaucoup investi dans le bénévolat pour le bien-être et les droits des animaux, et j'explore aujourd'hui l'impact potentiel de l'intelligence artificielle sur la situation des animaux, un sujet crucial qui reste largement absent du débat. Cela inclut l'examen de l'utilisation actuelle et potentielle de l'IA dans les élevages industriels et, à l'inverse, dans la réduction de la souffrance des animaux sauvages, ainsi que la manière dont la réduction des attitudes spécistes dans les systèmes d'IA de pointe peut avoir un impact présent et futur. Enfin, je m'intéresse à la façon dont les outils d'IA pourraient renforcer nos actions de plaidoyer pour les animaux.</p>
+        <p>Citoyen de l'UE titulaire d'un permis de travail suisse, basé près de Genève et disponible immédiatement pour une relocalisation.</p>
       </div>
     </div>
 
@@ -615,6 +582,55 @@
 
       <hr class="section-divider">
 
+      <h2 id="plaidoyer-fr"><strong>Expérience en plaidoyer animal</strong></h2>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Référent IA</h3>
+          <span class="resume-date">2026 – Aujourd'hui</span>
+        </div>
+        <div class="resume-company">Hack the Fork | Paris, France</div>
+        <p class="resume-summary">Conception du cadre IA du hackathon et participation à l'exploration et aux tests de l'environnement AWS ; accompagnement des équipes participantes sur le cadrage IA pendant l'événement.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Fondateur et organisateur</h3>
+          <span class="resume-date">2026 – Aujourd'hui</span>
+        </div>
+        <div class="resume-company">We The Free | Angoulême, France</div>
+        <p class="resume-summary">Fondation et gestion de l'antenne locale : gestion du budget matériel et des achats, organisation d'actions de sensibilisation et d'événements sociaux, et recrutement de militants dans la région.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Logistique</h3>
+          <span class="resume-date">2021 – 2022</span>
+        </div>
+        <div class="resume-company">Vegan Campout Argentina</div>
+        <p class="resume-summary">Coordination de la logistique des stands et des besoins fournisseurs pour un événement de 2 000 participants, contribution au programme, et encadrement d'une équipe de 20 bénévoles le jour J.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Organisateur</h3>
+          <span class="resume-date">2019 – 2022</span>
+        </div>
+        <div class="resume-company">Buenos Aires Animal Save</div>
+        <p class="resume-summary">Co-organisation de veillées devant des abattoirs : ouverture des événements par un briefing des participants, liaison avec les employés des abattoirs, accompagnement des participants pendant les veillées, et production de contenus vidéo pour les réseaux sociaux.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Organisateur</h3>
+          <span class="resume-date">2018 – 2020</span>
+        </div>
+        <div class="resume-company">Anonymous for the Voiceless | Buenos Aires, Argentine</div>
+        <p class="resume-summary">Création et animation d'événements Cube of Truth avec 20 à 60 militants : coordination des équipes et du matériel, et accueil et briefing des nouveaux membres.</p>
+      </div>
+
+      <hr class="section-divider">
+
       <h2 id="cours"><strong>Cours & certifications</strong></h2>
       <ul class="course-list">
         <li>
@@ -667,89 +683,13 @@
       <hr class="section-divider">
 
       <h2 id="competences"><strong>Compétences</strong></h2>
-      <div class="skills-container">
-
-        <div class="skill-category">Produit & Management</div>
-        <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">Agile (Scrum/Kanban)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">SDLC</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Gestion du Backlog</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">User Stories</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Jira</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Confluence</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Azure DevOps</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
-          <div class="skill-row"><span class="skill-name">Figma</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Miro</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Balsamiq</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Apple / MacOS</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Github / Gitlab</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Scrum / Agile</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">SEO</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Roadmap Produit</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Affinage du Backlog</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Recherche Utilisateur</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">A/B Testing</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Gestion des Parties Prenantes</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">TestRail</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-        </div>
-
-        <div class="skill-category">Langues</div>
-        <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">Espagnol (Natif)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Anglais (C1)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Français (C1)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Allemand (B2)</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Chinois (HSK3)</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
-        </div>
-        
-        <div class="skill-category">Outils d'IA & Automatisation</div>
-        <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">REST APIs</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">n8n</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Make.com</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Zapier</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Retrieval-Augmented Generation (RAG)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Création d'Agents IA</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">OpenAI API</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Anthropic Claude</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Déploiement LLM Local</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Code Assisté par IA (Cursor, Replit)</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-        </div>
-
-        <div class="skill-category">Tech & Data</div>
-        <div class="skills-grid">
-          <div class="skill-row"><span class="skill-name">Python</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">Pandas</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Scikit-learn</span> <span class="skill-stars"><span class="filled">★★★★★</span></span></div>
-          <div class="skill-row"><span class="skill-name">PyTorch</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">NLP</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">NER</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">SQL</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">React.js</span> <span class="skill-stars"><span class="filled">★★</span>★★★</span></div>
-          <div class="skill-row"><span class="skill-name">TypeScript</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">Git</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-          <div class="skill-row"><span class="skill-name">Docker</span> <span class="skill-stars"><span class="filled">★★★</span>★★</span></div>
-          <div class="skill-row"><span class="skill-name">CI/CD</span> <span class="skill-stars"><span class="filled">★★★★</span>★</span></div>
-        </div>
-
+      <div class="skills-compact">
+        <p class="skill-line"><span class="skill-label">Produit :</span> Agile (Scrum/Kanban), gestion du backlog, roadmap produit, recherche utilisateur, A/B testing, gestion des parties prenantes, Jira, Confluence, Figma</p>
+        <p class="skill-line"><span class="skill-label">IA & Data :</span> Python (Pandas, Scikit-learn, PyTorch), NLP/NER, SQL, RAG, API LLM (OpenAI, Anthropic), création d'agents IA, déploiement de LLM en local</p>
+        <p class="skill-line"><span class="skill-label">Ingénierie :</span> Docker, CI/CD, Git, React.js, TypeScript, REST APIs</p>
+        <p class="skill-line"><span class="skill-label">Langues :</span> Espagnol (natif), Anglais (C1), Français (C1), Allemand (B2), Chinois (HSK3)</p>
       </div>
       
-      <hr class="section-divider">
-
-      <h2 id="benevolat"><strong>Expérience de Bénévolat, Implication Communautaire</strong></h2>
-      <table>
-        <thead>
-          <tr><th>Date</th><th>Rôle</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>2026 - en cours</td><td>Référent IA : accompagnement des équipes locales sur le cadrage IA de leur hackathon <strong>Hack the Fork</strong> (Paris)</td></tr>
-          <tr><td>2026 - en cours</td><td>Organisateur pour le groupe <strong>We The Free</strong> en France</td></tr>
-          <tr><td>2019 - 2022</td><td>Organisateur de Buenos Aires <strong>Animal Save</strong></td></tr>
-          <tr><td>2020 - 2022</td><td>Organisateur de Buenos Aires <strong>Anonymous for the Voiceless</strong></td></tr>
-          <tr><td>2021 - 2022</td><td>Organisateur de <strong>Vegan Campout Argentina</strong></td></tr>
-        </tbody>
-      </table>
-
       <hr class="section-divider">
 
       <h2 id="references-fr"><strong>Références</strong></h2>
@@ -761,12 +701,261 @@
           <tr>
             <td>Andi Gjonej</td>
             <td>PDG, Union Financial Corners | Genève, Suisse</td>
-            <td><a href="mailto:andi.gjonej@ufc.ch">andi.gjonej@ufc.ch</a><br><a href="docs/assets/NC-Employment-certificate-2026.pdf" download>Télécharger le Certificat de travail</a></td>
+            <td>Disponible sur demande<br><a href="docs/assets/Certificat_de_travail.pdf" download>Télécharger le Certificat de travail</a></td>
           </tr>
           <tr>
             <td>Franco Cellone</td>
             <td><a href="https://www.linkedin.com/company/15223804/" target="_blank">Coordinador de Registro y Análisis de la Información</a><br><a href="https://www.linkedin.com/company/15223804/" target="_blank">Gobierno de Córdoba</a></td>
-            <td><a href="mailto:Franco.Cellone@cba.gov.ar">Franco.Cellone@cba.gov.ar</a></td>
+            <td>Disponible sur demande</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ================= SPANISH SECTION ================= -->
+  <div id="lang-es" style="display:none;">
+    
+    <div class="top-section">
+      <aside class="sidebar">
+        <img src="docs/assets/ppicture.jpeg" alt="Nicolas Cozzarin" class="profile-pic">
+        <hr>
+        <ul class="sidebar-links">
+          <li><a href="https://www.linkedin.com/in/ncozzarin/?skipRedirect=true" target="_blank">Ver mi perfil de LinkedIn</a></li>
+          <li><a href="docs/assets/CV_COZZARIN_ES.pdf" download>Descargar mi CV</a></li>
+          <li><a href="https://github.com/nicolas-cozzarin" target="_blank">Ver mi perfil de GitHub</a></li>
+          <li><a href="mailto:nicolasjcozzarin@gmail.com">Enviarme un correo</a></li>
+        </ul>
+      </aside>
+
+      <div class="about-content">
+        <h2 id="sobre-mi"><strong>Sobre mí</strong></h2>
+        <p>Soy Product Owner y IT Project Manager, con 10 años de experiencia en gestión de producto, QA y desarrollo backend, actualmente especializado en productos de IA y datos.</p>
+        <p>Habiendo completado con éxito mi Licenciatura en Inteligencia Artificial y Robótica, mi enfoque actual está puesto en el cumplimiento normativo de la IA, la ética y el alineamiento de los modelos de IA, así como en la integración fluida de la IA y la automatización en las empresas para hacer sus procesos significativamente más eficientes.</p>
+        <p>Además de mi trabajo profesional, he participado activamente como voluntario en causas de bienestar y derechos animales, y actualmente estoy explorando el impacto potencial de la inteligencia artificial en la situación de los animales, un tema crucial que sigue siendo poco discutido. Esto incluye analizar el uso actual y potencial de la IA en la ganadería industrial y, por el contrario, en la reducción del sufrimiento de los animales silvestres, así como la manera en que reducir las actitudes especistas en los sistemas de IA de vanguardia puede tener un impacto en el presente y en el futuro. Finalmente, considero de qué manera las herramientas de IA podrían potenciar nuestros esfuerzos de activismo por los animales.</p>
+        <p>Ciudadano de la UE con permiso de trabajo suizo, radicado cerca de Ginebra y disponible de forma inmediata para reubicarse.</p>
+      </div>
+    </div>
+
+    <div class="full-width-section">
+      <hr class="section-divider">
+
+      <h2 id="experiencia-profesional"><strong>Experiencia profesional</strong></h2>
+      
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Gerente de Proyectos IT / Product Owner</h3>
+          <span class="resume-date">Oct 2022 – Oct 2025</span>
+        </div>
+        <div class="resume-company">Union of Financial Corners | Ginebra, Suiza</div>
+        <p class="resume-summary">Lideré el desarrollo integral de productos financieros digitales, desde la planificación de negocio y la definición del producto hasta la entrega, el lanzamiento y la optimización post-lanzamiento, asegurando la alineación entre los objetivos de negocio, la tecnología y los requisitos de cumplimiento normativo. Gestioné el backlog de producto y equipos de ingeniería distribuidos, traduje las necesidades del negocio en user stories accionables, y utilicé la planificación de sprints y métricas de desempeño para mejorar la eficiencia en la entrega.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>AI Product Owner (Contrato a plazo fijo)</h3>
+          <span class="resume-date">2025</span>
+        </div>
+        <div class="resume-company">Sistema de Control Disciplinario de las Fuerzas de Seguridad | Córdoba, Argentina</div>
+        <p class="resume-summary">Lideré el desarrollo de un producto de clasificación de texto supervisada para automatizar el análisis de expedientes disciplinarios, desde la definición del producto hasta el procesamiento de datos y la generación de resultados de apoyo a la toma de decisiones. Diseñé protocolos de anonimización y protección de datos utilizando NLP, NER y pseudonimización, y analicé conjuntos de datos complejos para producir indicadores confiables cumpliendo con los requisitos legales y regulatorios.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Analista Funcional</h3>
+          <span class="resume-date">Feb 2019 – Dic 2022</span>
+        </div>
+        <div class="resume-company">FlyDevs | EE. UU. (Remoto)</div>
+        <p class="resume-summary">Traduje los requerimientos de negocio en especificaciones funcionales y user stories, actuando como nexo entre las partes interesadas, los equipos de UI/UX, QA e ingeniería a lo largo de la entrega del producto. Facilité las ceremonias Ágiles, resolví bloqueos en la entrega y contribuí a optimizar los procesos de lanzamiento alineando las prácticas de desarrollo y CI/CD con las prioridades del negocio.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Analista Líder de QA</h3>
+          <span class="resume-date">Mar 2017 – Dic 2019</span>
+        </div>
+        <div class="resume-company">Charly Inc. | Canadá (Remoto)</div>
+        <p class="resume-summary">Lideré las actividades de aseguramiento de calidad en varios proyectos de software, definiendo estrategias de testing y coordinando un equipo de QA distribuido para garantizar el cumplimiento de los requisitos funcionales y técnicos. Establecí procesos de testing funcional, de integración y de regresión, mantuve la documentación de pruebas y el seguimiento de defectos, y mejoré la detección de errores.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Desarrollador Backend Python - Odoo</h3>
+          <span class="resume-date">Feb 2015 – Jun 2016</span>
+        </div>
+        <div class="resume-company">E-MIPS | Buenos Aires, Argentina</div>
+        <p class="resume-summary">Desarrollé y personalicé módulos de Odoo en Python para automatizar procesos de negocio como CRM, inventario y contabilidad, e integré la plataforma con aplicaciones y APIs externas. Documenté las soluciones desarrolladas, utilicé Git y Docker a lo largo del desarrollo, y trabajé dentro de ciclos de entrega Ágiles para mantener y evolucionar las aplicaciones.</p>
+      </div>
+
+      <hr class="section-divider">
+
+      <h2 id="educacion"><strong>Educación</strong></h2>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Licenciatura en Inteligencia Artificial y Robótica</h3>
+          <span class="resume-date">2021 – 2025</span>
+        </div>
+        <div class="resume-company">Universidad Siglo XXI (R.M. n° 1142/2021)</div>
+        <ul>
+          <li><strong>Especialización:</strong> Inteligencia Artificial, Ciencia de Datos y Robótica.</li>
+          <li><strong>Cursos relevantes:</strong> Machine Learning, Deep Learning e IA Generativa.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Laboratorio de Intercambio en IA y Robótica</h3>
+          <span class="resume-date">Nov 2024 – Nov 2025</span>
+        </div>
+        <div class="resume-company">Hochschule Furtwangen | Alemania</div>
+        <ul>
+          <li>Completé cursos de Machine Learning, Modelos Generativos Profundos, Visión por Computadora, Robótica y Sistemas de Microcontroladores.</li>
+          <li>Mantuve un fuerte enfoque en el desarrollo de modelos de IA, el procesamiento de datos y la experimentación práctica en entornos basados en Jupyter.</li>
+          <li>Colaboré en un entorno académico multicultural, fortaleciendo mis capacidades de investigación analítica y comunicación intercultural.</li>
+          <li>Aprobé el examen de alemán nivel B2 y establecí contactos con profesionales y organizaciones activas en el ecosistema de IA de Alemania.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Diploma de Técnico Electrónico</h3>
+          <span class="resume-date">2009 – 2015</span>
+        </div>
+        <div class="resume-company">Instituto Técnico Industrial San Judas Tadeo</div>
+        <ul>
+          <li>Adquirí una base sólida en electrónica, sistemas aplicados y tecnologías de hardware.</li>
+          <li>Desarrollé habilidades analíticas y de resolución de problemas orientadas a proyectos, fácilmente transferibles a la ingeniería de software y a la IT.</li>
+        </ul>
+      </div>
+
+      <hr class="section-divider">
+
+      <h2 id="activismo-es"><strong>Experiencia en Activismo Animal</strong></h2>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Referente de IA</h3>
+          <span class="resume-date">2026 – Actualidad</span>
+        </div>
+        <div class="resume-company">Hack the Fork | París, Francia</div>
+        <p class="resume-summary">Diseñé el marco de IA del hackathon y participé en la exploración y prueba del entorno de AWS; seré mentor de los equipos participantes en la definición del alcance de IA durante el evento.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Fundador y organizador</h3>
+          <span class="resume-date">2026 – Actualidad</span>
+        </div>
+        <div class="resume-company">We The Free | Angoulême, Francia</div>
+        <p class="resume-summary">Fundé y dirijo la sede local: gestiono el presupuesto de materiales y las compras, organizo actividades de difusión y eventos sociales, y recluto activistas en la zona.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Logística</h3>
+          <span class="resume-date">2021 – 2022</span>
+        </div>
+        <div class="resume-company">Vegan Campout Argentina</div>
+        <p class="resume-summary">Coordiné la logística de stands y las necesidades de proveedores para un evento de 2.000 asistentes, contribuí al programa, y gestioné un equipo de 20 voluntarios durante la jornada.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Organizador</h3>
+          <span class="resume-date">2019 – 2022</span>
+        </div>
+        <div class="resume-company">Buenos Aires Animal Save</div>
+        <p class="resume-summary">Coorganicé vigilias frente a mataderos: abrí los eventos con una charla informativa a los asistentes, mantuve contacto con trabajadores de los mataderos, acompañé a los participantes durante las vigilias, y produje material audiovisual para redes sociales.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Organizador</h3>
+          <span class="resume-date">2018 – 2020</span>
+        </div>
+        <div class="resume-company">Anonymous for the Voiceless | Buenos Aires, Argentina</div>
+        <p class="resume-summary">Creé y coordiné eventos Cube of Truth con entre 20 y 60 activistas: organicé equipos y materiales, y recibí y capacité a nuevos miembros.</p>
+      </div>
+
+      <hr class="section-divider">
+
+      <h2 id="cursos-es"><strong>Cursos y certificaciones</strong></h2>
+      <ul class="course-list">
+        <li>
+          <span class="course-meta">2026 • Altruisme Efficace France</span>
+          <span class="course-title">Talleres introductorios de Altruismo Eficaz</span><br>
+          Exploración de estrategias de alto impacto y enfoques basados en evidencia para la resolución de problemas globales.
+        </li>
+        <li>
+          <span class="course-meta">Abr 2025 • Mendix (ID de credencial 90924)</span>
+          <span class="course-title">Mendix Developer Certificate</span><br>
+          Certificación en desarrollo rápido de aplicaciones escalables low-code.
+        </li>
+        <li>
+          <span class="course-meta">Semrush</span>
+          <span class="course-title">Backlink Management Course con Greg Gifford</span><br>
+          Estrategias avanzadas de SEO, construcción de enlaces y optimización de la presencia digital.
+        </li>
+        <li>
+          <span class="course-meta">Swiss Financial Compliance</span>
+          <span class="course-title">MLA Training Module</span><br>
+          Formación en regulaciones de prevención de lavado de dinero y estricto cumplimiento financiero.
+        </li>
+        <li>
+          <span class="course-meta">Udemy</span>
+          <span class="course-title">Build ReactJS Applications</span><br>
+          Desarrollo práctico de aplicaciones web frontend dinámicas basadas en componentes.
+        </li>
+        <li>
+          <span class="course-meta">Jun 2020 • Coderhouse</span>
+          <span class="course-title">Desarrollo Web</span><br>
+          Fundamentos de arquitectura web moderna, diseño responsivo y despliegue.
+        </li>
+        <li>
+          <span class="course-meta">2017</span>
+          <span class="course-title">Hardware Descriptive Language for VHDL Development</span><br>
+          Programación y diseño lógico para circuitos digitales complejos e integración FPGA.
+        </li>
+        <li>
+          <span class="course-meta">Programación</span>
+          <span class="course-title">Advanced C++ Programming and Modern Practices</span><br>
+          Profundización en gestión de memoria, diseño orientado a objetos y programación de alto rendimiento.
+        </li>
+        <li>
+          <span class="course-meta">2016</span>
+          <span class="course-title">Curso Universitario en Microelectrónica</span><br>
+          Diseño, principios de fabricación y aplicaciones prácticas de sistemas microelectrónicos.
+        </li>
+      </ul>
+
+      <hr class="section-divider">
+
+      <h2 id="habilidades"><strong>Habilidades</strong></h2>
+      <div class="skills-compact">
+        <p class="skill-line"><span class="skill-label">Producto:</span> Agile (Scrum/Kanban), gestión del backlog, roadmap de producto, investigación de usuarios, A/B testing, gestión de stakeholders, Jira, Confluence, Figma</p>
+        <p class="skill-line"><span class="skill-label">IA y Datos:</span> Python (Pandas, Scikit-learn, PyTorch), NLP/NER, SQL, RAG, APIs de LLM (OpenAI, Anthropic), creación de agentes de IA, despliegue de LLM local</p>
+        <p class="skill-line"><span class="skill-label">Ingeniería:</span> Docker, CI/CD, Git, React.js, TypeScript, REST APIs</p>
+        <p class="skill-line"><span class="skill-label">Idiomas:</span> Español (nativo), Inglés (C1), Francés (C1), Alemán (B2), Chino (HSK3)</p>
+      </div>
+
+      <hr class="section-divider">
+
+      <h2 id="referencias"><strong>Referencias</strong></h2>
+      <table>
+        <thead>
+          <tr><th>Nombre</th><th>Rol</th><th>Contacto</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Andi Gjonej</td>
+            <td>CEO, Union Financial Corners | Ginebra, Suiza</td>
+            <td>Disponible a solicitud<br><a href="docs/assets/Certificat_de_travail.pdf" download>Descargar Certificado de trabajo</a></td>
+          </tr>
+          <tr>
+            <td>Franco Cellone</td>
+            <td><a href="https://www.linkedin.com/company/15223804/" target="_blank">Coordinador de Registro y Análisis de la Información</a><br><a href="https://www.linkedin.com/company/15223804/" target="_blank">Gobierno de Córdoba</a></td>
+            <td>Disponible a solicitud</td>
           </tr>
         </tbody>
       </table>
