@@ -43,7 +43,7 @@
   
   /* Left Sidebar */
   .sidebar {
-    flex: 0 0 240px;
+    flex: 0 0 300px;
   }
   .sidebar h2 { 
     margin-top: 0; 
@@ -52,7 +52,7 @@
   }
   .profile-pic {
     width: 100%;
-    max-width: 240px;
+    max-width: 300px;
     border-radius: 4px; 
     display: block;
     margin-bottom: 20px;
@@ -137,7 +137,7 @@
     margin-bottom: 8px;
   }
   .about-content p {
-    max-width: 70ch;
+    max-width: 85ch;
   }
 
   /* Courses List */
@@ -188,6 +188,7 @@
   @media (max-width: 768px) {
     .top-section { flex-direction: column; gap: 30px; }
     .sidebar { flex: 1 1 auto; }
+    .profile-pic { max-width: 240px; }
     .lang-toggle-container { position: relative; text-align: right; margin-bottom: 20px; top: 0; }
     .resume-header { flex-direction: column; }
     .resume-date { margin-top: 5px; }
@@ -255,11 +256,15 @@
 
       <div class="resume-item">
         <div class="resume-header">
-          <h3>AI Product Owner (Fixed-term contract)</h3>
-          <span class="resume-date">2025</span>
+          <h3>AI Product Owner & ML Developer (Internship)</h3>
+          <span class="resume-date">Nov 2025 – Jun 2026</span>
         </div>
-        <div class="resume-company">Security Forces Disciplinary Control System | Cordoba, Argentina</div>
-        <p class="resume-summary">Led the development of a supervised text-classification product to automate the analysis of disciplinary case files, from product definition to data processing and decision-support outputs. Designed data anonymization and privacy protocols using NLP, NER, and pseudonymization, and analyzed complex datasets to produce reliable indicators while meeting legal and regulatory requirements.</p>
+        <div class="resume-company">Security Forces Disciplinary Control System | Córdoba, Argentina</div>
+        <ul>
+          <li>Owned end-to-end delivery of an NLP text-classification system automating the triage of legal case files: scoped requirements with legal staff, defined the roadmap, and built the model myself.</li>
+          <li>Developed the classification pipeline in Python, PyTorch, and Scikit-learn: data preparation, model training, and evaluation.</li>
+          <li>Designed and implemented an anonymisation pipeline (NER + pseudonymisation) so sensitive personal data never entered training or inference, meeting GDPR/LPD requirements.</li>
+        </ul>
       </div>
 
       <div class="resume-item">
@@ -342,6 +347,15 @@
         </div>
         <div class="resume-company">Hack the Fork | Paris, France</div>
         <p class="resume-summary">Designed the AI framework for the hackathon and helped explore and test the AWS environment; will mentor participating teams on AI scoping during the event.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>DevOps Volunteer</h3>
+          <span class="resume-date">2019 – 2022</span>
+        </div>
+        <div class="resume-company">Difusión V | Voicot</div>
+        <p class="resume-summary">Set up and maintained hosting and CI/CD for the organisation's websites: <a href="http://difuv.com" target="_blank">difuv.com</a>, <a href="http://voicot.com" target="_blank">voicot.com</a>, and <a href="http://difusionv.com" target="_blank">difusionv.com</a>.</p>
       </div>
 
       <div class="resume-item">
@@ -504,11 +518,15 @@
 
       <div class="resume-item">
         <div class="resume-header">
-          <h3>AI Product Owner (CDD)</h3>
-          <span class="resume-date">2025</span>
+          <h3>AI Product Owner & Développeur ML (stage)</h3>
+          <span class="resume-date">Nov 2025 – Juin 2026</span>
         </div>
-        <div class="resume-company">Système de Contrôle Disciplinaire des Forces de Sécurité | Cordoba, Argentine</div>
-        <p class="resume-summary">Pilotage du développement d'un outil de classification supervisée de textes destiné à automatiser l'analyse des dossiers disciplinaires, depuis la définition du produit jusqu'au traitement des données et à la production d'indicateurs d'aide à la décision. Conception de protocoles d'anonymisation et de protection des données sensibles à l'aide du NLP, de la NER et de la pseudonymisation, ainsi qu'exploration et analyse de jeux de données complexes dans le respect des exigences légales et réglementaires.</p>
+        <div class="resume-company">Système de Contrôle Disciplinaire des Forces de Sécurité | Córdoba, Argentine</div>
+        <ul>
+          <li>Prise en charge de bout en bout d'un système de classification de texte NLP automatisant le tri des dossiers juridiques : cadrage des besoins avec les équipes juridiques, définition de la feuille de route, et développement du modèle.</li>
+          <li>Développement du pipeline de classification en Python, PyTorch et Scikit-learn : préparation des données, entraînement et évaluation du modèle.</li>
+          <li>Conception et mise en œuvre d'un pipeline d'anonymisation (NER + pseudonymisation) garantissant qu'aucune donnée personnelle sensible n'entre dans l'entraînement ou l'inférence, conformément au RGPD et à la LPD.</li>
+        </ul>
       </div>
 
       <div class="resume-item">
@@ -591,6 +609,15 @@
         </div>
         <div class="resume-company">Hack the Fork | Paris, France</div>
         <p class="resume-summary">Conception du cadre IA du hackathon et participation à l'exploration et aux tests de l'environnement AWS ; accompagnement des équipes participantes sur le cadrage IA pendant l'événement.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Bénévole DevOps</h3>
+          <span class="resume-date">2019 – 2022</span>
+        </div>
+        <div class="resume-company">Difusión V | Voicot</div>
+        <p class="resume-summary">Mise en place et maintenance de l'hébergement et du CI/CD pour les sites de l'organisation : <a href="http://difuv.com" target="_blank">difuv.com</a>, <a href="http://voicot.com" target="_blank">voicot.com</a> et <a href="http://difusionv.com" target="_blank">difusionv.com</a>.</p>
       </div>
 
       <div class="resume-item">
@@ -753,11 +780,15 @@
 
       <div class="resume-item">
         <div class="resume-header">
-          <h3>AI Product Owner (Contrato a plazo fijo)</h3>
-          <span class="resume-date">2025</span>
+          <h3>AI Product Owner y Desarrollador ML (pasantía)</h3>
+          <span class="resume-date">Nov 2025 – Jun 2026</span>
         </div>
         <div class="resume-company">Sistema de Control Disciplinario de las Fuerzas de Seguridad | Córdoba, Argentina</div>
-        <p class="resume-summary">Lideré el desarrollo de un producto de clasificación de texto supervisada para automatizar el análisis de expedientes disciplinarios, desde la definición del producto hasta el procesamiento de datos y la generación de resultados de apoyo a la toma de decisiones. Diseñé protocolos de anonimización y protección de datos utilizando NLP, NER y pseudonimización, y analicé conjuntos de datos complejos para producir indicadores confiables cumpliendo con los requisitos legales y regulatorios.</p>
+        <ul>
+          <li>Lideré de punta a punta un sistema de clasificación de texto con NLP para automatizar el triage de expedientes legales: relevé los requerimientos junto con el equipo legal, definí el roadmap, y desarrollé el modelo.</li>
+          <li>Desarrollé el pipeline de clasificación en Python, PyTorch y Scikit-learn: preparación de datos, entrenamiento y evaluación del modelo.</li>
+          <li>Diseñé e implementé un pipeline de anonimización (NER + pseudonimización) para que ningún dato personal sensible ingresara al entrenamiento o la inferencia, cumpliendo con el RGPD y la LPD.</li>
+        </ul>
       </div>
 
       <div class="resume-item">
@@ -840,6 +871,15 @@
         </div>
         <div class="resume-company">Hack the Fork | París, Francia</div>
         <p class="resume-summary">Diseñé el marco de IA del hackathon y participé en la exploración y prueba del entorno de AWS; seré mentor de los equipos participantes en la definición del alcance de IA durante el evento.</p>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-header">
+          <h3>Voluntario DevOps</h3>
+          <span class="resume-date">2019 – 2022</span>
+        </div>
+        <div class="resume-company">Difusión V | Voicot</div>
+        <p class="resume-summary">Configuré y mantuve el hosting y el CI/CD de los sitios de la organización: <a href="http://difuv.com" target="_blank">difuv.com</a>, <a href="http://voicot.com" target="_blank">voicot.com</a> y <a href="http://difusionv.com" target="_blank">difusionv.com</a>.</p>
       </div>
 
       <div class="resume-item">
