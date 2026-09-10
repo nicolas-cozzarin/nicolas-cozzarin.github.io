@@ -399,6 +399,11 @@
       <h2 id="courses"><strong>Courses & certifications</strong></h2>
       <ul class="course-list">
         <li>
+          <span class="course-meta">Sep 2026 • BlueDot Impact</span>
+          <span class="course-title">Future of AI</span><br>
+          An introduction to what AI can do today, where it's going over the next decade, and how you can start contributing to a better future.
+        </li>
+        <li>
           <span class="course-meta">2026 • Altruisme Efficace France</span>
           <span class="course-title">Introductory Workshops to Effective Altruism</span><br>
           Exploring high-impact strategies and evidence-based approaches to global problem-solving.
@@ -661,6 +666,11 @@
       <h2 id="cours"><strong>Cours & certifications</strong></h2>
       <ul class="course-list">
         <li>
+          <span class="course-meta">Sep 2026 • BlueDot Impact</span>
+          <span class="course-title">Future of AI</span><br>
+          Une introduction à ce que l'IA peut faire aujourd'hui, à son évolution au cours de la prochaine décennie, et à la manière de contribuer dès à présent à un avenir meilleur.
+        </li>
+        <li>
           <span class="course-meta">2026 • Altruisme Efficace France</span>
           <span class="course-title">Ateliers d’introduction à l’altruisme efficace</span><br>
           Exploration de stratégies à fort impact et basées sur les preuves pour la résolution de problèmes globaux.
@@ -922,6 +932,11 @@
 
       <h2 id="cursos-es"><strong>Cursos y certificaciones</strong></h2>
       <ul class="course-list">
+        <li>
+          <span class="course-meta">Sep 2026 • BlueDot Impact</span>
+          <span class="course-title">Future of AI</span><br>
+          Una introducción a lo que la IA puede hacer hoy, hacia dónde se dirige en la próxima década, y cómo empezar a contribuir a un futuro mejor.
+        </li>
         <li>
           <span class="course-meta">2026 • Altruisme Efficace France</span>
           <span class="course-title">Talleres introductorios de Altruismo Eficaz</span><br>
