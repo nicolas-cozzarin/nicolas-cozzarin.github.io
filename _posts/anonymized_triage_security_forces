@@ -1,0 +1,294 @@
+---
+layout: post
+title: "Anonymized Triage: Building an NLP Classifier for Police Disciplinary Oversight"
+date: 2026-07-10
+---
+
+# Anonymized Triage: Building an NLP Classifier for Police Disciplinary Oversight
+
+Jul 10, 2026 • Nicolas Cozzarin (@ncozzarin)
+
+Share on:
+
+### 1. Motivation
+
+In August 2020, the killing of Valentino "Blas" Correas by police officers in Córdoba, Argentina, triggered a wave of public demand for civilian oversight of the security forces. The provincial legislature responded with Law 10.731, creating an independent body to investigate and sanction misconduct inside the Police, the Anti-Narcotics Force, and the Penitentiary Service.
+
+That body inherited two problems that had no easy fix. First, every complaint it receives contains sensitive personal data: names, national ID numbers, addresses, and details about victims, witnesses, and officers under investigation. Redacting this by hand is slow and prone to error, and any leak undermines the trust the office was created to build. Second, the volume of complaints is large and unevenly distributed. Some categories, like poor performance, dominate the caseload. Others, like institutional violence, are rare but urgent, and getting buried under routine cases delays the response to exactly the complaints that matter most.
+
+**Goal:** build an NLP pipeline that anonymizes incoming complaints before anyone reads them, then classifies each complaint into the office's official categories, so investigators spend their time on judgment calls instead of sorting and redacting.
+
+I worked on this as an AI Product Owner and ML Developer during an internship with the Coordination of Information Registry and Analysis, the area inside the office responsible for this data. I scoped the requirements with the legal and coordination staff, wrote the system specification, and built the model myself.
+
+---
+
+### 2. Institutional context and related work
+
+Two existing systems shaped how I approached this project.
+
+**Prometea**, developed for the Public Prosecutor's Office of the City of Buenos Aires, uses predictive AI to read, classify, and triage judicial case files. It is the most cited precedent for AI-assisted triage in the Argentine public sector, reporting accuracy above 93% while keeping the process auditable.
+
+**PretorIA**, used by the Constitutional Court of Colombia, applies NLP and transformer models to classify large volumes of tutela filings, the Colombian equivalent of a constitutional protection claim. It showed that transformer-based models can handle the kind of dense, informal, legally sensitive text this project also has to deal with.
+
+Both systems confirmed that delegating first-pass triage to an NLP model is technically viable and has already been accepted in similar institutional settings in the region. Neither system, as far as I could find, publishes details on how it handles anonymization before classification, which is the part of this project I spent the most time on.
+
+---
+
+### 3. Objectives
+
+**General objective:** reduce the time and error involved in receiving, protecting, and classifying complaints at the Coordination of Information Registry and Analysis, using an NLP pipeline.
+
+**Specific objectives, on a three month build plan:**
+
+1. Anonymize every complaint automatically before analysis, removing names, ID numbers, and addresses. Target: fully validated pipeline by the end of month 1.
+2. Classify each complaint into the office's eight official categories with a per class F1 score above 70%. Target: month 2. This is the objective I am currently working on, and the results below are partial.
+3. Cut the time it takes to route a new complaint to the right area, from manual triage to instant classification. Target: month 3.
+4. Keep all data inside government infrastructure. No complaint text or model artifact should touch an external server.
+5. Train the coordination staff to run the pipeline themselves after handover.
+
+The eight official categories are: conflicto laboral, corrupción, inconductas fuera de servicio, mal desempeño, violencia de género, violencia familiar, violencia institucional, and otro.
+
+---
+
+### 4. Data
+
+Each record is a free text complaint (RESEÑA) written by an operator, in informal Spanish, alongside two target labels: **tema**, the main category from the list above, and **subcategoria**, a finer grained label inside that category. A single complaint might read like a short paragraph describing an incident, with no fixed structure and frequent typos, abbreviations, and institutional jargon.
+
+The class distribution is heavily skewed. Mal desempeño alone accounts for the largest share of the dataset, while categories that matter most for civilian oversight, like violencia institucional and corrupción, are comparatively rare. This is the kind of imbalance that quietly breaks a classifier: a model that learns to guess the majority class most of the time will still score well on raw accuracy while being useless for the categories the office actually cares about.
+
+*Figure 1: Distribution of complaint categories in the dataset*
+![Figure 1](https://nicolas-cozzarin.github.io/docs/assets/secfs-theme-distribution.png)
+
+---
+
+### 5. System design and data governance
+
+Before writing any code, I mapped out who touches the data and what each role is allowed to see. This became the access model for the full system:
+
+| Role | Access |
+|---|---|
+| Data Operator | Uploads raw complaints and runs the anonymization batch. Never sees classification results. |
+| System Administrator | Manages users and defines the categories and examples the model learns from. |
+| Prosecutor | Reviews anonymized complaints with AI suggestions attached, and approves or overrides the classification. Never sees raw PII. |
+| Researcher | Queries fully anonymized data for statistics and trend analysis. No access to raw text at any point. |
+
+No role, including mine during development, has standing access to raw, un-anonymized complaints outside a restricted, logged vault used only for chain of custody. This constraint drove most of the architecture decisions below, starting with the anonymization pipeline itself.
+
+**Stack:** Python 3.12 backend, PyTorch with CUDA support, Hugging Face Transformers, scikit-learn, Pandas. The frontend is React with Tailwind, served separately from the API so the AI workload can scale independently of the interface.
+
+---
+
+### 6. Anonymization pipeline
+
+Anonymization has to run before any human or any model sees the text, and it has to be irreversible, not just hidden. The pipeline runs in a fixed order, because each rule can create false positives for the ones after it if applied out of sequence: emails first, then account numbers, then phone numbers, then national ID numbers (DNI), then names, then addresses, then anything else spaCy's NER model can catch.
+
+```python
+import re
+import spacy
+
+EMAIL_RE = re.compile(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+")
+DNI_RE = re.compile(r"\b\d{7,8}\b")
+PHONE_RE = re.compile(r"\b(?:\+54)?\s?9?\s?\d{2,4}[\s.-]?\d{6,8}\b")
+
+def strip_regex_pii(text: str) -> str:
+    text = EMAIL_RE.sub("[EMAIL]", text)
+    text = PHONE_RE.sub("[TELEFONO]", text)
+    text = DNI_RE.sub("[DNI]", text)
+    return text
+```
+
+Names go through a compiled dictionary of common Argentine first and last names first, since that catches most cases cheaply, and spaCy's Named Entity Recognition model handles the rest. Since only entity recognition is needed at this stage, the rest of the pipeline is disabled to keep inference fast:
+
+```python
+nlp = spacy.load(
+    "es_core_news_lg",
+    disable=["tok2vec", "tagger", "parser", "attribute_ruler", "lemmatizer"],
+)
+
+def mask_names(text: str) -> str:
+    doc = nlp(text)
+    for ent in reversed(doc.ents):
+        if ent.label_ == "PER":
+            text = text[: ent.start_char] + "[PERSONA]" + text[ent.end_char :]
+    return text
+```
+
+Addresses and geographic markers are handled by Microsoft Presidio, which is better suited to street names and location patterns than a general NER model. The mapping from raw text to anonymized text is kept in an encrypted vault, accessible only for chain of custody and audit, never for day to day analysis or model training.
+
+Every rule in this pipeline is tested against a set of honeypot cases, records with deliberately tricky names, addresses, and edge cases, to check for false positives and false negatives before the pipeline is trusted with real complaints.
+
+---
+
+### 7. Modeling plan
+
+Once anonymized text is available, the goal is to predict tema and subcategoria from the RESEÑA field. I treated this as a staged plan rather than jumping straight to the most complex model, so each step has a clear baseline to beat:
+
+| Step | Task | Output |
+|---|---|---|
+| 1 | Data inspection | Shape, missing values, class distribution per category |
+| 2 | Data cleaning | Lowercasing, noise removal, missing value handling |
+| 3 | EDA and feature analysis | Class balance, text length statistics, keyword patterns |
+| 4 | scikit-learn baselines | TF-IDF with Logistic Regression, Naive Bayes, and SVM, cross validated |
+| 5 | BETO fine-tuning | Spanish BERT fine-tuned with class weighted loss |
+| 6 | Evaluation and comparison | Accuracy, F1, and confusion matrices side by side |
+
+**Baseline models.** Before touching a transformer, I set a floor with standard TF-IDF pipelines. If a simple model gets close to a fine-tuned BERT model on this data, that tells you something about how much signal is really in the text versus how much complexity the problem needs.
+
+```python
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.svm import LinearSVC
+from sklearn.pipeline import Pipeline
+from sklearn.model_selection import cross_val_score
+
+vectorizer = TfidfVectorizer(max_features=20000, ngram_range=(1, 2))
+
+baselines = {
+    "logreg": LogisticRegression(max_iter=1000, class_weight="balanced"),
+    "naive_bayes": MultinomialNB(),
+    "svm": LinearSVC(class_weight="balanced"),
+}
+
+for name, model in baselines.items():
+    pipe = Pipeline([("tfidf", vectorizer), ("clf", model)])
+    scores = cross_val_score(pipe, X_train, y_train, cv=5, scoring="f1_weighted")
+    print(name, scores.mean())
+```
+
+---
+
+### 8. Classification architecture
+
+For the main model I used BETO, a Spanish BERT model, fine-tuned on the anonymized complaints. The core challenge is the class imbalance described in section 4. Left uncorrected, the model converges to a solution that mostly predicts the majority class and looks fine on overall accuracy while missing the categories the office cares most about.
+
+To fix this, I compute class weights from the training distribution and feed them into a weighted cross entropy loss inside the Hugging Face Trainer:
+
+```python
+import torch
+from sklearn.utils.class_weight import compute_class_weight
+from transformers import Trainer
+
+class_weights = compute_class_weight(
+    class_weight="balanced",
+    classes=np.unique(y_train),
+    y=y_train,
+)
+class_weights = torch.tensor(class_weights, dtype=torch.float)
+
+class WeightedTrainer(Trainer):
+    def compute_loss(self, model, inputs, return_outputs=False, **kwargs):
+        labels = inputs.pop("labels")
+        outputs = model(**inputs)
+        logits = outputs.logits
+        loss_fct = torch.nn.CrossEntropyLoss(weight=class_weights.to(logits.device))
+        loss = loss_fct(logits, labels)
+        return (loss, outputs) if return_outputs else loss
+```
+
+For predicting both tema and subcategoria at once, there are two reasonable architectures. A multi-task model shares one BETO backbone with two classification heads, one per target, which is cheaper to run but couples both tasks together during training. A decoupled approach trains two independent models, one per target, which costs more compute but keeps errors in one task from leaking into the other. Given the office's current hardware, a single dedicated GPU workstation, the current implementation uses the multi-task setup and treats the decoupled version as a comparison to run once more compute is available.
+
+Each prediction returns a confidence breakdown across all categories, not just the top choice, so a prosecutor reviewing the output can see how close a call it was:
+
+```json
+{
+  "complaint_id": "uuid-12345",
+  "status": "pending_human_verification",
+  "classification": {
+    "tema": {
+      "ai_suggested": "mal_desempeno",
+      "human_validated": null,
+      "confidence": 0.87,
+      "all_scores": {
+        "mal_desempeno": 0.87,
+        "violencia_institucional": 0.06,
+        "conflicto_laboral": 0.04,
+        "otro": 0.03
+      }
+    }
+  }
+}
+```
+
+---
+
+### 9. Explainability and human in the loop
+
+No classification is final on its own. A prosecutor sees the anonymized text on one side and the AI's suggested category with its confidence breakdown on the other, and either approves it or overrides it with a dropdown. Every override is logged and saved into a growing table of human corrected labels, which becomes the training data for future fine-tuning rounds. This closes the loop between the model's mistakes and the next version of the model, without needing a full manual relabeling project every time performance needs to improve.
+
+This part of the design matters as much as the model itself. A classification system feeding decisions to a civilian oversight body cannot work as a black box, both because a wrong silent decision on a category like violencia institucional has real consequences, and because the office exists specifically to be more transparent than the institutions it investigates.
+
+---
+
+### 10. Deployment and data sovereignty
+
+The office required that no complaint text, raw or anonymized, ever reaches a server outside government infrastructure. The plan is to run the full pipeline on a dedicated GPU workstation with CUDA support inside the office's own building, or inside the province's government data center, with no dependency on external internet access once deployed. This ruled out anything relying on a cloud API for inference and shaped the choice of an open, locally hostable model like BETO instead of a hosted third party model.
+
+---
+
+### 11. Results
+
+These are partial results from the second month of the build plan, using a blind validation set of 2,189 complaints held out from training.
+
+- Global accuracy: 66%
+- Weighted average F1 score: 66%
+
+That weighted average sits below the 70% target for the project, but it hides real variation between categories. Mal desempeño, the majority class, reaches 87% precision, meaning the model is rarely wrong when it assigns that label. Violencia institucional, one of the rarer and more sensitive categories, reaches 77% recall, meaning most of the real cases in that category are being caught rather than missed. Violencia de género reaches a combined F1 score of 0.72, above the project's per class target.
+
+*Figure 2: Confusion matrix across the eight official categories*
+![Figure 2](https://nicolas-cozzarin.github.io/docs/assets/secfs-confusion-matrix.png)
+
+*Figure 3: Training loss versus validation loss over training steps*
+![Figure 3](https://nicolas-cozzarin.github.io/docs/assets/secfs-loss-curve.png)
+
+*Figure 4: Precision, recall, and F1 by category*
+![Figure 4](https://nicolas-cozzarin.github.io/docs/assets/secfs-metrics-per-class.png)
+
+---
+
+### 12. Discussion
+
+The loss curves in Figure 3 show the model overfitting. Training loss decreases steadily throughout, which means the model is learning the patterns in the training data, but validation loss reaches a minimum and then starts climbing again. This is the standard signature of a model that starts memorizing training examples instead of generalizing, and it is the next thing to address, most likely with earlier stopping, stronger regularization, or more training data for the rarer categories.
+
+The confusion matrix in Figure 2 shows most of its errors concentrated between violencia familiar and violencia de género, which makes sense given how much these two categories overlap in real complaints: a lot of gender based violence in this dataset happens inside a family context, and the line between the two categories is genuinely blurry in the source text, not just in the model's predictions.
+
+The gap between the 87% precision on mal desempeño and the lower scores on rarer categories is the class imbalance problem showing up exactly where you would expect it, even after weighting the loss function. Weighting the loss helps, but it does not manufacture data that is not there. The more direct fix is collecting more labeled examples for the categories that matter most for oversight, which are, unhelpfully, the categories that are rare precisely because they are rare in real life.
+
+---
+
+### 13. Legal and governance relevance
+
+This project sits at a point that comes up constantly in debates about AI and public institutions: how do you get the efficiency benefits of automated triage without creating a new black box inside a body that exists to hold power accountable. The anonymization requirement is not a technical afterthought, it comes directly from Argentina's Personal Data Protection Law (Law 25.326), and the human in the loop requirement comes directly from the office's own mandate under Law 10.731 to be more transparent, not less, than the institutions it investigates.
+
+The data sovereignty constraint, keeping everything on government hardware with no external API calls, is also not a default engineering choice. It is a governance decision made because the data involved is about serving police officers and vulnerable complainants, and the province was not willing to have that data processed on infrastructure it does not control. Building this pipeline meant making those trade offs concrete: choosing an open, locally hostable model over a more powerful hosted one, and building an audit log before building a dashboard.
+
+---
+
+### 14. Roadmap
+
+The specification for this system includes several pieces beyond what has been built so far:
+
+- A P1 to P5 urgency scale on top of the category classification, so the most time sensitive complaints surface first, not just the correctly categorized ones.
+- A bias monitoring dashboard that flags whether the model's predictions correlate with any demographic or geographic pattern in ways that should not affect a classification.
+- A defined mathematical threshold for acceptable PII leakage, so the anonymization audit has a hard number to test against instead of a qualitative pass or fail.
+- Export of the trained model to ONNX for faster CPU inference on the office's deployment hardware.
+- A documented REST API with OpenAPI/Swagger specs, so the office's existing intake system can call this pipeline directly instead of processing complaints through a separate interface.
+
+---
+
+### 15. References
+
+- Law 10.731, Province of Córdoba, Argentina. Creation of the disciplinary control system for the security forces.
+- Law 25.326, National Personal Data Protection Law, Argentina.
+- Prometea, Public Prosecutor's Office of the City of Buenos Aires (Ministerio Público Fiscal de la CABA).
+- PretorIA, Constitutional Court of Colombia.
+- Cañete, J. et al., "Spanish Pre-Trained BERT Model and Evaluation Data," PML4DC at ICLR, 2020. (BETO)
+- Wolf, T. et al., "Transformers: State-of-the-Art Natural Language Processing," Hugging Face, 2020.
+- Microsoft Presidio, data protection and anonymization SDK.
+- spaCy, es_core_news_lg Spanish language model.
+
+This project was developed during my internship as AI Product Owner and ML Developer with the Coordination of Information Registry and Analysis, part of the Security Forces Disciplinary Control System of the Province of Córdoba, Argentina, between November 2025 and June 2026. The results above are partial. The category classifier is in its second build phase, and deployment on government infrastructure is planned for the following phase. Because this system processes real, sensitive government data, the source code is not published publicly. This write-up describes the design and the methodology, not a redistributable implementation.
+
+---
+
+[< Blog Archive Archive of all previous blog posts](https://nicolas-cozzarin.github.io/archive.html "Blog Archive")Anonymized triage security forces
