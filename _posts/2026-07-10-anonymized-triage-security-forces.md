@@ -18,19 +18,19 @@ The second is volume and imbalance. Complaints do not arrive labeled. An operato
 
 **Goal:** build an NLP pipeline that anonymizes every incoming complaint before a human or a model ever reads the identifying details, then classifies the anonymized text into the office's official categories, so investigators spend their time making judgment calls instead of doing manual redaction and sorting.
 
-I worked on this as an AI Product Owner and ML Developer during an internship with the Coordination of Information Registry and Analysis, the area inside the office responsible for this data. I scoped the requirements directly with the legal and coordination staff, wrote the system specification, and built the model myself. What follows is both the design of the full system and the honest state of what has actually been measured so far, since the two are not the same thing and I think keeping them separate matters, especially for a system that exists to make an institution more transparent, not less.
+I worked on this as an AI Product Owner and ML Developer during an internship with the Coordination of Information Registry and Analysis, at the Security Forces Disciplinary Control System in Córdoba, Argentina, the area inside the office responsible for this data. I scoped the requirements directly with the legal and coordination staff, wrote the system specification, and built the model myself. What follows is both the design of the full system and the  state of what has  been measured.
 
 ---
 
 ### 2. Institutional context and related work
 
-Two existing systems shaped how I approached this project, and knowing them mattered before writing a line of code.
+Two existing systems shaped how I approached this project.
 
 **Prometea**, developed for the Public Prosecutor's Office of the City of Buenos Aires, uses predictive AI to read, classify, and triage judicial case files. It is the most cited precedent for AI assisted triage in the Argentine public sector, and it reports accuracy above 93 percent while keeping the process auditable. It is also the strongest local proof that this kind of delegation is politically and institutionally acceptable in Argentina, not just technically possible.
 
 **PretorIA**, used by the Constitutional Court of Colombia, applies NLP and transformer models to classify large volumes of tutela filings, the Colombian equivalent of a constitutional protection claim. It showed that transformer based models can handle the kind of dense, informal, legally sensitive text this project also has to deal with, and that a national high court was willing to put a transformer model in the loop of a process with direct consequences for citizens' rights.
 
-Neither system, as far as I could find in public documentation, describes in detail how it handles anonymization before classification. That is the part of this project I spent the most time on, and it is the part that makes the most sense to treat as its own problem rather than an afterthought bolted onto a classifier.
+Neither system, as far as I could find in public documentation, describes in detail how it handles anonymization before classification. That is the part of this project I spent the most time on, and it is the part that makes the most sense to treat as its own problem.
 
 ---
 
@@ -38,11 +38,11 @@ Neither system, as far as I could find in public documentation, describes in det
 
 **General objective:** reduce the time and error involved in receiving, protecting, and classifying complaints at the Coordination of Information Registry and Analysis, using an NLP pipeline.
 
-**Specific objectives, on a three month build plan:**
+**Specific objectives:**
 
-1. Anonymize every complaint automatically before analysis, removing names, ID numbers, and addresses. Target: a fully validated pipeline by the end of month 1.
-2. Classify each complaint into the office's eight official categories with a per class F1 score above 70 percent. Target: month 2. This is the objective I am currently working on, and the results in section 11 are partial.
-3. Cut the time it takes to route a new complaint to the right area, moving from manual triage to instant classification. Target: month 3.
+1. Anonymize every complaint automatically before analysis, removing names, ID numbers, and addresses. 
+2. Classify each complaint into the office's eight official categories with a per class F1 score above 70 percent. 
+3. Cut the time it takes to route a new complaint to the right area, moving from manual triage to instant classification.
 4. Keep all data inside government infrastructure. No complaint text or model artifact should touch an external server.
 5. Train the coordination staff to run the pipeline themselves after handover.
 
@@ -80,7 +80,7 @@ No role, including mine during development, has standing access to raw, un-anony
 
 ### 6. Anonymization pipeline
 
-Anonymization has to run before any human or any model sees the text, and it has to be irreversible, not just hidden behind a permission check. The pipeline runs in a fixed order, because each rule can create false positives for the rules after it if applied out of sequence: emails first, then account numbers, then phone numbers, then national ID numbers (DNI), then names, then addresses, then anything else spaCy's NER model can catch.
+Anonymization has to run before any human or any model sees the text, and it has to be irreversible. The pipeline runs in a fixed order, because each rule can create false positives for the rules after it if applied out of sequence: emails first, then account numbers, then phone numbers, then national ID numbers (DNI), then names, then addresses, then anything else spaCy's NER model can catch.
 
 {% highlight python %}
 import re
@@ -132,7 +132,7 @@ Once anonymized text is available, the goal is to predict tema and subcategoria 
 | 5 | BETO fine-tuning | Spanish BERT fine-tuned with class weighted loss |
 | 6 | Evaluation and comparison | Accuracy, F1, and confusion matrices side by side |
 
-**Baseline models.** Before touching a transformer, I set a floor with standard TF-IDF pipelines. If a simple linear model gets close to a fine-tuned BERT model on this data, that tells you something important: how much of the signal is really in the vocabulary versus how much the problem needs deeper contextual understanding.
+**Baseline models.** Before touching a transformer, I set a floor with standard TF-IDF pipelines. If a simple linear model gets close to a fine-tuned BERT model on this data, that tells  something important: how much of the signal is really in the vocabulary versus how much the problem needs deeper contextual understanding.
 
 {% highlight python %}
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -216,7 +216,7 @@ Every prediction returns a confidence breakdown across all categories, not just 
 
 No classification is final on its own. A prosecutor sees the anonymized text on one side and the AI's suggested category with its confidence breakdown on the other, and either approves it or overrides it with a dropdown. Every override is logged and saved into a growing table of human corrected labels, which becomes the training data for future fine-tuning rounds. This closes the loop between the model's mistakes and the next version of the model, without needing a full manual relabeling project every time performance needs to improve.
 
-This part of the design matters as much as the model itself, maybe more. A classification system feeding decisions to a civilian oversight body cannot work as a black box, for two separate reasons: a wrong, silent decision on a category like violencia institucional has real consequences for real people, and the office exists specifically to be more transparent than the institutions it investigates. A triage tool that cannot explain itself would work against the exact purpose the office was created for.
+This part of the design matters as much as the model itself. A classification system feeding decisions to a civilian oversight body cannot work as a black box, for two separate reasons: a wrong, silent decision on a category like violencia institucional has real consequences for real people, and the office exists specifically to be more transparent than the institutions it investigates. A triage tool that cannot explain itself would work against the exact purpose the office was created for.
 
 ---
 
@@ -228,7 +228,7 @@ The office required that no complaint text, raw or anonymized, ever reaches a se
 
 ### 11. Results
 
-These are partial results from the second month of the build plan, using a blind validation set of 2,189 complaints held out from training.
+These are partial results , using a blind validation set of 2,189 complaints held out from training.
 
 - Global accuracy: 66 percent
 - Weighted average F1 score: 66 percent
@@ -260,7 +260,7 @@ The gap between the 87 percent precision on mal desempeño and the lower scores 
 
 This project sits inside a question that comes up constantly in debates about AI and public institutions: how do you get the efficiency benefits of automated triage without creating a new black box inside a body that exists to hold power accountable. Every major design choice in this system, the anonymization requirement, the mandatory human review, the ban on external servers, traces back to that question rather than to a purely technical preference.
 
-The anonymization requirement comes directly from Argentina's Personal Data Protection Law (Law 25.326). The human in the loop requirement comes directly from the office's own mandate under Law 10.731 to be more transparent, not less, than the institutions it investigates. Neither of these is a nice to have feature layered on top of a working classifier, they are the conditions the classifier had to be built around from the first design meeting.
+The anonymization requirement comes directly from Argentina's Personal Data Protection Law (Law 25.326). The human in the loop requirement comes directly from the office's own mandate under Law 10.731 to be more transparent, than the institutions it investigates. Neither of these is a nice to have feature layered on top of a working classifier, they are the conditions the classifier had to be built around from the first design meeting.
 
 It is worth putting this in a wider context. The European Union's AI Act classifies certain AI systems used in law enforcement, including systems used to evaluate the reliability of evidence or to support profiling in an investigation, as high risk, and requires exactly the kind of human oversight and audit logging this system was built with from the start (Article 14, and Annex III of the Act). Argentina is not bound by that regulation, and this system is not the same category of tool the Act describes. But the fact that a separate legal framework, written independently and for a different jurisdiction, converges on the same requirements this project already had, human review of every decision, a documented audit trail, no silent automation, suggests these are not arbitrary choices specific to one province's law. They look more like a baseline that shows up wherever AI is used inside state power over individuals, regardless of which government is writing the rules.
 
@@ -270,7 +270,7 @@ The data sovereignty constraint, keeping everything on government hardware with 
 
 ### 14. Roadmap
 
-The specification for this system includes several pieces beyond what has been built so far:
+The specification for this system includes several pieces:
 
 - A P1 to P5 urgency scale on top of the category classification, so the most time sensitive complaints surface first, not just the correctly categorized ones.
 - A bias monitoring dashboard that flags whether the model's predictions correlate with any demographic or geographic pattern in ways that should not affect a classification.
@@ -292,4 +292,4 @@ The specification for this system includes several pieces beyond what has been b
 - Microsoft Presidio, data protection and anonymization SDK.
 - spaCy, es_core_news_lg Spanish language model.
 
-This project was developed during my internship as AI Product Owner and ML Developer with the Coordination of Information Registry and Analysis, part of the Security Forces Disciplinary Control System of the Province of Córdoba, Argentina, between November 2025 and June 2026. The results above are partial. The category classifier is in its second build phase, and deployment on government infrastructure is planned for the following phase. Because this system processes real, sensitive government data, the source code is not published publicly. This write-up describes the design and the methodology, not a redistributable implementation.
+This project was developed during my internship as AI Product Owner and ML Developer with the Coordination of Information Registry and Analysis, part of the Security Forces Disciplinary Control System of the Province of Córdoba, Argentina, between November 2025 and June 2026. The results above are partial. The category classifier is in its second build phase, and deployment on government infrastructure is planned for the following phase. Because this system processes real, sensitive government data, the source code is not published publicly. This article describes the design and the methodology.
