@@ -85,7 +85,9 @@ layout: base
       <p class="meta">{{ w.context }}</p>
       <p>{{ w.text }}</p>
       <p class="result"><strong>{{ t.labels.results }}</strong> {{ w.result }}</p>
+      {%- if w.stack %}
       <p class="meta"><strong>{{ t.labels.stack }}</strong> {{ w.stack }}</p>
+      {%- endif %}
       {%- if w.note %}
       <p class="meta">{{ w.note }}</p>
       {%- endif %}

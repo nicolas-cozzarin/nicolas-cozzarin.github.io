@@ -1,6 +1,6 @@
 {%- assign share_url = page.url | absolute_url | url_encode -%}
 <p class="share">
-  Share:
+  {{ t.post.share }}
   <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}">LinkedIn</a>
   <a href="mailto:?subject={{ page.title | url_encode }}&amp;body={{ share_url }}">Email</a>
 </p>

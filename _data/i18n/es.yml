@@ -39,6 +39,13 @@ about:
   - "Hoy mi foco está en el cumplimiento normativo de la IA, la ética y el alineamiento de los modelos, y en ayudar a las empresas a integrar IA y automatización en sus procesos, donde realmente mejoran el trabajo."
 
 work:
+  - title: "Venta de criptomonedas en sucursales"
+    context: "Union of Financial Corners, Ginebra"
+    text: "Los clientes pagan en efectivo en la ventanilla y reciben Bitcoin o Ethereum en su propia wallet, o venden cripto a cambio de efectivo. Lideré el lanzamiento: los requerimientos, la elección del socio cripto suizo, el backlog con los desarrolladores externos, las pruebas, los procedimientos de sucursal y la capacitación del personal."
+    result: "Funciona en todas las sucursales de Ginebra, Lausana, Berna y Zúrich. Los clientes vuelven seguido, teníamos todos los documentos que pidieron en las auditorías, y el servicio se está extendiendo a quioscos de socios en toda Suiza."
+    links:
+      - label: "Leer el artículo"
+        url: "/2026/09/28/vender-bitcoin-en-ventanilla.html"
   - title: "Clasificación anonimizada de denuncias para el control policial"
     context: "Gobierno de Córdoba, Argentina, 2025–2026"
     text: "Un pipeline de NLP que quita nombres, números de documento y direcciones de las denuncias ciudadanas antes de que alguien las lea, y después sugiere una de las ocho categorías oficiales del organismo. Un fiscal aprueba o corrige cada sugerencia."
@@ -59,10 +66,18 @@ work:
       - label: "Abrir el notebook"
         url: "https://colab.research.google.com/drive/1vRHQOD1OUOzySDsNfvsINIWz_LFxucYV?usp=sharing"
 
+post:
+  glance: "En resumen"
+  share: "Compartir:"
+  also_in: "También disponible en:"
+  all_posts: "Todos los artículos"
+  home: "Volver al inicio"
+  date_format: "%d/%m/%Y"
+
 labels:
   results: "Resultados:"
   stack: "Tecnologías:"
-  all_posts: "Todos los artículos (en inglés)"
+  all_posts: "Todos los artículos"
 
 experience:
   - role: "Coordinador de Producto y Proyectos IT (rol de Product Owner)"

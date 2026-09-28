@@ -427,3 +427,10 @@ figure.highlight { margin: 1.25rem 0; }
 .courses h3 { font-size: 1rem; }
 .courses .meta { margin: 0.05rem 0 0.2rem !important; }
 .courses p { margin: 0 !important; }
+
+/* links to other language versions of a post */
+.translations { color: var(--slate); font-size: 0.95rem; margin: 0.5rem 0 0; }
+.translations a { margin-left: 0.35rem; }
+.post-list .translations { font-size: 0.9rem; }
+.post-nav a { font-weight: 600; }
+.post-list .translations a { font-size: inherit; font-weight: 500; }
