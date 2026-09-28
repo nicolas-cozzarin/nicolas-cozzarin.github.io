@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-{%- assign t = site.data.i18n[page.lang] %}
-<html lang="{{ page.lang | default: 'en' }}">
+{%- assign lang = page.lang | default: 'en' %}
+{%- assign t = site.data.i18n[lang] %}
+<html lang="{{ lang }}">
 {% include head.html %}
 <body>
   <header class="topbar">
@@ -10,7 +11,7 @@
       {% include lang-switch.html %}
       {%- else %}
       <a class="site-name" href="{{ '/' | relative_url }}">Nicolas Cozzarin</a>
-      <a class="topbar-link" href="{{ '/archive.html' | relative_url }}">All posts</a>
+      <a class="topbar-link" href="{{ '/archive.html' | relative_url }}">{{ t.post.all_posts }}</a>
       {%- endif %}
     </div>
   </header>

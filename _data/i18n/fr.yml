@@ -39,6 +39,13 @@ about:
   - "Je me concentre aujourd'hui sur la conformité de l'IA, l'éthique et l'alignement des modèles, et sur l'intégration de l'IA et de l'automatisation dans les entreprises, là où elles améliorent vraiment le travail."
 
 work:
+  - title: "Vente de cryptomonnaies en agence"
+    context: "Union of Financial Corners, Genève"
+    text: "Les clients paient en espèces au guichet et reçoivent du Bitcoin ou de l'Ethereum sur leur propre wallet, ou vendent de la crypto contre des espèces. J'ai piloté le lancement : les besoins, le choix du partenaire crypto suisse, le backlog avec les développeurs externes, les tests, les procédures en agence et la formation du personnel."
+    result: "En service dans toutes les agences de Genève, Lausanne, Berne et Zurich. Les clients reviennent régulièrement, nous avions tous les documents demandés lors des audits, et le service est en cours d'extension à des bornes partenaires dans toute la Suisse."
+    links:
+      - label: "Lire l'article"
+        url: "/2026/09/28/vendre-du-bitcoin-au-guichet.html"
   - title: "Tri anonymisé des plaintes pour le contrôle de la police"
     context: "Gouvernement de Córdoba, Argentine, 2025–2026"
     text: "Un pipeline NLP qui retire les noms, les numéros d'identité et les adresses des plaintes de citoyens avant que quiconque ne les lise, puis propose l'une des huit catégories officielles de l'organisme. Un procureur valide ou corrige chaque proposition."
@@ -59,10 +66,18 @@ work:
       - label: "Ouvrir le notebook"
         url: "https://colab.research.google.com/drive/1vRHQOD1OUOzySDsNfvsINIWz_LFxucYV?usp=sharing"
 
+post:
+  glance: "En bref"
+  share: "Partager :"
+  also_in: "Aussi disponible en :"
+  all_posts: "Tous les articles"
+  home: "Retour à l'accueil"
+  date_format: "%d/%m/%Y"
+
 labels:
   results: "Résultats :"
   stack: "Technologies :"
-  all_posts: "Tous les articles (en anglais)"
+  all_posts: "Tous les articles"
 
 experience:
   - role: "Coordinateur Produit et Projets IT (rôle de Product Owner)"

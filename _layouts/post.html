@@ -1,18 +1,33 @@
 ---
 layout: base
 ---
+{%- assign lang = page.lang | default: 'en' %}
+{%- assign t = site.data.i18n[lang] %}
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <h1 itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: t.post.date_format }}</time>
       {%- if page.author %}, <span itemprop="author">{{ page.author }}</span>{% endif %}
     </p>
+    {%- if page.ref %}
+    {%- assign versions = site.posts | where: "ref", page.ref %}
+    {%- if versions.size > 1 %}
+    <p class="translations">{{ t.post.also_in }}
+      {%- for l in site.data.languages %}
+      {%- for v in versions %}
+      {%- assign vlang = v.lang | default: 'en' %}
+      {%- if vlang == l.code and v.url != page.url %} <a href="{{ v.url | relative_url }}" lang="{{ vlang }}" hreflang="{{ vlang }}">{{ l.name }}</a>{% endif %}
+      {%- endfor %}
+      {%- endfor %}
+    </p>
+    {%- endif %}
+    {%- endif %}
   </header>
 
   {%- if page.glance %}
   <aside class="glance" aria-labelledby="glance-title">
-    <h2 id="glance-title">At a glance</h2>
+    <h2 id="glance-title">{{ t.post.glance }}</h2>
     <dl>
       {%- for g in page.glance %}
       <dt>{{ g.label }}</dt>

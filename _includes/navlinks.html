@@ -1,12 +1,6 @@
-<nav class="post-nav" aria-label="More posts">
-  {%- if page.previous.url %}
-  <a class="prev" href="{{ page.previous.url | relative_url }}"><span class="post-nav-label">Previous post</span>{{ page.previous.title }}</a>
-  {%- else %}
-  <span></span>
-  {%- endif %}
-  {%- if page.next.url %}
-  <a class="next" href="{{ page.next.url | relative_url }}"><span class="post-nav-label">Next post</span>{{ page.next.title }}</a>
-  {%- else %}
-  <a class="next" href="{{ '/' | relative_url }}"><span class="post-nav-label">Back to</span>Nicolas Cozzarin's homepage</a>
-  {%- endif %}
+{%- assign home_url = '/' %}
+{%- for l in site.data.languages %}{% if l.code == lang %}{% assign home_url = l.url %}{% endif %}{% endfor %}
+<nav class="post-nav" aria-label="{{ t.post.all_posts }}">
+  <a class="prev" href="{{ '/archive.html' | relative_url }}">{{ t.post.all_posts }}</a>
+  <a class="next" href="{{ home_url | relative_url }}">{{ t.post.home }}</a>
 </nav>

@@ -2,11 +2,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
-  {%- if page.lang %}
+  {%- if page.layout == 'profile' %}
   {%- for l in site.data.languages %}
   <link rel="alternate" hreflang="{{ l.code }}" href="{{ l.url | absolute_url }}">
   {%- endfor %}
   <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+  {%- elsif page.ref %}
+  {%- assign versions = site.posts | where: "ref", page.ref %}
+  {%- for v in versions %}
+  <link rel="alternate" hreflang="{{ v.lang | default: 'en' }}" href="{{ v.url | absolute_url }}">
+  {%- endfor %}
   {%- endif %}
   <link rel="icon" href="{{ '/docs/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="icon" href="{{ '/docs/assets/favicon-32.png' | relative_url }}" sizes="32x32" type="image/png">

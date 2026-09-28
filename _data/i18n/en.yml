@@ -39,6 +39,13 @@ about:
   - "My current focus is AI compliance, AI ethics and alignment, and helping companies bring AI and automation into their processes where it really makes their work better."
 
 work:
+  - title: "Crypto sales in Swiss branches"
+    context: "Union of Financial Corners, Geneva"
+    text: "Clients pay cash at the counter and receive Bitcoin or Ethereum in their own wallet, or sell crypto for cash. I led the launch: the requirements, the choice of the Swiss crypto partner, the backlog with the external developers, the testing, the branch procedures and the staff training."
+    result: "Live in all branches in Geneva, Lausanne, Bern and Zurich. Clients come back regularly, we had every document the auditors asked for, and the service is being extended to partner kiosks across Switzerland."
+    links:
+      - label: "Read the write-up"
+        url: "/2026/09/28/selling-bitcoin-over-the-counter.html"
   - title: "Anonymised complaint triage for police oversight"
     context: "Government of Córdoba, Argentina, 2025–2026"
     text: "An NLP pipeline that removes names, ID numbers and addresses from citizen complaints before anyone reads them, and then suggests one of the office's eight official categories. A prosecutor approves or changes each suggestion."
@@ -58,6 +65,14 @@ work:
         url: "/2025/07/06/justice-inequality-simulator.html"
       - label: "Open the notebook"
         url: "https://colab.research.google.com/drive/1vRHQOD1OUOzySDsNfvsINIWz_LFxucYV?usp=sharing"
+
+post:
+  glance: "At a glance"
+  share: "Share:"
+  also_in: "Also available in:"
+  all_posts: "All posts"
+  home: "Back to the homepage"
+  date_format: "%B %-d, %Y"
 
 labels:
   results: "Results:"
