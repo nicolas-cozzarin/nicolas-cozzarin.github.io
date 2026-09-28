@@ -1,0 +1,13 @@
+# Language switcher. Each homepage sets `lang:` in its front matter.
+- code: en
+  label: EN
+  name: English
+  url: /
+- code: fr
+  label: FR
+  name: Français
+  url: /fr/
+- code: es
+  label: ES
+  name: Español
+  url: /es/

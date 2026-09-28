@@ -1,39 +1,46 @@
 title: "Nicolas Cozzarin"
-description: "A more detailed site on me." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "Product Owner with 10 years in tech, working on AI and data products in finance and the public sector."
+url: "https://nicolas-cozzarin.github.io"
+baseurl: ""
+lang: en
+locale: en_GB
+author: "Nicolas Cozzarin"
 
-# Email / Social media user names used by the minima theme:
-# All of these are optional and can be removed or commented out
+# Used in links across the site
 email: "nicolasjcozzarin@gmail.com"
-#twitter_username: "earthlingnic"
 github_username: "nicolas-cozzarin"
 linkedin_username: "ncozzarin"
-#facebook_username: username
-#flickr_username: username
-#instagram_username: username
-#pinterest_username: username
-#youtube_username: username
-#googleplus_username: +username
+
+# Search-engine and link-preview settings (jekyll-seo-tag)
+social:
+  name: "Nicolas Cozzarin"
+  links:
+    - "https://www.linkedin.com/in/ncozzarin"
+    - "https://github.com/nicolas-cozzarin"
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 theme: "minima"
 
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
-    
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-
-titles_from_headings:
-  strip_title: true
-  collections: true
+  - jekyll-seo-tag
 
 defaults:
   - scope:
       path: ""
+    values:
+      image: "/docs/assets/og-image.png"
+  - scope:
+      path: ""
       type: post
     values:
+      layout: post
       tags: Other
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

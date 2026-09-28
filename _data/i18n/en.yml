@@ -1,0 +1,198 @@
+# English content for the homepage. Edit text here; the layout lives in _layouts/profile.html.
+lang: en
+title: "Nicolas Cozzarin – AI Product Owner"
+description: "Product Owner with 10 years in tech, working on AI and data products in finance and the public sector. Based in France, open to relocation. EN, FR, ES, DE."
+language_label: "Language"
+
+cv:
+  label: "Download CV (PDF)"
+  file: "/docs/assets/CV_COZZARIN_EN.pdf"
+  download_name: "Nicolas_Cozzarin_CV_EN.pdf"
+
+links:
+  linkedin: "LinkedIn"
+  email: "Email"
+  github: "GitHub"
+
+hero:
+  headline: "AI Product Owner for regulated industries"
+  pitch: "I have 10 years of experience in tech, from backend development and QA to product management. Today I work on AI and data products in finance and the public sector, where data protection and compliance are part of the job."
+  facts:
+    - "Based in France, open to relocation (Switzerland, France, Spain) or remote"
+    - "EU citizen, can work in Switzerland without sponsorship"
+    - "English, French, Spanish, German"
+
+sections:
+  about: "About"
+  work: "Selected work"
+  experience: "Experience"
+  education: "Education"
+  research: "Research interests"
+  volunteering: "Leadership and volunteering"
+  skills: "Skills and languages"
+  courses: "Courses and certifications"
+  contact: "Contact"
+
+about:
+  - "I'm a Product Owner with 10 years of experience in backend development, QA, functional analysis and product management. In the last few years I have focused on AI and data products."
+  - "In Geneva I worked at Union of Financial Corners, a money transfer and currency exchange company, where I was product owner for three products, among them crypto purchase in the branches and an online exchange platform. For my degree internship I built an NLP system for the office that investigates police misconduct in Córdoba, Argentina. It removes personal data from each complaint and suggests a category, and a prosecutor makes the final decision."
+  - "My current focus is AI compliance, AI ethics and alignment, and helping companies bring AI and automation into their processes where it really makes their work better."
+
+work:
+  - title: "Anonymised complaint triage for police oversight"
+    context: "Government of Córdoba, Argentina, 2025–2026"
+    text: "An NLP pipeline that removes names, ID numbers and addresses from citizen complaints before anyone reads them, and then suggests one of the office's eight official categories. A prosecutor approves or changes each suggestion."
+    result: "On a blind test set of 2,189 complaints, 77% recall on institutional violence and an F1 score of 0.72 on gender-based violence. Everything runs on the office's own hardware."
+    stack: "Python, PyTorch, BETO (Spanish BERT), spaCy, Microsoft Presidio"
+    note: "The code is not public because the system works with government data."
+    links:
+      - label: "Read the write-up"
+        url: "/2026/07/10/anonymized-triage-security-forces.html"
+  - title: "Justice Inequality Simulator"
+    context: "Deep Generative Models course, Hochschule Furtwangen, 2025"
+    text: "A way to test if a model that predicts court outcomes is biased. I change one sensitive detail in the case description, like gender or ethnicity, and measure how much the prediction moves."
+    result: "Test accuracy of 0.78 and ROC-AUC of 0.84. In several cases, swapping a sensitive word moved the predicted probability by 0.10 to 0.25."
+    stack: "Python, Legal-BERT, PyTorch, scikit-learn"
+    links:
+      - label: "Read the write-up"
+        url: "/2025/07/06/justice-inequality-simulator.html"
+      - label: "Open the notebook"
+        url: "https://colab.research.google.com/drive/1vRHQOD1OUOzySDsNfvsINIWz_LFxucYV?usp=sharing"
+
+labels:
+  results: "Results:"
+  stack: "Stack:"
+  all_posts: "All posts"
+
+experience:
+  - role: "IT Product & Project Coordinator (Product Owner role)"
+    org: "Union of Financial Corners SA, Geneva, Switzerland"
+    dates: "Oct 2022 – Oct 2025"
+    context: "Money transfer and currency exchange company with branches in six Swiss cities, working under FINMA and anti-money-laundering rules."
+    bullets:
+      - "Product owner for three products: crypto purchase in the branches, an online currency exchange platform, and an improved Western Union money transfer flow for branch clients."
+      - "Coordinated a team of about 10 developers and external suppliers. I wrote the user stories and acceptance criteria and prioritised the backlog."
+      - "Ran quality and compliance tests on new products, services and processes before they went live, checking them against anti-money-laundering and operational requirements."
+      - "Coordinated suppliers, subcontractors and communication agencies for the launches, and managed SEO and social media."
+  - role: "AI Product Owner & ML Developer"
+    org: "Security Forces Disciplinary Control System, Government of Córdoba, Argentina"
+    dates: "Nov 2025 – Jun 2026"
+    context: "Degree internship, remote and part-time, with the Coordination of Information Registry and Analysis."
+    bullets:
+      - "Owned the NLP system from start to finish: gathered the requirements with the legal staff, wrote the specification, defined the roadmap and built the model."
+      - "Designed the anonymisation pipeline (regex, spaCy NER and Microsoft Presidio) so that no personal data reaches training or inference, in line with GDPR and data protection law."
+      - "Fine-tuned BETO (Spanish BERT) with a class-weighted loss after testing TF-IDF baselines. On a blind test set of 2,189 complaints it reached 77% recall on institutional violence and an F1 score of 0.72 on gender-based violence."
+      - "Designed the review step with role-based access and an audit log: prosecutors see the confidence for each category and approve or override every suggestion, and their corrections are used to retrain the model."
+  - role: "Functional Analyst"
+    org: "FlyDevs, USA (remote)"
+    dates: "Feb 2019 – Dec 2022"
+    bullets:
+      - "Translated business requirements into functional specifications and user stories for the development teams."
+      - "Worked as the link between stakeholders, UI/UX, QA and engineering during the whole product delivery."
+      - "Facilitated the Agile ceremonies and helped unblock the team when delivery got stuck."
+      - "Helped streamline the release process by aligning development and CI/CD practices with business priorities."
+  - role: "Lead QA Analyst"
+    org: "Charly Inc., Canada (remote)"
+    dates: "Mar 2017 – Dec 2019"
+    bullets:
+      - "Led quality assurance on several software projects running at the same time."
+      - "Defined the test strategies and coordinated a distributed QA team to make sure functional and technical requirements were met."
+      - "Set up the processes for functional, integration and regression testing."
+      - "Kept the test documentation and defect tracking up to date, and improved how we detected defects before release."
+  - role: "Python Backend Developer (Odoo)"
+    org: "E-MIPS, Buenos Aires, Argentina"
+    dates: "Feb 2015 – Jun 2016"
+    bullets:
+      - "Developed and customised Odoo modules in Python to automate business processes such as CRM, inventory and accounting."
+      - "Integrated Odoo with external applications and APIs, including ERP systems and payment gateways."
+      - "Documented the solutions and used Git and Docker throughout development."
+      - "Worked in Agile delivery cycles to maintain and improve the applications."
+
+education:
+  - title: "BSc in Artificial Intelligence and Robotics"
+    org: "Universidad Siglo XXI, Argentina"
+    dates: "2021 – 2026"
+    details: "Grade 8.40/10, diploma expected in December 2026. Specialisation in artificial intelligence, data science and robotics, with coursework in machine learning, deep learning and generative AI."
+  - title: "Exchange in AI and Robotics (Master's-level courses)"
+    org: "Hochschule Furtwangen University, Germany"
+    dates: "Nov 2024 – Nov 2025"
+    details: "Courses in machine learning, deep generative models, computer vision, robotics and microcontroller systems, with a lot of hands-on work in Jupyter. I also passed the German B2 exam."
+  - title: "Electronics Technician Diploma"
+    org: "Instituto Técnico Industrial San Judas Tadeo, Argentina"
+    dates: "2009 – 2015"
+    details: "A base in electronics, applied systems and hardware, and a very project-based way of solving problems."
+
+research:
+  intro: "These are the topics I want to keep working on, at work and in a master's."
+  items:
+    - title: "AI in public institutions"
+      text: "I want to understand how courts, regulators and oversight bodies can use AI without it becoming a new black box. In Córdoba that meant a person reviewing every decision, an audit log and keeping the data on government hardware. The EU AI Act asks for many of the same things for high-risk systems."
+    - title: "Bias, one case at a time"
+      text: "In the Justice Inequality Simulator I tested bias by changing one detail in a case and checking if the prediction changed. I like this kind of test because anyone can run it on a system they don't control, including regulators and journalists."
+    - title: "AI and animals"
+      text: "How AI is used today in factory farming, how it could help reduce wild animal suffering, and how speciesist attitudes in frontier AI systems could affect animals now and in the future. I'm also interested in how AI tools can help animal advocacy. It is an important topic that is still barely discussed."
+
+volunteering:
+  - role: "AI Enabler, Hack the Fork"
+    place: "Paris"
+    dates: "2026"
+    text: "I designed the AI framework for the hackathon and helped test the AWS environment. During the event I mentor the teams on how to scope their AI projects."
+  - role: "Founder and organiser, We The Free"
+    place: "Angoulême"
+    dates: "2026 – present"
+    text: "I founded and run the local chapter of an animal rights group. I manage the materials budget, organise outreach and social events, and recruit new activists in the area."
+  - role: "Logistics, Vegan Campout Argentina"
+    place: "Buenos Aires"
+    dates: "2021 – 2022"
+    text: "I coordinated stall logistics and suppliers for an event with 2,000 attendees, helped with the programme, and managed a team of 20 volunteers on the day."
+  - role: "DevOps Volunteer, Difusión V and Voicot"
+    place: "Remote"
+    dates: "2019 – 2022"
+    text: "I set up and maintained the hosting and CI/CD for the organisation's three websites."
+
+skills:
+  - label: "Product"
+    text: "Agile (Scrum, Kanban), backlog management, user stories, requirements, roadmapping, stakeholder management, Jira, Confluence"
+  - label: "AI and data"
+    text: "Python, PyTorch, Hugging Face Transformers, scikit-learn, pandas, spaCy, NLP (classification, NER), SQL, LLM APIs (OpenAI, Anthropic), RAG, AI agents, local LLMs"
+  - label: "Governance"
+    text: "Data protection by design, anonymisation and pseudonymisation, GDPR, EU AI Act (human oversight), AML and FINMA compliance, audit logging"
+  - label: "Engineering"
+    text: "Docker, CI/CD, Git, REST APIs, React, TypeScript"
+  - label: "Languages"
+    text: "Spanish (native), English (C1), French (C1), German (B2), Chinese (HSK 3)"
+
+courses:
+  - title: "Future of AI"
+    org: "BlueDot Impact, Sep 2026"
+    text: "An introduction to what AI can do today, where it is going over the next decade, and how to start contributing to a better future."
+  - title: "Introductory workshops on effective altruism"
+    org: "Altruisme Efficace France, 2026"
+    text: "High-impact strategies and evidence-based approaches to global problems."
+  - title: "Mendix Developer Certificate"
+    org: "Mendix, Apr 2025, credential ID 90924"
+    text: "Certification in fast, scalable low-code application development."
+  - title: "AML Training Module"
+    org: "Swiss financial compliance"
+    text: "Training on anti-money-laundering regulations and financial compliance."
+  - title: "Build ReactJS Applications"
+    org: "Udemy"
+    text: "Hands-on development of dynamic, component-based front-end web applications."
+  - title: "Web Development"
+    org: "Coderhouse, Jun 2020"
+    text: "Fundamentals of modern web architecture, responsive design and deployment."
+  - title: "Backlink Management Course with Greg Gifford"
+    org: "Semrush"
+    text: "SEO, link-building and optimising an online presence."
+  - title: "Advanced C++ Programming and Modern Practices"
+    org: "Programming course"
+    text: "Memory management, object-oriented design and high-performance code."
+  - title: "Hardware Description Language for VHDL Development"
+    org: "2017"
+    text: "Programming and logic design for complex digital circuits and FPGA integration."
+  - title: "University Course in Microelectronics"
+    org: "2016"
+    text: "Design, fabrication principles and practical uses of microelectronic systems."
+
+contact:
+  text: "The best way to reach me is by email. References are available on request."

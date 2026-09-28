@@ -1,0 +1,170 @@
+---
+layout: base
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+<section class="hero">
+  <img class="portrait" src="{{ '/docs/assets/portrait.jpg' | relative_url }}" alt="Nicolas Cozzarin" width="480" height="480">
+  <div class="hero-text">
+    <h1>Nicolas Cozzarin</h1>
+    <p class="headline">{{ t.hero.headline }}</p>
+    <p class="pitch">{{ t.hero.pitch }}</p>
+    <div class="actions">
+      <a class="button" href="{{ t.cv.file | relative_url }}" download="{{ t.cv.download_name }}">{{ t.cv.label }}</a>
+      <a class="action-link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">{{ t.links.linkedin }}</a>
+      <a class="action-link" href="mailto:{{ site.email }}">{{ t.links.email }}</a>
+      <a class="action-link" href="https://github.com/{{ site.github_username }}">{{ t.links.github }}</a>
+    </div>
+    <ul class="facts">
+      {%- for f in t.hero.facts %}
+      <li>{{ f }}</li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="about">
+  <h2>{{ t.sections.about }}</h2>
+  <div class="block-body">
+    {%- for p in t.about %}
+    <p>{{ p }}</p>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="block" id="experience">
+  <h2>{{ t.sections.experience }}</h2>
+  <div class="block-body">
+    <ol class="entries">
+      {%- for e in t.experience %}
+      <li class="entry">
+        <div class="entry-head">
+          <h3>{{ e.role }}</h3>
+          <span class="dates">{{ e.dates }}</span>
+        </div>
+        <p class="org">{{ e.org }}</p>
+        {%- if e.context %}
+        <p class="meta">{{ e.context }}</p>
+        {%- endif %}
+        <ul>
+          {%- for b in e.bullets %}
+          <li>{{ b }}</li>
+          {%- endfor %}
+        </ul>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="education">
+  <h2>{{ t.sections.education }}</h2>
+  <div class="block-body">
+    <ol class="entries">
+      {%- for e in t.education %}
+      <li class="entry">
+        <div class="entry-head">
+          <h3>{{ e.title }}</h3>
+          <span class="dates">{{ e.dates }}</span>
+        </div>
+        <p class="org">{{ e.org }}</p>
+        {%- if e.details %}
+        <p class="meta">{{ e.details }}</p>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="work">
+  <h2>{{ t.sections.work }}</h2>
+  <div class="block-body">
+    {%- for w in t.work %}
+    <article class="work">
+      <h3>{{ w.title }}</h3>
+      <p class="meta">{{ w.context }}</p>
+      <p>{{ w.text }}</p>
+      <p class="result"><strong>{{ t.labels.results }}</strong> {{ w.result }}</p>
+      <p class="meta"><strong>{{ t.labels.stack }}</strong> {{ w.stack }}</p>
+      {%- if w.note %}
+      <p class="meta">{{ w.note }}</p>
+      {%- endif %}
+      <p class="work-links">
+        {%- for l in w.links %}
+        <a href="{{ l.url | relative_url }}">{{ l.label }}</a>
+        {%- endfor %}
+      </p>
+    </article>
+    {%- endfor %}
+    <p class="more"><a href="{{ '/archive.html' | relative_url }}">{{ t.labels.all_posts }}</a></p>
+  </div>
+</section>
+
+<section class="block" id="research">
+  <h2>{{ t.sections.research }}</h2>
+  <div class="block-body">
+    <p>{{ t.research.intro }}</p>
+    <dl class="research">
+      {%- for r in t.research.items %}
+      <dt>{{ r.title }}</dt>
+      <dd>{{ r.text }}</dd>
+      {%- endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="block" id="volunteering">
+  <h2>{{ t.sections.volunteering }}</h2>
+  <div class="block-body">
+    <ol class="entries compact">
+      {%- for v in t.volunteering %}
+      <li class="entry">
+        <div class="entry-head">
+          <h3>{{ v.role }}</h3>
+          <span class="dates">{{ v.dates }}</span>
+        </div>
+        <p class="meta">{{ v.place }}</p>
+        <p>{{ v.text }}</p>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="skills">
+  <h2>{{ t.sections.skills }}</h2>
+  <div class="block-body">
+    <dl class="skills">
+      {%- for s in t.skills %}
+      <dt>{{ s.label }}</dt>
+      <dd>{{ s.text }}</dd>
+      {%- endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="block" id="courses">
+  <h2>{{ t.sections.courses }}</h2>
+  <div class="block-body">
+    <ul class="courses">
+      {%- for c in t.courses %}
+      <li>
+        <h3>{{ c.title }}</h3>
+        <p class="meta">{{ c.org }}</p>
+        <p>{{ c.text }}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="contact">
+  <h2>{{ t.sections.contact }}</h2>
+  <div class="block-body">
+    <p>{{ t.contact.text }}</p>
+    <p class="contact-links">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">linkedin.com/in/{{ site.linkedin_username }}</a>
+    </p>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{%- assign t = site.data.i18n[page.lang] %}
+<html lang="{{ page.lang | default: 'en' }}">
+{% include head.html %}
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      {%- if page.layout == 'profile' %}
+      <span class="topbar-spacer"></span>
+      {% include lang-switch.html %}
+      {%- else %}
+      <a class="site-name" href="{{ '/' | relative_url }}">Nicolas Cozzarin</a>
+      <a class="topbar-link" href="{{ '/archive.html' | relative_url }}">All posts</a>
+      {%- endif %}
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>Nicolas Cozzarin</span>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">LinkedIn</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </div>
+  </footer>
+</body>
+</html>

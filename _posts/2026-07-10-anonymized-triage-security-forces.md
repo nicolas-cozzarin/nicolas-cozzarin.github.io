@@ -1,11 +1,22 @@
 ---
-title: " An Anonymized NLP Pipeline for Police Disciplinary Oversight"
+title: "Who Watches the Watchers: An Anonymized NLP Pipeline for Police Disciplinary Oversight"
 date: 2026-07-10
-author: "Nicolas Cozzarin (@ncozzarin)"
+author: "Nicolas Cozzarin"
+description: "How I designed and built an on-premise NLP pipeline that anonymises citizen complaints about police misconduct and suggests categories for human review."
+glance:
+  - label: "Role"
+    text: "AI Product Owner and ML Developer (degree internship), Security Forces Disciplinary Control System, Government of Córdoba, Nov 2025 – Jun 2026"
+  - label: "Problem"
+    text: "Personal data had to be removed from every complaint by hand, and rare, high-stakes complaints waited in the queue behind routine ones."
+  - label: "What I built"
+    text: "An irreversible anonymisation pipeline (regex, spaCy NER, Microsoft Presidio), then BETO fine-tuned to suggest one of eight categories for a prosecutor to approve or override."
+  - label: "Results"
+    text: "On a blind test set of 2,189 complaints: 77% recall on institutional violence and an F1 score of 0.72 on gender-based violence. Weighted F1 is 66% overall; this is the second build phase."
+  - label: "Constraints"
+    text: "Fully on-premise with no external APIs, role-based access and an audit log."
+  - label: "Code"
+    text: "Not public, because the system runs on government data."
 ---
-
-## Who Watches the Watchers: An Anonymized NLP Pipeline for Police Disciplinary Oversight
-
 ### 1. Motivation
 
 In August 2020, a seventeen year old named Valentino "Blas" Correas was shot and killed by a police officer in Córdoba, Argentina, after his car was stopped at a checkpoint. The case became a turning point. It was not an isolated complaint that disappeared into an internal file, it was the event that made the province rewrite how it holds its own security forces accountable. The following year, the provincial legislature passed Law 10.731, creating an independent body with the mandate to investigate and sanction misconduct inside the Police, the Anti-Narcotics Force, and the Penitentiary Service, entirely outside the chain of command of the institutions it investigates.

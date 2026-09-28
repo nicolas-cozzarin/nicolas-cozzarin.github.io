@@ -1,11 +1,21 @@
 ---
 title: "Justice Inequality Simulator: A Generative and Probabilistic Approach to Judicial Bias"
 date: 2025-07-06
-author: "Nicolas Cozzarin (@ncozzarin)"
+author: "Nicolas Cozzarin"
+description: "A counterfactual method to test whether a court-outcome prediction model is biased, one case at a time."
+glance:
+  - label: "Context"
+    text: "Deep Generative Models course, Hochschule Furtwangen University, 2025"
+  - label: "Question"
+    text: "Does a court-outcome prediction model change its answer when only a sensitive detail, such as gender or ethnicity, changes?"
+  - label: "What I built"
+    text: "Legal-BERT embeddings with an MLP classifier, plus a counterfactual generator that swaps sensitive words and measures how far the prediction moves."
+  - label: "Results"
+    text: "Test accuracy 0.78 and ROC-AUC 0.84. Swapping sensitive words shifted predicted probabilities by 0.10 to 0.25 in several cases."
+  - label: "Code"
+    text: "Google Colab notebook"
+    url: "https://colab.research.google.com/drive/1vRHQOD1OUOzySDsNfvsINIWz_LFxucYV?usp=sharing"
 ---
-
-## Justice Inequality Simulator: A Generative and Probabilistic Approach to Judicial Bias
-
 ### 1. Motivation
 
 In May 2016, ProPublica published an investigation into COMPAS, a risk assessment tool used across the United States to predict whether a defendant would reoffend. The finding that made headlines was blunt: Black defendants who did not go on to reoffend were flagged as high risk at roughly twice the rate of white defendants who did not reoffend. The tool was not designed to use race as an input. It did not need to. The bias was already inside the historical data the model learned from, and the model reproduced it faithfully, just without anyone having to decide to be biased on purpose.
