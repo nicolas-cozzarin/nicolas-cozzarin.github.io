@@ -4,5 +4,5 @@ lang: es
 locale: es_ES
 permalink: /es/
 title: AI Product Owner
-description: "AI Product Owner para sectores regulados: productos fintech bajo la normativa FINMA y de prevención de lavado de dinero en Suiza, y un sistema de NLP que protege la privacidad para un organismo de control policial."
+description: "Product Owner con 10 años de experiencia en tecnología, especializado en productos de IA y datos para finanzas y el sector público. Radicado en Francia, disponible para mudarme. ES, EN, FR, DE."
 ---

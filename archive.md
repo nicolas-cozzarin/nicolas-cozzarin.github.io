@@ -2,7 +2,7 @@
 layout: default
 title: All posts
 permalink: /archive.html
-description: "Write-ups of AI projects by Nicolas Cozzarin: privacy-first NLP for public oversight and bias testing for judicial prediction models."
+description: "Write-ups of my AI projects: an NLP system for police oversight in Córdoba and a bias test for court prediction models."
 ---
 <h1 class="page-title">All posts</h1>
 <ul class="post-list">

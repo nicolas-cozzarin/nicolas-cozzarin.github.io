@@ -420,3 +420,10 @@ figure.highlight { margin: 1.25rem 0; }
   body { background: #FFFFFF; color: #000000; font-size: 11pt; }
   .block { break-inside: avoid; }
 }
+
+/* courses and certifications */
+.courses { list-style: none; margin: 0; padding: 0; }
+.courses li + li { margin-top: 1.1rem; }
+.courses h3 { font-size: 1rem; }
+.courses .meta { margin: 0.05rem 0 0.2rem !important; }
+.courses p { margin: 0 !important; }

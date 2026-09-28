@@ -31,30 +31,6 @@ layout: base
   </div>
 </section>
 
-<section class="block" id="work">
-  <h2>{{ t.sections.work }}</h2>
-  <div class="block-body">
-    {%- for w in t.work %}
-    <article class="work">
-      <h3>{{ w.title }}</h3>
-      <p class="meta">{{ w.context }}</p>
-      <p>{{ w.text }}</p>
-      <p class="result"><strong>{{ t.labels.results }}</strong> {{ w.result }}</p>
-      <p class="meta"><strong>{{ t.labels.stack }}</strong> {{ w.stack }}</p>
-      {%- if w.note %}
-      <p class="meta">{{ w.note }}</p>
-      {%- endif %}
-      <p class="work-links">
-        {%- for l in w.links %}
-        <a href="{{ l.url | relative_url }}">{{ l.label }}</a>
-        {%- endfor %}
-      </p>
-    </article>
-    {%- endfor %}
-    <p class="more"><a href="{{ '/archive.html' | relative_url }}">{{ t.labels.all_posts }}</a></p>
-  </div>
-</section>
-
 <section class="block" id="experience">
   <h2>{{ t.sections.experience }}</h2>
   <div class="block-body">
@@ -97,6 +73,30 @@ layout: base
       </li>
       {%- endfor %}
     </ol>
+  </div>
+</section>
+
+<section class="block" id="work">
+  <h2>{{ t.sections.work }}</h2>
+  <div class="block-body">
+    {%- for w in t.work %}
+    <article class="work">
+      <h3>{{ w.title }}</h3>
+      <p class="meta">{{ w.context }}</p>
+      <p>{{ w.text }}</p>
+      <p class="result"><strong>{{ t.labels.results }}</strong> {{ w.result }}</p>
+      <p class="meta"><strong>{{ t.labels.stack }}</strong> {{ w.stack }}</p>
+      {%- if w.note %}
+      <p class="meta">{{ w.note }}</p>
+      {%- endif %}
+      <p class="work-links">
+        {%- for l in w.links %}
+        <a href="{{ l.url | relative_url }}">{{ l.label }}</a>
+        {%- endfor %}
+      </p>
+    </article>
+    {%- endfor %}
+    <p class="more"><a href="{{ '/archive.html' | relative_url }}">{{ t.labels.all_posts }}</a></p>
   </div>
 </section>
 
@@ -146,9 +146,13 @@ layout: base
 <section class="block" id="courses">
   <h2>{{ t.sections.courses }}</h2>
   <div class="block-body">
-    <ul class="plain">
+    <ul class="courses">
       {%- for c in t.courses %}
-      <li>{{ c }}</li>
+      <li>
+        <h3>{{ c.title }}</h3>
+        <p class="meta">{{ c.org }}</p>
+        <p>{{ c.text }}</p>
+      </li>
       {%- endfor %}
     </ul>
   </div>
