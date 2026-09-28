@@ -1,0 +1,162 @@
+# Contenu français de la page d'accueil. Modifier le texte ici ; la mise en page est dans _layouts/profile.html.
+lang: fr
+title: "Nicolas Cozzarin – AI Product Owner"
+description: "AI Product Owner pour les secteurs réglementés : produits fintech soumis à la FINMA et à la LBA en Suisse, et système NLP respectueux de la vie privée pour un organe de contrôle de la police."
+language_label: "Langue"
+
+cv:
+  label: "Télécharger le CV (PDF)"
+  file: "/docs/assets/CV_COZZARIN_FR.pdf"
+  download_name: "Nicolas_Cozzarin_CV_FR.pdf"
+
+links:
+  linkedin: "LinkedIn"
+  email: "E-mail"
+  github: "GitHub"
+
+hero:
+  headline: "AI Product Owner pour les secteurs réglementés"
+  pitch: "Je transforme les exigences juridiques et de conformité en produits d'IA dignes de confiance. J'ai lancé des produits fintech soumis à la FINMA et aux règles suisses de lutte contre le blanchiment, et conçu un système NLP respectueux de la vie privée pour un organe de contrôle de la police."
+  facts:
+    - "Basé en France, mobile (Suisse, France, Espagne) ou en télétravail"
+    - "Ressortissant de l'UE, autorisé à travailler en Suisse"
+    - "Français, anglais, espagnol, allemand"
+
+sections:
+  about: "À propos"
+  work: "Projets choisis"
+  experience: "Expérience"
+  education: "Formation"
+  research: "Axes de recherche"
+  volunteering: "Engagements et bénévolat"
+  skills: "Compétences et langues"
+  courses: "Cours et certifications"
+  contact: "Contact"
+
+about:
+  - "J'ai 10 ans d'expérience en développement backend, QA, analyse fonctionnelle et gestion de produit. Chez Union of Financial Corners à Genève, j'ai été Product Owner de trois produits clients dans une activité réglementée de transfert d'argent."
+  - "Pendant ma licence en Intelligence Artificielle et Robotique, j'ai piloté et développé un système NLP qui anonymise et trie les plaintes visant les forces de sécurité, pour l'organe de contrôle de la province de Córdoba, en Argentine. Il fonctionne entièrement sur site et chaque décision est validée par une personne."
+  - "Je recherche des postes en produit IA, produit technique et gouvernance de l'IA, où l'IA responsable fait partie du produit dès le départ."
+
+work:
+  - title: "Tri anonymisé des plaintes pour le contrôle de la police"
+    context: "Gouvernement de Córdoba, Argentine, 2025–2026"
+    text: "Un pipeline NLP qui retire les données personnelles des plaintes de citoyens avant toute lecture, puis propose l'une des huit catégories officielles, qu'un procureur valide ou corrige."
+    result: "Sur un jeu de test aveugle de 2 189 plaintes : rappel de 77 % sur les violences institutionnelles et F1 de 0,72 sur les violences de genre. Fonctionne entièrement sur site."
+    stack: "Python, PyTorch, BETO (BERT espagnol), spaCy, Microsoft Presidio"
+    note: "Le code n'est pas public, car le système traite des données gouvernementales."
+    links:
+      - label: "Lire l'article (en anglais)"
+        url: "/2026/07/10/anonymized-triage-security-forces.html"
+  - title: "Justice Inequality Simulator"
+    context: "Cours de modèles génératifs profonds, Hochschule Furtwangen, 2025"
+    text: "Teste si un modèle de prédiction de décisions de justice est biaisé : on modifie un seul détail sensible d'une affaire, comme le genre ou l'origine, et on mesure de combien la prédiction change."
+    result: "Précision de 0,78 et ROC-AUC de 0,84 sur le jeu de test. Le remplacement de mots sensibles a déplacé les probabilités prédites de 0,10 à 0,25 dans plusieurs cas."
+    stack: "Python, Legal-BERT, PyTorch, scikit-learn"
+    links:
+      - label: "Lire l'article (en anglais)"
+        url: "/2025/07/06/justice-inequality-simulator.html"
+      - label: "Ouvrir le notebook"
+        url: "https://colab.research.google.com/drive/1vRHQOD1OUOzySDsNfvsINIWz_LFxucYV?usp=sharing"
+
+labels:
+  results: "Résultats :"
+  stack: "Technologies :"
+  all_posts: "Tous les articles (en anglais)"
+
+experience:
+  - role: "Coordinateur Produit et Projets IT (rôle de Product Owner)"
+    org: "Union of Financial Corners SA, Genève, Suisse"
+    dates: "oct. 2022 – oct. 2025"
+    context: "Société de transfert d'argent et de change présente dans six villes suisses, soumise à la FINMA et aux règles de lutte contre le blanchiment."
+    bullets:
+      - "Product Owner de trois produits clients : achat de cryptomonnaies en agence, plateforme de change en ligne et amélioration du parcours d'envoi d'argent Western Union."
+      - "Coordination d'une équipe d'environ 10 développeurs et prestataires externes ; rédaction des user stories et des critères d'acceptation, priorisation du backlog produit."
+      - "Tests de qualité et de conformité des nouveaux produits et processus (exigences LBA et opérationnelles) avant leur déploiement."
+  - role: "AI Product Owner et Développeur ML"
+    org: "Système de contrôle disciplinaire des forces de sécurité, Gouvernement de Córdoba, Argentine"
+    dates: "nov. 2025 – juin 2026"
+    context: "Stage de fin d'études, à distance et à temps partiel, au sein de la Coordination de l'enregistrement et de l'analyse de l'information."
+    bullets:
+      - "Pilotage de bout en bout d'un système NLP qui anonymise les plaintes de citoyens visant des policiers et les classe en 8 catégories : cadrage avec l'équipe juridique, spécifications et développement du modèle."
+      - "Conception d'un pipeline d'anonymisation irréversible (regex, NER spaCy, Microsoft Presidio) avec accès par rôle, coffre-fort journalisé et validation humaine."
+      - "Fine-tuning de BETO (BERT espagnol) avec pondération des classes ; sur un jeu de test aveugle de 2 189 plaintes, rappel de 77 % sur les violences institutionnelles et F1 de 0,72 sur les violences de genre."
+  - role: "Analyste fonctionnel"
+    org: "FlyDevs, États-Unis (à distance)"
+    dates: "févr. 2019 – déc. 2022"
+    bullets:
+      - "Traduction des besoins métier en spécifications fonctionnelles et user stories ; interface entre parties prenantes, UI/UX, QA et développement."
+      - "Animation des cérémonies Agile et alignement des pratiques de livraison CI/CD sur les priorités métier."
+  - role: "Lead QA Analyst"
+    org: "Charly Inc., Canada (à distance)"
+    dates: "mars 2017 – déc. 2019"
+    bullets:
+      - "Définition des stratégies de tests fonctionnels, d'intégration et de régression pour plusieurs projets logiciels en parallèle ; coordination d'une équipe QA répartie."
+  - role: "Développeur Backend Python (Odoo)"
+    org: "E-MIPS, Buenos Aires, Argentine"
+    dates: "févr. 2015 – juin 2016"
+    bullets:
+      - "Développement de modules Odoo en Python (CRM, stocks, comptabilité) et intégration d'API REST, d'ERP et de passerelles de paiement."
+
+education:
+  - title: "Licence en Intelligence Artificielle et Robotique"
+    org: "Universidad Siglo XXI, Argentine"
+    dates: "2021 – 2026"
+    details: "Moyenne de 8,40/10, diplôme prévu en décembre 2026. Machine learning, deep learning, IA générative, science des données et robotique."
+  - title: "Échange en IA et Robotique (cours de niveau master)"
+    org: "Hochschule Furtwangen, Allemagne"
+    dates: "nov. 2024 – nov. 2025"
+    details: "Machine learning, modèles génératifs profonds, vision par ordinateur, robotique et systèmes à microcontrôleurs. Examen d'allemand B2 réussi."
+  - title: "Diplôme de technicien en électronique"
+    org: "Instituto Técnico Industrial San Judas Tadeo, Argentine"
+    dates: "2009 – 2015"
+
+research:
+  intro: "Les questions sur lesquelles je veux continuer à travailler, en poste comme en master."
+  items:
+    - title: "L'IA au sein des institutions publiques"
+      text: "Comment les tribunaux, les régulateurs et les organes de contrôle peuvent utiliser l'IA sans créer de nouvelles boîtes noires : validation humaine, traçabilité, souveraineté des données, et ce que l'AI Act européen exige concrètement des systèmes à haut risque."
+    - title: "Mesurer les biais cas par cas"
+      text: "Des tests contrefactuels qui modifient un seul détail sensible et montrent si la décision change. Régulateurs et journalistes peuvent les appliquer à des systèmes qu'ils ne contrôlent pas."
+    - title: "L'IA et les animaux"
+      text: "Comment l'IA est utilisée dans l'élevage industriel, comment elle pourrait aider à réduire la souffrance des animaux sauvages, et comment les biais spécistes des modèles de pointe pourraient peser sur le sort des animaux."
+
+volunteering:
+  - role: "Référent IA, Hack the Fork"
+    place: "Paris"
+    dates: "2026"
+    text: "Conception du cadre IA du hackathon et tests de son environnement AWS. Accompagnement des équipes sur le cadrage IA pendant l'événement."
+  - role: "Fondateur et organisateur, We The Free"
+    place: "Angoulême"
+    dates: "2026 – aujourd'hui"
+    text: "Création et animation de l'antenne locale d'un mouvement pour les droits des animaux : budget, événements et recrutement de bénévoles."
+  - role: "Coordinateur logistique, Vegan Campout Argentina"
+    place: "Buenos Aires"
+    dates: "2021 – 2022"
+    text: "Coordination de la logistique des stands et des fournisseurs pour un événement de 2 000 participants, et encadrement de 20 bénévoles le jour J."
+  - role: "Bénévole DevOps, Difusión V et Voicot"
+    place: "À distance"
+    dates: "2019 – 2022"
+    text: "Mise en place et maintenance de l'hébergement et du CI/CD de trois sites web."
+
+skills:
+  - label: "Produit"
+    text: "Agile (Scrum, Kanban), gestion du backlog, user stories, expression de besoins, roadmap, gestion des parties prenantes, Jira, Confluence"
+  - label: "IA et data"
+    text: "Python, PyTorch, Hugging Face Transformers, scikit-learn, pandas, spaCy, NLP (classification, NER), SQL, API de LLM, RAG, agents IA"
+  - label: "Gouvernance"
+    text: "Protection des données dès la conception, anonymisation et pseudonymisation, RGPD, AI Act européen (contrôle humain), conformité LBA et FINMA, journalisation d'audit"
+  - label: "Ingénierie"
+    text: "Docker, CI/CD, Git, API REST, React, TypeScript"
+  - label: "Langues"
+    text: "Espagnol (langue maternelle), anglais (C1), français (C1), allemand (B2), chinois (HSK 3)"
+
+courses:
+  - "Future of AI, BlueDot Impact (sept. 2026)"
+  - "Ateliers d'introduction à l'altruisme efficace, Altruisme Efficace France (2026)"
+  - "Mendix Developer Certificate, identifiant 90924 (avr. 2025)"
+  - "Formation à la lutte contre le blanchiment, secteur financier suisse"
+  - "Développement web, Coderhouse (juin 2020)"
+
+contact:
+  text: "Le plus rapide est de m'écrire par e-mail. Références disponibles sur demande."

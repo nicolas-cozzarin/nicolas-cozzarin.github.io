@@ -1,0 +1,162 @@
+# English content for the homepage. Edit text here; the layout lives in _layouts/profile.html.
+lang: en
+title: "Nicolas Cozzarin – AI Product Owner"
+description: "AI Product Owner for regulated industries: fintech products under Swiss FINMA and AML rules, and a privacy-first NLP system for police oversight. EN, FR, ES, DE."
+language_label: "Language"
+
+cv:
+  label: "Download CV (PDF)"
+  file: "/docs/assets/CV_COZZARIN_EN.pdf"
+  download_name: "Nicolas_Cozzarin_CV_EN.pdf"
+
+links:
+  linkedin: "LinkedIn"
+  email: "Email"
+  github: "GitHub"
+
+hero:
+  headline: "AI Product Owner for regulated industries"
+  pitch: "I turn legal and compliance requirements into AI products people can trust. I've shipped fintech products under Swiss FINMA and anti-money-laundering rules, and built a privacy-first NLP system for a police oversight body."
+  facts:
+    - "Based in France, open to relocation (Switzerland, France, Spain) or remote"
+    - "EU citizen, can work in Switzerland without sponsorship"
+    - "English, French, Spanish, German"
+
+sections:
+  about: "About"
+  work: "Selected work"
+  experience: "Experience"
+  education: "Education"
+  research: "Research interests"
+  volunteering: "Leadership and volunteering"
+  skills: "Skills and languages"
+  courses: "Courses and certifications"
+  contact: "Contact"
+
+about:
+  - "I have 10 years of experience across backend development, QA, functional analysis and product ownership. At Union of Financial Corners in Geneva, I was product owner for three customer-facing products in a regulated money-transfer business."
+  - "During my degree in Artificial Intelligence and Robotics, I led and built an NLP system that anonymises and triages misconduct complaints for the police oversight body of the Province of Córdoba, Argentina. It runs fully on-premise, and a person reviews every decision."
+  - "I'm looking for AI product, technical product and AI governance roles where responsible AI is part of the product from the start."
+
+work:
+  - title: "Anonymised complaint triage for police oversight"
+    context: "Government of Córdoba, Argentina, 2025–2026"
+    text: "An NLP pipeline that removes personal data from citizen complaints before anyone reads them, then suggests one of eight official categories for a prosecutor to approve or override."
+    result: "On a blind test set of 2,189 complaints: 77% recall on institutional violence and an F1 score of 0.72 on gender-based violence. Runs fully on-premise."
+    stack: "Python, PyTorch, BETO (Spanish BERT), spaCy, Microsoft Presidio"
+    note: "The code isn't public because the system runs on government data."
+    links:
+      - label: "Read the write-up"
+        url: "/2026/07/10/anonymized-triage-security-forces.html"
+  - title: "Justice Inequality Simulator"
+    context: "Deep Generative Models course, Hochschule Furtwangen, 2025"
+    text: "Tests whether a court-outcome prediction model is biased by changing one sensitive detail in a case description, such as gender or ethnicity, and measuring how far the prediction moves."
+    result: "Test accuracy 0.78 and ROC-AUC 0.84. Swapping sensitive words shifted predicted probabilities by 0.10 to 0.25 in several cases."
+    stack: "Python, Legal-BERT, PyTorch, scikit-learn"
+    links:
+      - label: "Read the write-up"
+        url: "/2025/07/06/justice-inequality-simulator.html"
+      - label: "Open the notebook"
+        url: "https://colab.research.google.com/drive/1vRHQOD1OUOzySDsNfvsINIWz_LFxucYV?usp=sharing"
+
+labels:
+  results: "Results:"
+  stack: "Stack:"
+  all_posts: "All posts"
+
+experience:
+  - role: "IT Product & Project Coordinator (Product Owner role)"
+    org: "Union of Financial Corners SA, Geneva, Switzerland"
+    dates: "Oct 2022 – Oct 2025"
+    context: "Money-transfer and currency-exchange firm with branches in six Swiss cities, working under FINMA and anti-money-laundering rules."
+    bullets:
+      - "Acted as product owner for three customer-facing products: in-branch cryptocurrency purchase, an online currency-exchange platform, and an improved Western Union send-money flow."
+      - "Coordinated a team of about 10 developers and external suppliers; wrote user stories and acceptance criteria and prioritised the product backlog."
+      - "Ran quality and compliance testing of new products and processes against AML and operational requirements before rollout."
+  - role: "AI Product Owner & ML Developer"
+    org: "Security Forces Disciplinary Control System, Government of Córdoba, Argentina"
+    dates: "Nov 2025 – Jun 2026"
+    context: "Degree internship, remote and part-time, with the Coordination of Information Registry and Analysis."
+    bullets:
+      - "Owned end-to-end delivery of an NLP system that anonymises citizen complaints about police misconduct and classifies them into 8 categories: scoped requirements with legal staff, wrote the specification and built the model."
+      - "Designed an irreversible anonymisation pipeline (regex, spaCy NER, Microsoft Presidio) with role-based access, an audit-logged vault and human-in-the-loop review."
+      - "Fine-tuned BETO (Spanish BERT) with class-weighted loss; on a blind test set of 2,189 complaints, reached 77% recall on institutional violence and an F1 score of 0.72 on gender-based violence."
+  - role: "Functional Analyst"
+    org: "FlyDevs, USA (remote)"
+    dates: "Feb 2019 – Dec 2022"
+    bullets:
+      - "Turned business requirements into functional specifications and user stories, and linked stakeholders, UI/UX, QA and engineering."
+      - "Facilitated Agile ceremonies and aligned CI/CD release practices with business priorities."
+  - role: "Lead QA Analyst"
+    org: "Charly Inc., Canada (remote)"
+    dates: "Mar 2017 – Dec 2019"
+    bullets:
+      - "Defined functional, integration and regression test strategies for several concurrent software projects and coordinated a distributed QA team."
+  - role: "Python Backend Developer (Odoo)"
+    org: "E-MIPS, Buenos Aires, Argentina"
+    dates: "Feb 2015 – Jun 2016"
+    bullets:
+      - "Built custom Odoo modules in Python (CRM, inventory, accounting) and integrated REST APIs, ERP systems and payment gateways."
+
+education:
+  - title: "BSc in Artificial Intelligence and Robotics"
+    org: "Universidad Siglo XXI, Argentina"
+    dates: "2021 – 2026"
+    details: "Grade 8.40/10, diploma expected December 2026. Machine learning, deep learning, generative AI, data science and robotics."
+  - title: "Exchange in AI and Robotics (Master's-level courses)"
+    org: "Hochschule Furtwangen University, Germany"
+    dates: "Nov 2024 – Nov 2025"
+    details: "Machine learning, deep generative models, computer vision, robotics and microcontroller systems. Passed the German B2 exam."
+  - title: "Electronics Technician Diploma"
+    org: "Instituto Técnico Industrial San Judas Tadeo, Argentina"
+    dates: "2009 – 2015"
+
+research:
+  intro: "The questions I want to keep working on, in my job and in a master's programme."
+  items:
+    - title: "AI inside public institutions"
+      text: "How courts, regulators and oversight bodies can use AI without creating new black boxes: human review, audit trails, data sovereignty, and what the EU AI Act asks of high-risk systems in practice."
+    - title: "Measuring bias case by case"
+      text: "Counterfactual tests that change one sensitive detail and show whether a decision moves. Regulators and journalists can apply them to systems they don't control."
+    - title: "AI and animals"
+      text: "How AI is used in industrial animal farming, how it could help reduce wild animal suffering, and how speciesist assumptions in frontier models could shape outcomes for animals."
+
+volunteering:
+  - role: "AI Enabler, Hack the Fork"
+    place: "Paris"
+    dates: "2026"
+    text: "Designed the AI framework for the hackathon and tested its AWS environment. Mentoring teams on AI scoping during the event."
+  - role: "Founder and organiser, We The Free"
+    place: "Angoulême"
+    dates: "2026 – present"
+    text: "Founded and run the local chapter of an animal rights group: budget, events and volunteer recruitment."
+  - role: "Logistics Coordinator, Vegan Campout Argentina"
+    place: "Buenos Aires"
+    dates: "2021 – 2022"
+    text: "Coordinated stall and supplier logistics for a 2,000-attendee event and led 20 volunteers on the day."
+  - role: "DevOps Volunteer, Difusión V and Voicot"
+    place: "Remote"
+    dates: "2019 – 2022"
+    text: "Set up and maintained hosting and CI/CD for three websites."
+
+skills:
+  - label: "Product"
+    text: "Agile (Scrum, Kanban), backlog management, user stories, requirements, roadmapping, stakeholder management, Jira, Confluence"
+  - label: "AI and data"
+    text: "Python, PyTorch, Hugging Face Transformers, scikit-learn, pandas, spaCy, NLP (classification, NER), SQL, LLM APIs, RAG, AI agents"
+  - label: "Governance"
+    text: "Data protection by design, anonymisation and pseudonymisation, GDPR, EU AI Act (human oversight), AML and FINMA compliance, audit logging"
+  - label: "Engineering"
+    text: "Docker, CI/CD, Git, REST APIs, React, TypeScript"
+  - label: "Languages"
+    text: "Spanish (native), English (C1), French (C1), German (B2), Chinese (HSK 3)"
+
+courses:
+  - "Future of AI, BlueDot Impact (Sep 2026)"
+  - "Introductory workshops on effective altruism, Altruisme Efficace France (2026)"
+  - "Mendix Developer Certificate, credential ID 90924 (Apr 2025)"
+  - "Anti-money-laundering compliance training, Swiss financial sector"
+  - "Web Development, Coderhouse (Jun 2020)"
+
+contact:
+  text: "Email is the fastest way to reach me. References are available on request."

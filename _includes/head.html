@@ -1,35 +1,19 @@
-
-<!-- Site build date: {{ "now" | date: "%FT%T%z" }} -->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Begin SEO -->
   {% seo %}
-  <!-- End SEO -->
-
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="stylesheet" type="text/css" href="/css/override.css">
-
-  {% feed_meta %}
-
-  {% if jekyll.environment == 'production' and site.google_analytics -%}
-  <!-- Begin Google Analytics -->
-  {% include google-analytics.html %}
-  <!-- End Google Analytics -->
+  {%- if page.lang %}
+  {%- for l in site.data.languages %}
+  <link rel="alternate" hreflang="{{ l.code }}" href="{{ l.url | absolute_url }}">
+  {%- endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
   {%- endif %}
-
-  <!-- Begin highlight.js support -->
-  <link rel="stylesheet" href="/js/highlightjs/styles/github.css">
-  <link rel="stylesheet" href="/js/highlightjs/styles/ssms.css" />
-
-  <script type="text/javascript" src="/js/highlightjs/highlight.min.js"></script>
-
-  <script type="text/javascript" src="/js/highlightjs/languages/plaintext.min.js"></script>
-  <script type="text/javascript" src="/js/highlightjs/languages/powershell.min.js"></script>
-  <script type="text/javascript" src="/js/highlightjs/languages/tsql.min.js"></script>
-
-  <script type="text/javascript"> hljs.highlightAll(); </script>
-  <!-- end highlight.js support -->
+  <link rel="icon" href="{{ '/docs/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" href="{{ '/docs/assets/favicon-32.png' | relative_url }}" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="{{ '/docs/assets/apple-touch-icon.png' | relative_url }}">
+  <meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#11151B" media="(prefers-color-scheme: dark)">
+  <link rel="preload" href="{{ '/assets/fonts/schibsted-grotesk-latin-wght-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ '/css/site.css' | relative_url }}">
+  {% feed_meta %}
 </head>
