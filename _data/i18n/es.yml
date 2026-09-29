@@ -36,7 +36,7 @@ sections:
 about:
   - "Soy Product Owner, con 10 años de experiencia en desarrollo backend, QA, análisis funcional y gestión de producto. En los últimos años me especialicé en productos de IA y datos."
   - "En Ginebra trabajé en Union of Financial Corners, una empresa de envío de dinero y cambio de divisas, donde fui Product Owner de tres productos, entre ellos la compra de criptomonedas en las sucursales y una plataforma de cambio online. Para la práctica profesional de mi carrera desarrollé un sistema de NLP para el organismo que investiga las faltas de las fuerzas de seguridad en Córdoba, Argentina. El sistema quita los datos personales de cada denuncia y sugiere una categoría, y la decisión final la toma un fiscal."
-  - "Hoy mi foco está en el cumplimiento normativo de la IA, la ética y el alineamiento de los modelos, y en ayudar a las empresas a integrar IA y automatización en sus procesos, donde realmente mejoran el trabajo."
+  - "Hoy mi foco está en el cumplimiento normativo de la IA, la ética y el alineamiento de los modelos. Quiero ayudar a las organizaciones a integrar IA y automatización donde realmente mejoran el trabajo, y no solo a las empresas: las asociaciones, las ONG y las instituciones públicas muchas veces tienen menos recursos para hacerlo y mucho para ganar. Ya empecé a hacerlo como voluntario, por ejemplo diseñando el marco de IA de la hackathon Hack the Fork."
   - "Además de mi trabajo profesional, he participado activamente como voluntario en causas de bienestar y derechos animales, y actualmente estoy explorando el impacto potencial de la inteligencia artificial en la situación de los animales, un tema crucial que sigue siendo poco discutido. Esto incluye analizar el uso actual y potencial de la IA en la ganadería industrial y, por el contrario, en la reducción del sufrimiento de los animales silvestres, así como la manera en que reducir las actitudes especistas en los sistemas de IA de vanguardia puede tener un impacto en el presente y en el futuro. Finalmente, considero de qué manera las herramientas de IA podrían potenciar nuestros esfuerzos de activismo por los animales."
 
 work:
@@ -141,12 +141,12 @@ education:
 research:
   intro: "Los temas en los que quiero seguir trabajando, en mi trabajo y en un máster."
   items:
+    - title: "La IA y los animales"
+      text: "Cómo se usa hoy la IA en la ganadería industrial, cómo podría ayudar a reducir el sufrimiento de los animales silvestres y cómo las actitudes especistas de los sistemas de IA de vanguardia pueden afectar a los animales, hoy y en el futuro. También me interesa cómo las herramientas de IA pueden potenciar el activismo por los animales. Es un tema importante que todavía casi no se discute."
     - title: "La IA en las instituciones públicas"
       text: "Quiero entender cómo tribunales, reguladores y organismos de control pueden usar IA sin que se convierta en una nueva caja negra. En Córdoba eso significó que una persona revise cada decisión, un registro de auditoría y que los datos se queden en el hardware del gobierno. La Ley de IA de la UE pide en gran parte lo mismo para los sistemas de alto riesgo."
-    - title: "Sesgos, caso por caso"
+    - title: "Sesgos en los modelos de IA"
       text: "En el Justice Inequality Simulator probé los sesgos cambiando un solo dato de un caso y viendo si la predicción cambiaba. Me interesa este tipo de prueba porque cualquiera puede aplicarla a un sistema que no controla, incluidos reguladores y periodistas."
-    - title: "La IA y los animales"
-      text: "Cómo la IA cambia la situación de los animales: en la ganadería industrial, en la reducción del sufrimiento de los animales silvestres y a través de las actitudes especistas de los sistemas de IA de vanguardia. Es el tema que más me gustaría investigar en un máster."
 
 volunteering:
   - role: "Referente de IA, Hack the Fork"

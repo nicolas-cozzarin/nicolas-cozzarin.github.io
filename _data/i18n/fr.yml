@@ -36,7 +36,7 @@ sections:
 about:
   - "Je suis Product Owner avec 10 ans d'expérience en développement backend, QA, analyse fonctionnelle et gestion de produit. Ces dernières années, je me suis spécialisé dans les produits IA et data."
   - "À Genève, j'ai travaillé chez Union of Financial Corners, une société de transfert d'argent et de change, où j'ai été Product Owner de trois produits, dont l'achat de cryptomonnaies en agence et une plateforme de change en ligne. Pour mon stage de fin d'études, j'ai développé un système NLP pour l'organisme qui enquête sur les fautes des forces de sécurité à Córdoba, en Argentine. Il retire les données personnelles de chaque plainte et propose une catégorie, et c'est un procureur qui prend la décision finale."
-  - "Je me concentre aujourd'hui sur la conformité de l'IA, l'éthique et l'alignement des modèles, et sur l'intégration de l'IA et de l'automatisation dans les entreprises, là où elles améliorent vraiment le travail."
+  - "Je me concentre aujourd'hui sur la conformité de l'IA, l'éthique et l'alignement des modèles. Je veux aider les organisations à intégrer l'IA et l'automatisation là où elles améliorent vraiment le travail, et pas seulement les entreprises : les associations, les ONG et les institutions publiques ont souvent moins de moyens pour le faire et beaucoup à y gagner. J'ai commencé à le faire en tant que bénévole, par exemple en concevant le cadre IA du hackathon Hack the Fork."
   - "En parallèle de mon parcours professionnel, je me suis beaucoup investi dans le bénévolat pour le bien-être et les droits des animaux, et j'explore aujourd'hui l'impact potentiel de l'intelligence artificielle sur la situation des animaux, un sujet crucial qui reste largement absent du débat. Cela inclut l'examen de l'utilisation actuelle et potentielle de l'IA dans les élevages industriels et, à l'inverse, dans la réduction de la souffrance des animaux sauvages, ainsi que la manière dont la réduction des attitudes spécistes dans les systèmes d'IA de pointe peut avoir un impact présent et futur. Enfin, je m'intéresse à la façon dont les outils d'IA pourraient renforcer nos actions de plaidoyer pour les animaux."
 
 work:
@@ -141,12 +141,12 @@ education:
 research:
   intro: "Les sujets sur lesquels je veux continuer à travailler, en poste comme en master."
   items:
+    - title: "L'IA et les animaux"
+      text: "Comment l'IA est utilisée aujourd'hui dans l'élevage industriel, comment elle pourrait aider à réduire la souffrance des animaux sauvages, et comment les attitudes spécistes des systèmes d'IA de pointe peuvent peser sur les animaux, aujourd'hui et demain. Je m'intéresse aussi à la façon dont les outils d'IA peuvent renforcer le plaidoyer pour les animaux. C'est un sujet important, encore très peu discuté."
     - title: "L'IA dans les institutions publiques"
       text: "Je veux comprendre comment les tribunaux, les régulateurs et les organes de contrôle peuvent utiliser l'IA sans en faire une nouvelle boîte noire. À Córdoba, cela voulait dire une personne qui valide chaque décision, un journal d'audit et des données qui restent sur le matériel du gouvernement. L'AI Act européen demande en grande partie la même chose pour les systèmes à haut risque."
-    - title: "Les biais, un cas à la fois"
+    - title: "Les biais dans les modèles d'IA"
       text: "Dans le Justice Inequality Simulator, j'ai testé les biais en changeant un seul détail d'une affaire et en regardant si la prédiction changeait. Ce type de test m'intéresse parce que n'importe qui peut l'appliquer à un système qu'il ne contrôle pas, y compris des régulateurs et des journalistes."
-    - title: "L'IA et les animaux"
-      text: "Comment l'IA change la situation des animaux : dans l'élevage industriel, dans la réduction de la souffrance des animaux sauvages et à travers les attitudes spécistes des systèmes d'IA de pointe. C'est le sujet que j'aimerais le plus approfondir en master."
 
 volunteering:
   - role: "Référent IA, Hack the Fork"

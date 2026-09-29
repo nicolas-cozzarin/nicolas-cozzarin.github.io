@@ -36,7 +36,7 @@ sections:
 about:
   - "I'm a Product Owner with 10 years of experience in backend development, QA, functional analysis and product management. In the last few years I have focused on AI and data products."
   - "In Geneva I worked at Union of Financial Corners, a money transfer and currency exchange company, where I was product owner for three products, among them crypto purchase in the branches and an online exchange platform. For my degree internship I built an NLP system for the office that investigates police misconduct in Córdoba, Argentina. It removes personal data from each complaint and suggests a category, and a prosecutor makes the final decision."
-  - "My current focus is AI compliance, AI ethics and alignment, and helping companies bring AI and automation into their processes where it really makes their work better."
+  - "My current focus is AI compliance, AI ethics and alignment. I want to help organisations use AI and automation where it really makes their work better, and not only companies: associations, NGOs and public institutions often have fewer resources to do it and a lot to gain. I have started doing this as a volunteer, for example by designing the AI framework for the Hack the Fork hackathon."
   - "Alongside my professional work, I have volunteered extensively in animal welfare and animal rights, and I am now exploring the potential impact of artificial intelligence on the situation of animals, a crucial topic that remains largely undiscussed. This includes examining the present and potential use of AI in factory farming and, conversely, in reducing wild animal suffering, as well as how reducing speciesist attitudes in frontier AI systems could shape outcomes for animals now and in the future. Finally, I consider how AI tools could help boost our efforts in animal advocacy."
 
 work:
@@ -141,12 +141,12 @@ education:
 research:
   intro: "These are the topics I want to keep working on, at work and in a master's."
   items:
+    - title: "AI and animals"
+      text: "How AI is used today in factory farming, how it could help reduce wild animal suffering, and how speciesist attitudes in frontier AI systems could affect animals now and in the future. I'm also interested in how AI tools can help animal advocacy. It is an important topic that is still barely discussed."
     - title: "AI in public institutions"
       text: "I want to understand how courts, regulators and oversight bodies can use AI without it becoming a new black box. In Córdoba that meant a person reviewing every decision, an audit log and keeping the data on government hardware. The EU AI Act asks for many of the same things for high-risk systems."
-    - title: "Bias, one case at a time"
+    - title: "Bias in AI models"
       text: "In the Justice Inequality Simulator I tested bias by changing one detail in a case and checking if the prediction changed. I like this kind of test because anyone can run it on a system they don't control, including regulators and journalists."
-    - title: "AI and animals"
-      text: "How AI changes the situation of animals: in factory farming, in reducing wild animal suffering, and through the speciesist attitudes of frontier AI systems. This is the topic I would most like to research in a master's."
 
 volunteering:
   - role: "AI Enabler, Hack the Fork"
