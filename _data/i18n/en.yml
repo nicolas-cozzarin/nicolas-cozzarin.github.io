@@ -37,6 +37,7 @@ about:
   - "I'm a Product Owner with 10 years of experience in backend development, QA, functional analysis and product management. In the last few years I have focused on AI and data products."
   - "In Geneva I worked at Union of Financial Corners, a money transfer and currency exchange company, where I was product owner for three products, among them crypto purchase in the branches and an online exchange platform. For my degree internship I built an NLP system for the office that investigates police misconduct in Córdoba, Argentina. It removes personal data from each complaint and suggests a category, and a prosecutor makes the final decision."
   - "My current focus is AI compliance, AI ethics and alignment, and helping companies bring AI and automation into their processes where it really makes their work better."
+  - "Alongside my professional work, I have volunteered extensively in animal welfare and animal rights, and I am now exploring the potential impact of artificial intelligence on the situation of animals, a crucial topic that remains largely undiscussed. This includes examining the present and potential use of AI in factory farming and, conversely, in reducing wild animal suffering, as well as how reducing speciesist attitudes in frontier AI systems could shape outcomes for animals now and in the future. Finally, I consider how AI tools could help boost our efforts in animal advocacy."
 
 work:
   - title: "Crypto sales in Swiss branches"
@@ -145,7 +146,7 @@ research:
     - title: "Bias, one case at a time"
       text: "In the Justice Inequality Simulator I tested bias by changing one detail in a case and checking if the prediction changed. I like this kind of test because anyone can run it on a system they don't control, including regulators and journalists."
     - title: "AI and animals"
-      text: "How AI is used today in factory farming, how it could help reduce wild animal suffering, and how speciesist attitudes in frontier AI systems could affect animals now and in the future. I'm also interested in how AI tools can help animal advocacy. It is an important topic that is still barely discussed."
+      text: "How AI changes the situation of animals: in factory farming, in reducing wild animal suffering, and through the speciesist attitudes of frontier AI systems. This is the topic I would most like to research in a master's."
 
 volunteering:
   - role: "AI Enabler, Hack the Fork"
@@ -165,6 +166,14 @@ volunteering:
     dates: "2019 – 2022"
     text: "I set up and maintained the hosting and CI/CD for the organisation's three websites."
 
+  - role: "Organiser, Buenos Aires Animal Save"
+    place: "Buenos Aires"
+    dates: "2019 – 2022"
+    text: "I co-organised vigils outside slaughterhouses. I opened each event with a briefing for the attendees, was the contact with the slaughterhouse workers, supported participants during the vigils and produced footage for social media."
+  - role: "Organiser, Anonymous for the Voiceless"
+    place: "Buenos Aires"
+    dates: "2018 – 2020"
+    text: "I created and ran Cube of Truth street events with 20 to 60 activists. I coordinated the teams and materials, and welcomed and briefed new members."
 skills:
   - label: "Product"
     text: "Agile (Scrum, Kanban), backlog management, user stories, requirements, roadmapping, stakeholder management, Jira, Confluence"

@@ -37,6 +37,7 @@ about:
   - "Soy Product Owner, con 10 años de experiencia en desarrollo backend, QA, análisis funcional y gestión de producto. En los últimos años me especialicé en productos de IA y datos."
   - "En Ginebra trabajé en Union of Financial Corners, una empresa de envío de dinero y cambio de divisas, donde fui Product Owner de tres productos, entre ellos la compra de criptomonedas en las sucursales y una plataforma de cambio online. Para la práctica profesional de mi carrera desarrollé un sistema de NLP para el organismo que investiga las faltas de las fuerzas de seguridad en Córdoba, Argentina. El sistema quita los datos personales de cada denuncia y sugiere una categoría, y la decisión final la toma un fiscal."
   - "Hoy mi foco está en el cumplimiento normativo de la IA, la ética y el alineamiento de los modelos, y en ayudar a las empresas a integrar IA y automatización en sus procesos, donde realmente mejoran el trabajo."
+  - "Además de mi trabajo profesional, he participado activamente como voluntario en causas de bienestar y derechos animales, y actualmente estoy explorando el impacto potencial de la inteligencia artificial en la situación de los animales, un tema crucial que sigue siendo poco discutido. Esto incluye analizar el uso actual y potencial de la IA en la ganadería industrial y, por el contrario, en la reducción del sufrimiento de los animales silvestres, así como la manera en que reducir las actitudes especistas en los sistemas de IA de vanguardia puede tener un impacto en el presente y en el futuro. Finalmente, considero de qué manera las herramientas de IA podrían potenciar nuestros esfuerzos de activismo por los animales."
 
 work:
   - title: "Venta de criptomonedas en sucursales"
@@ -145,7 +146,7 @@ research:
     - title: "Sesgos, caso por caso"
       text: "En el Justice Inequality Simulator probé los sesgos cambiando un solo dato de un caso y viendo si la predicción cambiaba. Me interesa este tipo de prueba porque cualquiera puede aplicarla a un sistema que no controla, incluidos reguladores y periodistas."
     - title: "La IA y los animales"
-      text: "Cómo se usa hoy la IA en la ganadería industrial, cómo podría ayudar a reducir el sufrimiento de los animales silvestres y cómo las actitudes especistas de los sistemas de IA de vanguardia pueden afectar a los animales, hoy y en el futuro. También me interesa cómo las herramientas de IA pueden potenciar el activismo por los animales. Es un tema importante que todavía casi no se discute."
+      text: "Cómo la IA cambia la situación de los animales: en la ganadería industrial, en la reducción del sufrimiento de los animales silvestres y a través de las actitudes especistas de los sistemas de IA de vanguardia. Es el tema que más me gustaría investigar en un máster."
 
 volunteering:
   - role: "Referente de IA, Hack the Fork"
@@ -165,6 +166,14 @@ volunteering:
     dates: "2019 – 2022"
     text: "Configuré y mantuve el hosting y el CI/CD de los tres sitios de la organización."
 
+  - role: "Organizador, Buenos Aires Animal Save"
+    place: "Buenos Aires"
+    dates: "2019 – 2022"
+    text: "Coorganicé vigilias frente a mataderos. Abría cada evento con una charla informativa para los asistentes, era el contacto con los trabajadores de los mataderos, acompañaba a los participantes durante las vigilias y producía material audiovisual para redes sociales."
+  - role: "Organizador, Anonymous for the Voiceless"
+    place: "Buenos Aires"
+    dates: "2018 – 2020"
+    text: "Creé y coordiné eventos Cube of Truth en la calle con entre 20 y 60 activistas. Organizaba los equipos y los materiales, y recibía y capacitaba a los nuevos miembros."
 skills:
   - label: "Producto"
     text: "Agile (Scrum, Kanban), gestión del backlog, user stories, relevamiento de requerimientos, roadmap, gestión de stakeholders, Jira, Confluence"

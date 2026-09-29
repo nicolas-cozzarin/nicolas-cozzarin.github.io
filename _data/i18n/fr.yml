@@ -37,6 +37,7 @@ about:
   - "Je suis Product Owner avec 10 ans d'expérience en développement backend, QA, analyse fonctionnelle et gestion de produit. Ces dernières années, je me suis spécialisé dans les produits IA et data."
   - "À Genève, j'ai travaillé chez Union of Financial Corners, une société de transfert d'argent et de change, où j'ai été Product Owner de trois produits, dont l'achat de cryptomonnaies en agence et une plateforme de change en ligne. Pour mon stage de fin d'études, j'ai développé un système NLP pour l'organisme qui enquête sur les fautes des forces de sécurité à Córdoba, en Argentine. Il retire les données personnelles de chaque plainte et propose une catégorie, et c'est un procureur qui prend la décision finale."
   - "Je me concentre aujourd'hui sur la conformité de l'IA, l'éthique et l'alignement des modèles, et sur l'intégration de l'IA et de l'automatisation dans les entreprises, là où elles améliorent vraiment le travail."
+  - "En parallèle de mon parcours professionnel, je me suis beaucoup investi dans le bénévolat pour le bien-être et les droits des animaux, et j'explore aujourd'hui l'impact potentiel de l'intelligence artificielle sur la situation des animaux, un sujet crucial qui reste largement absent du débat. Cela inclut l'examen de l'utilisation actuelle et potentielle de l'IA dans les élevages industriels et, à l'inverse, dans la réduction de la souffrance des animaux sauvages, ainsi que la manière dont la réduction des attitudes spécistes dans les systèmes d'IA de pointe peut avoir un impact présent et futur. Enfin, je m'intéresse à la façon dont les outils d'IA pourraient renforcer nos actions de plaidoyer pour les animaux."
 
 work:
   - title: "Vente de cryptomonnaies en agence"
@@ -145,7 +146,7 @@ research:
     - title: "Les biais, un cas à la fois"
       text: "Dans le Justice Inequality Simulator, j'ai testé les biais en changeant un seul détail d'une affaire et en regardant si la prédiction changeait. Ce type de test m'intéresse parce que n'importe qui peut l'appliquer à un système qu'il ne contrôle pas, y compris des régulateurs et des journalistes."
     - title: "L'IA et les animaux"
-      text: "Comment l'IA est utilisée aujourd'hui dans l'élevage industriel, comment elle pourrait aider à réduire la souffrance des animaux sauvages, et comment les attitudes spécistes des systèmes d'IA de pointe peuvent peser sur les animaux, aujourd'hui et demain. Je m'intéresse aussi à la façon dont les outils d'IA peuvent renforcer le plaidoyer pour les animaux. C'est un sujet important, encore très peu discuté."
+      text: "Comment l'IA change la situation des animaux : dans l'élevage industriel, dans la réduction de la souffrance des animaux sauvages et à travers les attitudes spécistes des systèmes d'IA de pointe. C'est le sujet que j'aimerais le plus approfondir en master."
 
 volunteering:
   - role: "Référent IA, Hack the Fork"
@@ -165,6 +166,14 @@ volunteering:
     dates: "2019 – 2022"
     text: "J'ai mis en place et maintenu l'hébergement et le CI/CD des trois sites de l'organisation."
 
+  - role: "Organisateur, Buenos Aires Animal Save"
+    place: "Buenos Aires"
+    dates: "2019 – 2022"
+    text: "J'ai co-organisé des veillées devant des abattoirs. J'ouvrais chaque événement par un briefing des participants, j'étais le lien avec les employés des abattoirs, j'accompagnais les participants pendant les veillées et je produisais des vidéos pour les réseaux sociaux."
+  - role: "Organisateur, Anonymous for the Voiceless"
+    place: "Buenos Aires"
+    dates: "2018 – 2020"
+    text: "J'ai créé et animé des événements Cube of Truth dans la rue avec 20 à 60 militants. Je coordonnais les équipes et le matériel, et j'accueillais et formais les nouveaux membres."
 skills:
   - label: "Produit"
     text: "Agile (Scrum, Kanban), gestion du backlog, user stories, expression de besoins, roadmap, gestion des parties prenantes, Jira, Confluence"
