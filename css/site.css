@@ -434,3 +434,16 @@ figure.highlight { margin: 1.25rem 0; }
 .post-list .translations { font-size: 0.9rem; }
 .post-nav a { font-weight: 600; }
 .post-list .translations a { font-size: inherit; font-weight: 500; }
+
+/* "Show credential" link under a course */
+.courses .credential { margin-top: 0.45rem !important; }
+.credential a {
+  display: inline-block;
+  padding: 0.12rem 0.65rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.credential a:hover { border-color: var(--accent); background: var(--wash); }

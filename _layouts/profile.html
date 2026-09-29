@@ -154,6 +154,9 @@ layout: base
         <h3>{{ c.title }}</h3>
         <p class="meta">{{ c.org }}</p>
         <p>{{ c.text }}</p>
+        {%- if c.credential %}
+        <p class="credential"><a href="{{ c.credential }}" target="_blank" rel="noopener">{{ t.labels.credential }}</a></p>
+        {%- endif %}
       </li>
       {%- endfor %}
     </ul>
