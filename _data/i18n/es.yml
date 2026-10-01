@@ -59,7 +59,7 @@ work:
   - title: "Justice Inequality Simulator"
     context: "Curso de Modelos Generativos Profundos, Hochschule Furtwangen, 2025"
     text: "Una forma de probar si un modelo que predice resultados judiciales tiene sesgos. Cambio un solo dato sensible en la descripción del caso, como el género o el origen étnico, y mido cuánto se mueve la predicción."
-    result: "Exactitud de 0,78 y ROC-AUC de 0,84 en el conjunto de prueba. En varios casos, cambiar una palabra sensible movió la probabilidad predicha entre 0,10 y 0,25."
+    result: "En varios casos, cambiar una palabra sensible movió la probabilidad predicha entre 0,10 y 0,25. Exactitud de 0,78 en el conjunto de prueba, probablemente optimista: el artículo explica los límites de la evaluación."
     stack: "Python, Legal-BERT, PyTorch, scikit-learn"
     links:
       - label: "Leer el artículo (en inglés)"

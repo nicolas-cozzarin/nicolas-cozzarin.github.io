@@ -22,7 +22,7 @@ glance:
 
 Union of Financial Corners est une société de transfert d'argent et de change en Suisse. La plus grande partie de son activité se fait en agence : les gens viennent au guichet pour envoyer de l'argent à l'étranger avec Western Union ou pour changer des devises. C'est une activité réglementée, soumise aux règles de la FINMA et à la loi suisse sur le blanchiment d'argent.
 
-Trois choses ont fait de la crypto un nouveau produit logique. La loi suisse sur la crypto avait changé, ce qui permettait de la proposer dans un cadre légal clair. Les clients la demandaient au guichet. Et l'entreprise cherchait une nouvelle source de revenus, à côté des transferts et du change.
+Il y avait trois raisons d'ajouter la crypto. La loi suisse sur la crypto avait changé, ce qui permettait de la proposer dans un cadre légal clair. Les clients la demandaient au guichet. Et l'entreprise cherchait une nouvelle source de revenus, à côté des transferts et du change.
 
 Mon travail était d'en faire un produit que le personnel puisse vendre tous les jours, dans chaque agence, sans créer de risque de conformité.
 
@@ -38,7 +38,7 @@ Du côté du client, c'est simple :
 
 Les clients peuvent aussi faire l'inverse et vendre de la crypto contre des espèces.
 
-Derrière ces trois étapes, il y a beaucoup plus : identifier le client, vérifier le montant par rapport aux limites, décider quel niveau de KYC s'applique, enregistrer les documents et envoyer l'ordre au fournisseur crypto. L'objectif de la conception était de garder le passage au guichet court, tout en garantissant qu'aucun de ces contrôles ne puisse être sauté.
+Derrière ces trois étapes, il y a beaucoup plus : identifier le client, vérifier le montant par rapport aux limites, décider quel niveau de KYC s'applique, enregistrer les documents et envoyer l'ordre au fournisseur crypto. L'objectif était de garder le passage au guichet court, sans permettre de sauter aucun de ces contrôles.
 
 ---
 
@@ -100,11 +100,9 @@ Je n'ai pas de chiffres exacts à partager, mais les signes étaient clairs :
 - Le service fonctionne toujours aujourd'hui.
 - Il est en cours d'extension à des bornes de partenaires tiers dans toute la Suisse.
 
-Pour un produit réglementé, l'audit compte autant que les ventes. Un produit qui se vend bien mais qui ne peut pas présenter ses documents est un risque pour toute l'entreprise.
-
 ---
 
 ### 8. Ce que j'en retiens
 
-- Dans une activité réglementée, la conformité fait partie du produit. Le suivi entre les agences n'était pas une fonctionnalité ajoutée à la fin ; c'est lui qui a décidé du fonctionnement de tout le système.
-- La formation doit commencer simple. Expliquer moins, mais bien, aurait fait gagner du temps au personnel et à moi aussi.
+- Dans une activité réglementée, les exigences de conformité font partie de la conception du produit. Dans ce projet, le plus difficile était une exigence de conformité : reconnaître chaque client dans toutes les agences et garder ses documents prêts pour un audit.
+- La prochaine fois, je formerais le personnel en deux temps : d'abord les quelques points qui comptent au guichet, ensuite le détail des règles.

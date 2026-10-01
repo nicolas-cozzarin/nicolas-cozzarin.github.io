@@ -59,7 +59,7 @@ work:
   - title: "Justice Inequality Simulator"
     context: "Cours de modèles génératifs profonds, Hochschule Furtwangen, 2025"
     text: "Une façon de tester si un modèle qui prédit des décisions de justice est biaisé. Je modifie un seul détail sensible dans la description de l'affaire, comme le genre ou l'origine, et je mesure de combien la prédiction change."
-    result: "Précision de 0,78 et ROC-AUC de 0,84 sur le jeu de test. Dans plusieurs cas, remplacer un mot sensible a déplacé la probabilité prédite de 0,10 à 0,25."
+    result: "Dans plusieurs cas, remplacer un mot sensible a déplacé la probabilité prédite de 0,10 à 0,25. Précision de 0,78 sur le jeu de test, probablement optimiste : l'article explique les limites de l'évaluation."
     stack: "Python, Legal-BERT, PyTorch, scikit-learn"
     links:
       - label: "Lire l'article (en anglais)"
