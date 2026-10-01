@@ -22,7 +22,7 @@ glance:
 
 Union of Financial Corners is a money transfer and currency exchange company in Switzerland. Most of its business happens in physical branches: people come to the counter to send money abroad with Western Union or to change currency. It is a regulated business that works under FINMA rules and Swiss anti-money-laundering law.
 
-Three things came together that made crypto a natural next product. Swiss law around crypto had changed, which made it possible to offer it in a clear legal frame. Clients were asking for it at the counter. And the company wanted a new source of revenue next to transfers and exchange.
+There were three reasons to add crypto. Swiss law around crypto had changed, which made it possible to offer it in a clear legal frame. Clients were asking for it at the counter. And the company wanted a new source of revenue next to transfers and exchange.
 
 My job was to turn that into a product that the staff could sell every day, in every branch, without creating a compliance risk.
 
@@ -38,7 +38,7 @@ From the client's side, it is simple:
 
 Clients can also do the opposite and sell crypto for cash.
 
-Behind these three steps there is a lot more: identifying the client, checking the amount against the limits, deciding which level of KYC applies, saving the documents, and sending the order to the crypto provider. The whole point of the product design was to keep the counter experience short while making sure none of those checks could be skipped.
+Behind these three steps there is a lot more: identifying the client, checking the amount against the limits, deciding which level of KYC applies, saving the documents, and sending the order to the crypto provider. The design goal was to keep the time at the counter short without letting any of these checks be skipped.
 
 ---
 
@@ -100,11 +100,9 @@ I do not have exact numbers to share, but the signs were clear:
 - The service is still running today.
 - It is now being extended to third-party partner kiosks across Switzerland.
 
-For a regulated product, the audit part matters as much as the sales. A product that sells well but cannot show its documents is a risk for the whole company.
-
 ---
 
 ### 8. What I learned
 
-- In a regulated business, compliance is part of the product. The tracking across branches was not a feature added at the end; it decided how the whole system worked.
-- Training has to start simple. Explaining less, but explaining it well, would have saved time for the staff and for me.
+- In a regulated business, compliance requirements are part of the product design. In this project, the hardest part was a compliance requirement: recognising each client in every branch and keeping their documents ready for an audit.
+- Next time I would train the staff in two steps: first the few points that matter at the counter, then the details of the rules.

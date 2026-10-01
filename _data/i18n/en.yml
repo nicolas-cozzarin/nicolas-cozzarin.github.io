@@ -59,7 +59,7 @@ work:
   - title: "Justice Inequality Simulator"
     context: "Deep Generative Models course, Hochschule Furtwangen, 2025"
     text: "A way to test if a model that predicts court outcomes is biased. I change one sensitive detail in the case description, like gender or ethnicity, and measure how much the prediction moves."
-    result: "Test accuracy of 0.78 and ROC-AUC of 0.84. In several cases, swapping a sensitive word moved the predicted probability by 0.10 to 0.25."
+    result: "In several cases, swapping a sensitive word moved the predicted probability by 0.10 to 0.25. Test accuracy of 0.78, probably optimistic: the write-up explains the limits of the evaluation."
     stack: "Python, Legal-BERT, PyTorch, scikit-learn"
     links:
       - label: "Read the write-up"

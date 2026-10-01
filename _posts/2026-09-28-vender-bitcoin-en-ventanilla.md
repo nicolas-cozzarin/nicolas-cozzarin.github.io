@@ -22,7 +22,7 @@ glance:
 
 Union of Financial Corners es una empresa de envío de dinero y cambio de divisas en Suiza. La mayor parte de su actividad pasa por las sucursales: la gente viene a la ventanilla para enviar dinero al exterior con Western Union o para cambiar divisas. Es una actividad regulada, que funciona bajo las reglas de la FINMA y la ley suiza de prevención de lavado de dinero.
 
-Se juntaron tres cosas que hicieron de la cripto el siguiente producto lógico. La ley suiza sobre cripto había cambiado, y eso permitía ofrecerla dentro de un marco legal claro. Los clientes la pedían en la ventanilla. Y la empresa buscaba una nueva fuente de ingresos, además de los envíos y el cambio.
+Había tres razones para sumar la cripto. La ley suiza sobre cripto había cambiado, y eso permitía ofrecerla dentro de un marco legal claro. Los clientes la pedían en la ventanilla. Y la empresa buscaba una nueva fuente de ingresos, además de los envíos y el cambio.
 
 Mi trabajo era convertir eso en un producto que el personal pudiera vender todos los días, en cada sucursal, sin generar un riesgo de cumplimiento.
 
@@ -38,7 +38,7 @@ Del lado del cliente es simple:
 
 Los clientes también pueden hacer lo contrario y vender cripto a cambio de efectivo.
 
-Detrás de esos tres pasos hay mucho más: identificar al cliente, controlar el monto contra los límites, decidir qué nivel de KYC corresponde, guardar los documentos y enviar la orden al proveedor cripto. La idea del diseño era que el paso por la ventanilla fuera corto, pero sin que se pudiera saltear ninguno de esos controles.
+Detrás de esos tres pasos hay mucho más: identificar al cliente, controlar el monto contra los límites, decidir qué nivel de KYC corresponde, guardar los documentos y enviar la orden al proveedor cripto. El objetivo era que el paso por la ventanilla fuera corto, sin que se pudiera saltear ninguno de esos controles.
 
 ---
 
@@ -100,11 +100,9 @@ No tengo cifras exactas para compartir, pero las señales fueron claras:
 - El servicio sigue funcionando hoy.
 - Se está extendiendo a quioscos de socios en toda Suiza.
 
-En un producto regulado, la auditoría importa tanto como las ventas. Un producto que vende bien pero no puede mostrar sus documentos es un riesgo para toda la empresa.
-
 ---
 
 ### 8. Lo que aprendí
 
-- En una actividad regulada, el cumplimiento es parte del producto. El seguimiento entre sucursales no fue una función agregada al final; definió cómo funcionaba todo el sistema.
-- La capacitación tiene que empezar simple. Explicar menos, pero bien, nos habría ahorrado tiempo al personal y a mí.
+- En una actividad regulada, los requisitos de cumplimiento son parte del diseño del producto. En este proyecto, lo más difícil fue un requisito de cumplimiento: reconocer a cada cliente en todas las sucursales y tener sus documentos listos para una auditoría.
+- La próxima vez capacitaría al personal en dos etapas: primero los pocos puntos que importan en la ventanilla, después el detalle de las reglas.
