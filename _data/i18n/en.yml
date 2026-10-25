@@ -40,6 +40,17 @@ about:
   - "Alongside my professional work, I have volunteered extensively in animal welfare and animal rights, and I am now exploring the potential impact of artificial intelligence on the situation of animals, a crucial topic that remains largely undiscussed. This includes examining the present and potential use of AI in factory farming and, conversely, in reducing wild animal suffering, as well as how reducing speciesist attitudes in frontier AI systems could shape outcomes for animals now and in the future. Finally, I consider how AI tools could help boost our efforts in animal advocacy."
 
 work:
+  - title: "EU AI Act checks in the deployment pipeline"
+    context: "Final degree project, Universidad Siglo XXI, 2026"
+    text: "A validator built to run as a step of a GitLab CI pipeline. For each new version of a credit model, it measures whether the model approves men and women at different rates and checks five controls of the EU AI Act. If one fails, the deployment is blocked and the report gives the rule and the article."
+    result: "Working prototype. In a first run, version 1 of a test credit model passed the five rules and version 2 was blocked by the fairness rule (demographic parity difference of 0.15, limit 0.10). The evaluation against manual review takes place in November 2026."
+    stack: "Python, RDF, SHACL, GraphDB, Fairlearn, GitLab CI, Streamlit, Docker"
+    note: "The consultancy and the bank are a modelled case, not real clients."
+    links:
+      - label: "Read the write-up"
+        url: "/2026/10/25/eu-ai-act-checks-in-the-deployment-pipeline.html"
+      - label: "See the prototype screens"
+        url: "https://nicolas-cozzarin.github.io/validador-prototipo/"
   - title: "Crypto sales in Swiss branches"
     context: "Union of Financial Corners, Geneva"
     text: "Clients pay cash at the counter and receive Bitcoin or Ethereum in their own wallet, or sell crypto for cash. I led the launch: the requirements, the choice of the Swiss crypto partner, the backlog with the external developers, the testing, the branch procedures and the staff training."
@@ -129,7 +140,7 @@ education:
   - title: "BSc in Artificial Intelligence and Robotics"
     org: "Universidad Siglo XXI, Argentina"
     dates: "2021 – 2026"
-    details: "Grade 8.40/10, diploma expected in December 2026. Specialisation in artificial intelligence, data science and robotics, with coursework in machine learning, deep learning and generative AI."
+    details: "Grade 8.40/10, diploma expected in December 2026. Specialisation in artificial intelligence, data science and robotics, with coursework in machine learning, deep learning and generative AI. Final degree project: a validator that checks EU AI Act controls in the deployment pipeline (see Selected work)."
   - title: "Exchange in AI and Robotics (Master's-level courses)"
     org: "Hochschule Furtwangen University, Germany"
     dates: "Nov 2024 – Nov 2025"
