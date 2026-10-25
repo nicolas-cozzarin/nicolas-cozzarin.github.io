@@ -42,7 +42,7 @@ about:
 work:
   - title: "EU AI Act checks in the deployment pipeline"
     context: "Final degree project, Universidad Siglo XXI, 2026"
-    text: "A validator that runs as a step of a GitLab CI pipeline. For each new version of a credit model, it measures whether the model approves men and women at different rates and checks five controls of the EU AI Act. If one fails, the deployment is blocked and the report gives the rule and the article."
+    text: "A validator built to run as a step of a GitLab CI pipeline. For each new version of a credit model, it measures whether the model approves men and women at different rates and checks five controls of the EU AI Act. If one fails, the deployment is blocked and the report gives the rule and the article."
     result: "Working prototype. In a first run, version 1 of a test credit model passed the five rules and version 2 was blocked by the fairness rule (demographic parity difference of 0.15, limit 0.10). The evaluation against manual review takes place in November 2026."
     stack: "Python, RDF, SHACL, GraphDB, Fairlearn, GitLab CI, Streamlit, Docker"
     note: "The consultancy and the bank are a modelled case, not real clients."

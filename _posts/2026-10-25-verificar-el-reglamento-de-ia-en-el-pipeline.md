@@ -11,7 +11,7 @@ glance:
   - label: "Problema"
     text: "El cumplimiento de los modelos de IA se verifica a mano, al final del desarrollo, y cada versión nueva repite toda la revisión."
   - label: "Qué construí"
-    text: "Un validador que corre como una etapa del pipeline de GitLab CI del cliente. Arma la ficha de cada versión del modelo como un grafo RDF, mide la equidad con Fairlearn, verifica cinco controles del Reglamento con reglas SHACL en GraphDB y frena el despliegue si alguno no se cumple."
+    text: "Un validador pensado para correr como una etapa del pipeline de GitLab CI del cliente. Arma la ficha de cada versión del modelo como un grafo RDF, mide la equidad con Fairlearn, verifica cinco controles del Reglamento con reglas SHACL en GraphDB y frena el despliegue si alguno no se cumple."
   - label: "Estado"
     text: "Prototipo funcionando. En una primera ejecución, la versión 1 de un modelo de crédito de prueba cumplió las cinco reglas y la versión 2 quedó bloqueada por la regla de equidad. La evaluación frente a la revisión manual se hace en noviembre de 2026."
   - label: "Prototipo"

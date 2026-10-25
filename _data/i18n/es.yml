@@ -42,7 +42,7 @@ about:
 work:
   - title: "Controles del Reglamento europeo de IA en el pipeline de despliegue"
     context: "Trabajo final de grado, Universidad Siglo XXI, 2026"
-    text: "Un validador que corre como una etapa de un pipeline de GitLab CI. En cada versión nueva de un modelo de crédito, mide si el modelo aprueba a hombres y mujeres en tasas distintas y verifica cinco controles del Reglamento europeo de IA. Si alguno falla, el despliegue se frena y el reporte indica la regla y el artículo."
+    text: "Un validador pensado para correr como una etapa de un pipeline de GitLab CI. En cada versión nueva de un modelo de crédito, mide si el modelo aprueba a hombres y mujeres en tasas distintas y verifica cinco controles del Reglamento europeo de IA. Si alguno falla, el despliegue se frena y el reporte indica la regla y el artículo."
     result: "Prototipo funcionando. En una primera ejecución, la versión 1 de un modelo de crédito de prueba cumplió las cinco reglas y la versión 2 quedó bloqueada por la regla de equidad (diferencia de paridad demográfica de 0,15, umbral de 0,10). La evaluación frente a la revisión manual se hace en noviembre de 2026."
     stack: "Python, RDF, SHACL, GraphDB, Fairlearn, GitLab CI, Streamlit, Docker"
     note: "La consultora y el banco son un caso modelado, no clientes reales."

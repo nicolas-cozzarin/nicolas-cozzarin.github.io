@@ -11,7 +11,7 @@ glance:
   - label: "Problem"
     text: "AI models are checked for compliance by hand, at the end of development, and every new version repeats the whole review."
   - label: "What I built"
-    text: "A validator that runs as a step of the client's GitLab CI pipeline. It turns the card of each model version into an RDF graph, measures fairness with Fairlearn, checks five EU AI Act controls with SHACL rules in GraphDB, and blocks the deployment if one fails."
+    text: "A validator built to run as a step of the client's GitLab CI pipeline. It turns the card of each model version into an RDF graph, measures fairness with Fairlearn, checks five EU AI Act controls with SHACL rules in GraphDB, and blocks the deployment if one fails."
   - label: "Status"
     text: "Working prototype. In a first run, version 1 of a test credit model passed the five rules and version 2 was blocked by the fairness rule. The evaluation against manual review takes place in November 2026."
   - label: "Prototype"
