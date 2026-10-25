@@ -40,6 +40,17 @@ about:
   - "En parallèle de mon parcours professionnel, je me suis beaucoup investi dans le bénévolat pour le bien-être et les droits des animaux, et j'explore aujourd'hui l'impact potentiel de l'intelligence artificielle sur la situation des animaux, un sujet crucial qui reste largement absent du débat. Cela inclut l'examen de l'utilisation actuelle et potentielle de l'IA dans les élevages industriels et, à l'inverse, dans la réduction de la souffrance des animaux sauvages, ainsi que la manière dont la réduction des attitudes spécistes dans les systèmes d'IA de pointe peut avoir un impact présent et futur. Enfin, je m'intéresse à la façon dont les outils d'IA pourraient renforcer nos actions de plaidoyer pour les animaux."
 
 work:
+  - title: "Contrôles du Règlement européen sur l'IA dans le pipeline de déploiement"
+    context: "Projet de fin d'études, Universidad Siglo XXI, 2026"
+    text: "Un validateur qui tourne comme une étape d'un pipeline GitLab CI. Pour chaque nouvelle version d'un modèle de crédit, il mesure si le modèle accepte les hommes et les femmes à des taux différents et vérifie cinq contrôles du Règlement européen sur l'IA. Si l'un échoue, le déploiement est bloqué et le rapport indique la règle et l'article."
+    result: "Prototype fonctionnel. Lors d'une première exécution, la version 1 d'un modèle de crédit de test a passé les cinq règles et la version 2 a été bloquée par la règle d'équité (différence de parité démographique de 0,15, seuil de 0,10). L'évaluation face à la revue manuelle a lieu en novembre 2026."
+    stack: "Python, RDF, SHACL, GraphDB, Fairlearn, GitLab CI, Streamlit, Docker"
+    note: "Le cabinet et la banque sont un cas modélisé, pas de vrais clients."
+    links:
+      - label: "Lire l'article"
+        url: "/2026/10/25/verifier-le-reglement-ia-dans-le-pipeline.html"
+      - label: "Voir les écrans du prototype"
+        url: "https://nicolas-cozzarin.github.io/validador-prototipo/"
   - title: "Vente de cryptomonnaies en agence"
     context: "Union of Financial Corners, Genève"
     text: "Les clients paient en espèces au guichet et reçoivent du Bitcoin ou de l'Ethereum sur leur propre wallet, ou vendent de la crypto contre des espèces. J'ai piloté le lancement : les besoins, le choix du partenaire crypto suisse, le backlog avec les développeurs externes, les tests, les procédures en agence et la formation du personnel."
@@ -129,7 +140,7 @@ education:
   - title: "Licence en Intelligence Artificielle et Robotique"
     org: "Universidad Siglo XXI, Argentine"
     dates: "2021 – 2026"
-    details: "Moyenne de 8,40/10, diplôme prévu en décembre 2026. Spécialisation en intelligence artificielle, science des données et robotique, avec des cours de machine learning, deep learning et IA générative."
+    details: "Moyenne de 8,40/10, diplôme prévu en décembre 2026. Spécialisation en intelligence artificielle, science des données et robotique, avec des cours de machine learning, deep learning et IA générative. Projet de fin d'études : un validateur qui vérifie des contrôles du Règlement européen sur l'IA dans le pipeline de déploiement (voir Projets choisis)."
   - title: "Échange en IA et Robotique (cours de niveau master)"
     org: "Hochschule Furtwangen, Allemagne"
     dates: "nov. 2024 – nov. 2025"
