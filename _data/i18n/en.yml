@@ -206,6 +206,10 @@ skills:
     text: "Spanish: native. English: Duolingo English Test 140/160 (8 October 2026). French: fluent (self-assessed). German: B2, HFU course passed with 2.3 (summer semester 2025). Chinese: basic, about HSK 3 level (not certified)."
 
 courses:
+  - title: "AGI Strategy"
+    org: "BlueDot Impact, November 2026"
+    text: "A 30-hour course on how advanced AI could develop and what can go wrong: linking technical trends to future capabilities, building threat models, designing safeguards with defence in depth, and writing a personal action plan."
+    credential: "https://bluedot.org/certification?id=recAfKlAH7GKCoNpX"
   - title: "Future of AI"
     org: "BlueDot Impact, August 2026"
     text: "An introduction to what AI can do today, where it is going over the next decade, and how to start contributing to a better future."
